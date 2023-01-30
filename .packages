@@ -36,6 +36,7 @@ linux-zen 6.1.8.zen1-1
 m4 1.4.19-2
 make 4.4-1
 man-db 2.11.2-1
+mpd 0.23.12-1
 nano 7.2-1
 neofetch 7.1.0-2
 networkmanager 1.40.12-1
