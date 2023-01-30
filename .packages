@@ -51,6 +51,8 @@ pipewire-alsa 1:0.3.64-1
 pipewire-jack 1:0.3.64-1
 pipewire-pulse 1:0.3.64-1
 pkgconf 1.8.0-1
+python 3.10.9-1
+python-pip 22.3.1-1
 rsync 3.2.7-3
 sed 4.9-1
 slurp 1.4.0-1
