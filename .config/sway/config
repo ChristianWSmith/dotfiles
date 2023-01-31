@@ -208,6 +208,21 @@ bindsym Mod1+r mode "resize"
 # Please remove the following exec line:
 #######################################################################
 
+# +GNOME SETTINGS
+set $gnome-schema org.gnome.desktop.interface
+exec_always {
+    gsettings set $gnome-schema gtk-theme 'Adwaita-dark'
+    gsettings set $gnome-schema icon-theme 'Papirus-Dark'
+    gsettings set $gnome-schema font-name 'Noto Sans Regular 11'
+    gsettings set $gnome-schema monospace-font-name 'NotoMono Nerd Font Mono 11'
+    gsettings set $gnome-schema document-font-name 'Noto Sans Regular 11'
+    gsettings set org.gnome.desktop.wm.preferences titlebar-font 'Noto Sans Regular 11'
+    gsettings set org.gnome.desktop.wm.preferences button-layout ''
+    gsettings set org.gnome.desktop.default-applications.terminal exec $term
+    gsettings set org.gnome.desktop.default-applications.terminal exec-arg ''
+}
+# -GNOME SETTINGS
+
 gaps inner 12
 gaps outer 15
 for_window [class="^.*"] border pixel 2
