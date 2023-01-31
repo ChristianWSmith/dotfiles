@@ -225,8 +225,8 @@ exec_always {
 set $exit "exit: [l]ock, [r]eboot, [s]hutdown"
 mode $exit {
     bindsym --to-code {
-        s exec systemctl poweroff
-        r exec systemctl reboot
+        s exec systemctl poweroff --no-wall
+        r exec systemctl reboot --no-wall
         l exec swaylock; mode "default"
     
         Return mode "default"
