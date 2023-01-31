@@ -1,6 +1,7 @@
 *
 !.gitignore
 !.packages
+!.vimrc
 !.config
 !.config/sway
 !.config/sway/**
