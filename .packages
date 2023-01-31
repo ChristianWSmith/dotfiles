@@ -1,3 +1,5 @@
+adwaita-dark 1.0-1
+adwaita-qt5 1.4.2-1
 amd-ucode 20230117.7e4f0ed-1
 archlinux-keyring 20221220-1
 autoconf 2.71-1
@@ -34,6 +36,7 @@ libva-mesa-driver 22.3.3-3
 light 1.2.2-3
 linux-firmware 20230117.7e4f0ed-1
 linux-zen 6.1.8.zen1-1
+lxappearance 0.6.3-4
 m4 1.4.19-2
 make 4.4-1
 man-db 2.11.2-1
@@ -41,6 +44,9 @@ mpd 0.23.12-1
 nano 7.2-1
 neofetch 7.1.0-2
 networkmanager 1.40.12-1
+noto-fonts 20220810-1
+noto-fonts-cjk 20220126-1
+noto-fonts-emoji 20220920-1
 openssh 9.1p1-3
 otf-font-awesome 6.2.1-1
 pacdep 1.1.0-4
@@ -54,6 +60,7 @@ pipewire-pulse 1:0.3.64-1
 pkgconf 1.8.0-1
 python 3.10.9-1
 python-pip 22.3.1-1
+qt5ct 1.5-2
 rsync 3.2.7-3
 sed 4.9-1
 slurp 1.4.0-1

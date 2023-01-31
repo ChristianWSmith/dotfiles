@@ -14,4 +14,8 @@
 !.config/waybar/**
 !.config/foot
 !.config/foot/**
-!mirrorlist
+!.config/qt5ct
+!.config/qt5ct/**
+!.gtkrc-2.0
+!.config/gtk-3.0
+!.config/gtk-3.0/**
