@@ -1,3 +1,4 @@
+a52dec 0.7.4-12
 adw-gtk-theme 1.1-2
 adwaita-dark 1.0-1
 adwaita-qt5 1.4.2-1
@@ -13,7 +14,12 @@ caprine 2.57.0-1
 debugedit 5.0-4
 discord 0.0.24-1
 dmenu 5.2-1
+dvd+rw-tools 7.1-9
+dvdauthor 0.7.2-11
+dvgrab 3.5-12
 efibootmgr 18-1
+exfat-utils 1.3.0-2
+faac 1.30-3
 fakeroot 1.30.1-1
 file 5.44-1
 findutils 4.9.0-2
@@ -29,6 +35,7 @@ google-chrome 109.0.5414.119-1
 grep 3.8-2
 grim 1.4.0-3
 groff 1.22.4-7
+gst-libav 1.22.0-3
 gst-plugin-pipewire 1:0.3.64-1
 gvfs 1.50.3-1
 gzip 1.12-1
@@ -36,7 +43,13 @@ htop 3.2.1-1
 inkscape 1.2.2-4
 iwd 2.2-1
 libadwaita 1:1.2.1-1
+libdca 0.0.7-1
+libdv 1.0.0-9
+libdvdcss 1.4.3-1
+libdvdnav 6.1.1-1
+libdvdread 6.1.3-1
 libinput-config-git r75.cb26cfd-1
+libmpeg2 0.5.1-7
 libpulse 16.1-3
 libtool 2.4.7+4+g1ec8fa28-1
 libva-mesa-driver 22.3.3-3
@@ -47,6 +60,7 @@ lxappearance 0.6.3-4
 m4 1.4.19-2
 make 4.4-1
 man-db 2.11.2-1
+mirage 0.11.1-1
 mpd 0.23.12-1
 nano 7.2-1
 neofetch 7.1.0-2
@@ -83,6 +97,7 @@ thunar 4.18.3-1
 transmission-qt 3.00-6
 ttf-noto-nerd 2.3.3-2
 vim 9.0.1182-1
+vlc 3.0.18-6
 vulkan-radeon 22.3.3-3
 waybar 0.9.17-1
 wget 1.21.3-1
