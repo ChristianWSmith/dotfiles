@@ -88,11 +88,11 @@
     "cpu": {
         "format": "{usage}% ",
         "tooltip": false,
-        "on-click": "foot btop" // TODO: decouple foot
+        "on-click": "footclient btop" // TODO: decouple footclient
     },
     "memory": {
         "format": "{}% ",
-        "on-click": "foot btop" // TODO: decouple foot
+        "on-click": "footclient btop" // TODO: decouple footclient
     },
     "temperature": {
         // "thermal-zone": 2,
@@ -132,7 +132,7 @@
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
         // "format-alt": "{ifname}: {ipaddr}/{cidr}",
-        "on-click": "foot nmtui" // TODO: decouple foot
+        "on-click": "footclient nmtui" // TODO: decouple footclient
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
