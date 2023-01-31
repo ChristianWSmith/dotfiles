@@ -1,5 +1,6 @@
 *
 !.gitignore
+!.sys-settings.sh
 !.packages
 !.vimrc
 !.etc-environment
