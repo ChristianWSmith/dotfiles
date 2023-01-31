@@ -1,3 +1,4 @@
+adw-gtk-theme 1.1-2
 adwaita-dark 1.0-1
 adwaita-qt5 1.4.2-1
 amd-ucode 20230117.7e4f0ed-1
@@ -29,6 +30,7 @@ gst-plugin-pipewire 1:0.3.64-1
 gzip 1.12-1
 htop 3.2.1-1
 iwd 2.2-1
+libadwaita 1:1.2.1-1
 libinput-config-git r75.cb26cfd-1
 libpulse 16.1-3
 libtool 2.4.7+4+g1ec8fa28-1
