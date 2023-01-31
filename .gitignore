@@ -23,3 +23,5 @@
 !.config/gtk-3.0/**
 !.config/neofetch
 !.config/neofetch/**
+!.config/Thunar
+!.config/Thunar/**
