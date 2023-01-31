@@ -25,3 +25,7 @@
 !.config/neofetch/**
 !.config/Thunar
 !.config/Thunar/**
+!.config/mirage
+!.config/mirage/**
+!.config/xfce4
+!.config/xfce4/**
