@@ -2,7 +2,7 @@ font pango:Noto Sans Mono 11
 
 exec --no-startup-id dex --autostart --environment sway
 
-exec --no-startup-id xss-lock --transfer-sleep-lock -- swaylock --nofork
+# exec --no-startup-id xss-lock --transfer-sleep-lock -- swaylock --nofork
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_swaystatus killall -SIGUSR1 swaystatus
