@@ -14,3 +14,4 @@
 !.config/waybar/**
 !.config/foot
 !.config/foot/**
+!mirrorlist
