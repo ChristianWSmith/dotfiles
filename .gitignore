@@ -1,0 +1,16 @@
+*
+!.gitignore
+!.packages
+!.config
+!.config/sway
+!.config/sway/**
+!.config/waybar
+!.config/waybar/**
+!.config/fish
+!.config/fish/**
+!.config/btop
+!.config/btop/**
+!.config/waybar
+!.config/waybar/**
+!.config/foot
+!.config/foot/**
