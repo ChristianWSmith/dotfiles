@@ -11,6 +11,7 @@ binutils 2.40-2
 bison 3.8.2-4
 btop 1.2.13-1
 caprine 2.57.0-1
+checkupdates-aur 0.04-1
 cups 1:2.4.2-3
 debugedit 5.0-4
 discord 0.0.24-1
@@ -83,6 +84,7 @@ openssh 9.1p1-3
 otf-font-awesome 6.2.1-1
 pacdep 1.1.0-4
 pacman 6.0.2-5
+pacman-contrib 1.8.2-1
 papirus-icon-theme 20230104-1
 patch 2.7.6-8
 pavucontrol 1:5.0+r61+gee77d86-2
@@ -94,6 +96,8 @@ pkgconf 1.8.0-1
 python 3.10.9-1
 python-pip 22.3.1-1
 qt5ct 1.5-2
+reflector 2021.11-5
+reflector-pacman-hook-git r84.cba689a-1
 rsync 3.2.7-3
 sed 4.9-1
 slurp 1.4.0-1
@@ -109,6 +113,8 @@ texinfo 7.0.2-1
 thunar 4.18.3-1
 thunderbird 102.7.0-2
 thunderbird-dark-reader 4.9.62-1
+timeshift 22.11.2-1
+timeshift-autosnap 0.9-1
 transmission-qt 3.00-6
 tumbler 4.18.0-1
 vim 9.0.1182-1
@@ -132,3 +138,4 @@ xorg-xgamma 1.0.7-1
 xorg-xinit 1.4.2-1
 xorg-xwayland 22.1.7-1
 yay 11.3.2-1
+zeit-git 0.6.0.r8.gde6b5c2-1
