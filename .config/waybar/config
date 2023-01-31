@@ -87,10 +87,12 @@
     },
     "cpu": {
         "format": "{usage}% ",
-        "tooltip": false
+        "tooltip": false,
+        "on-click": "foot btop" // TODO: decouple foot
     },
     "memory": {
-        "format": "{}% "
+        "format": "{}% ",
+        "on-click": "foot btop" // TODO: decouple foot
     },
     "temperature": {
         // "thermal-zone": 2,
