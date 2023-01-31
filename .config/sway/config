@@ -177,7 +177,7 @@ mode $exit {
     bindsym --to-code {
         s exec systemctl poweroff --no-wall
         r exec systemctl reboot --no-wall
-        l exec swaylock; mode "default"
+        l exec ~/.config/sway/scripts/launchers/swaylock.sh; mode "default"
     
         Return mode "default"
         Escape mode "default"
