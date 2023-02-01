@@ -1,151 +1,151 @@
-a52dec 0.7.4-12
-adw-gtk-theme 1.1-2
-adwaita-dark 1.0-1
-adwaita-qt5 1.4.2-1
-amd-ucode 20230117.7e4f0ed-1
-archlinux-keyring 20230130-1
-autoconf 2.71-1
-automake 1.16.5-1
-base 3-1
-binutils 2.40-2
-bison 3.8.2-4
-btop 1.2.13-1
-caprine 2.57.0-1
-checkupdates-aur 0.04-1
-cups 1:2.4.2-3
-debugedit 5.0-4
-discord 0.0.24-1
-dmenu 5.2-1
-dvd+rw-tools 7.1-9
-dvdauthor 0.7.2-11
-dvgrab 3.5-12
-efibootmgr 18-1
-epson-inkjet-printer-escpr2 1.1.59-1
-exfat-utils 1.3.0-2
-faac 1.30-3
-fakeroot 1.30.1-1
-ffmpegthumbnailer 2.2.2-4
-file 5.44-1
-findutils 4.9.0-2
-fish 3.6.0-1
-flex 2.6.4-4
-foot 1.13.1-2
-gamemode 1.7-1
-gawk 5.2.1-1
-gcc 12.2.1-1
-gettext 0.21.1-2
-gimp 2.10.32-3
-git 2.39.1-1
-google-chrome 109.0.5414.119-1
-grep 3.8-2
-grim 1.4.0-3
-groff 1.22.4-7
-gst-libav 1.22.0-3
-gst-plugin-pipewire 1:0.3.65-5
-gst-plugins-bad 1.22.0-3
-gst-plugins-good 1.22.0-3
-gst-plugins-ugly 1.22.0-3
-gvfs 1.50.3-1
-gzip 1.12-1
-htop 3.2.1-1
-inkscape 1.2.2-4
-innoextract 1.9-8
-intel-ucode 20221108-1
-iw 5.19-1
-iwd 2.2-1
-jq 1.6-4
-lib32-gamemode 1.7-1
-lib32-vkd3d 1.5-1
-lib32-vulkan-icd-loader 1.3.240-1
-libadwaita 1:1.2.1-1
-libdca 0.0.7-1
-libdv 1.0.0-9
-libdvdcss 1.4.3-1
-libdvdnav 6.1.1-1
-libdvdread 6.1.3-1
-libinput-config-git r75.cb26cfd-1
-libmpeg2 0.5.1-7
-libpulse 16.1-3
-libreoffice-fresh 7.4.5-1
-libtool 2.4.7+4+g1ec8fa28-1
-libva-mesa-driver 22.3.3-3
-light 1.2.2-3
-linux-firmware 20230117.7e4f0ed-1
-linux-zen 6.1.8.zen1-1
-linux-zen-headers 6.1.8.zen1-1
-lutris 0.5.12-2
-lxappearance 0.6.3-4
-m4 1.4.19-2
-make 4.4-1
-man-db 2.11.2-1
-mirage 0.11.1-1
-mokutil 0.6.0-2
-mpd 0.23.12-1
-nano 7.2-1
-neofetch 7.1.0-2
-network-manager-applet 1.30.0-1
-networkmanager 1.40.12-1
-noto-fonts 20230117-3
-noto-fonts-cjk 20220126-1
-noto-fonts-emoji 20220920-1
-ntfs-3g 2022.10.3-1
-openssh 9.1p1-3
-otf-font-awesome 6.2.1-1
-pacdep 1.1.0-4
-pacman 6.0.2-5
-pacman-contrib 1.8.2-1
-papirus-icon-theme 20230104-1
-patch 2.7.6-8
-pavucontrol 1:5.0+r61+gee77d86-2
-pipewire 1:0.3.65-5
-pipewire-alsa 1:0.3.65-5
-pipewire-jack 1:0.3.65-5
-pipewire-pulse 1:0.3.65-5
-pkgconf 1.8.0-1
-python 3.10.9-1
-python-pip 22.3.1-1
-qt5ct 1.5-2
-reflector 2021.11-5
-reflector-pacman-hook-git r84.cba689a-1
-rsync 3.2.7-3
-rtl88x2bu-dkms-git 5.13.1.r179.a2ac3b2-1
-sed 4.9-1
-slurp 1.4.0-1
-smartmontools 7.3-1
-steam 1.0.0.75-1
-steam-native-runtime 1.0.0.75-2
-sudo 1.9.12.p2-1
-sway 1:1.8-3
-swaybg 1.2.0-1
-swayidle 1.8.0-1
-swaylock 1.7.2-1
-texinfo 7.0.2-1
-thunar 4.18.3-1
-thunderbird 102.7.0-2
-thunderbird-dark-reader 4.9.62-1
-timeshift 22.11.2-1
-transmission-qt 3.00-6
-tumbler 4.18.0-1
-vim 9.0.1182-1
-vkd3d 1.6-1
-vlc 3.0.18-6
-vulkan-radeon 22.3.3-3
-waybar 0.9.17-1
-wget 1.21.3-1
-which 2.21-5
-wine 8.0-2
-wireless-regdb 2022.08.12-1
-wireless_tools 30.pre9-3
-wireplumber 0.4.13-1
-wl-clipboard 1:2.1.0-2
-wofi 1.3-2
-xdg-utils 1.1.3+25+g8ae0263-1
-xf86-video-amdgpu 22.0.0-1
-xf86-video-ati 1:19.1.0.r15.g7a6a34af-1
-xfce4-settings 4.18.1-1
-xorg-server 21.1.6-1
-xorg-xgamma 1.0.7-1
-xorg-xinit 1.4.2-1
-xorg-xwayland 22.1.7-1
-yay-git 11.3.1.r100.g4f50b79-1
-zeit-git 0.6.0.r8.gde6b5c2-1
+a52dec
+adw-gtk-theme
+adwaita-dark
+adwaita-qt5
+amd-ucode
+archlinux-keyring
+autoconf
+automake
+base
+binutils
+bison
+btop
+caprine
+checkupdates-aur
+cups
+debugedit
+discord
+dmenu
+dvd+rw-tools
+dvdauthor
+dvgrab
+efibootmgr
+epson-inkjet-printer-escpr2
+exfat-utils
+faac
+fakeroot
+ffmpegthumbnailer
+file
+findutils
+fish
+flex
+foot
+gamemode
+gawk
+gcc
+gettext
+gimp
+git
+google-chrome
+grep
+grim
+groff
+gst-libav
+gst-plugin-pipewire
+gst-plugins-bad
+gst-plugins-good
+gst-plugins-ugly
+gvfs
+gzip
+htop
+inkscape
+innoextract
+intel-ucode
+iw
+iwd
+jq
+lib32-gamemode
+lib32-vkd3d
+lib32-vulkan-icd-loader
+libadwaita
+libdca
+libdv
+libdvdcss
+libdvdnav
+libdvdread
+libinput-config-git
+libmpeg2
+libpulse
+libreoffice-fresh
+libtool
+libva-mesa-driver
+light
+linux-firmware
+linux-zen
+linux-zen-headers
+lutris
+lxappearance
+m4
+make
+man-db
+mirage
+mokutil
+mpd
+nano
+neofetch
+network-manager-applet
+networkmanager
+noto-fonts
+noto-fonts-cjk
+noto-fonts-emoji
+ntfs-3g
+openssh
+otf-font-awesome
+pacdep
+pacman
+pacman-contrib
+papirus-icon-theme
+patch
+pavucontrol
+pipewire
+pipewire-alsa
+pipewire-jack
+pipewire-pulse
+pkgconf
+python
+python-pip
+qt5ct
+reflector
+reflector-pacman-hook-git
+rsync
+rtl88x2bu-dkms-git
+sed
+slurp
+smartmontools
+steam
+steam-native-runtime
+sudo
+sway
+swaybg
+swayidle
+swaylock
+texinfo
+thunar
+thunderbird
+thunderbird-dark-reader
+timeshift
+transmission-qt
+tumbler
+vim
+vkd3d
+vlc
+vulkan-radeon
+waybar
+wget
+which
+wine
+wireless-regdb
+wireless_tools
+wireplumber
+wl-clipboard
+wofi
+xdg-utils
+xf86-video-amdgpu
+xf86-video-ati
+xfce4-settings
+xorg-server
+xorg-xgamma
+xorg-xinit
+xorg-xwayland
+yay-git
+zeit-git

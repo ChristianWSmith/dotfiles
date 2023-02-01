@@ -4,6 +4,7 @@ if status is-interactive
     if [ "$XDG_VTNR" = "1" ] && [ -z "$DISPLAY" ]
         /usr/bin/sway 2>&1 > /dev/null
     end
+    alias "update-package-list" "yay -Qe | cut -d' ' -f1 > ~/.packages"
     alias "shutdown" "systemctl poweroff --no-wall"
     alias "reboot" "systemctl reboot --no-wall --reboot"
 end
