@@ -93,7 +93,6 @@ pipewire-alsa 1:0.3.65-5
 pipewire-jack 1:0.3.65-5
 pipewire-pulse 1:0.3.65-5
 pkgconf 1.8.0-1
-plymouth 22.02.122-4
 python 3.10.9-1
 python-pip 22.3.1-1
 qt5ct 1.5-2

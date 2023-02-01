@@ -23,7 +23,7 @@ sudo chown root:root $autologin_file
 
 # +KERNEL OPTIONS
 entries=(/boot/loader/entries/*)
-kernel_options="quiet splash vt.global_cursor_default=0 loglevel=3 systemd.show_status=auto rd.udev.log_level=3 nowatchdog modprobe.blacklist=sp5100_tco audit=0"
+kernel_options="quiet loglevel=3 vt.global_cursor_default=0 systemd.show_status=auto rd.udev.log_level=3 nowatchdog modprobe.blacklist=sp5100_tco audit=0"
 option_keys=()
 for token in ${kernel_options[@]}
 do
@@ -72,8 +72,6 @@ do
     if [ "$key" = "HOOKS" ]
     then
         new_line=$(echo $line | sed 's/udev/systemd fsck/g')
-    new_line=$(echo $new_line | sed 's/systemd/systemd sd-plymouth/g')
-    new_line=$(echo $new_line | sed 's/sd-plymouth sd-plymouth/sd-plymouth/g')
         echo $new_line >> .tmp
     else
         echo $line >> .tmp    
@@ -125,7 +123,3 @@ sudo systemctl mask systemd-journald-audit.socket
 # +NO WIFI POWER SAVING
 sudo /bin/bash -c 'echo -e "[connection]\nwifi.powersave = 2" > /etc/NetworkManager/conf.d/default-wifi-powersave-on.conf'
 # -NO WIFI POWER SAVING
-
-# +PLYMOUTH THEME
-sudo plymouth-set-default-theme spinner
-# -PLYMOUTH THEME
