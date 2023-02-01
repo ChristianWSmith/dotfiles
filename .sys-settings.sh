@@ -141,3 +141,7 @@ sudo mkdir -p /etc/pacman.d/hooks
 sudo cp ${SCRIPT_DIR}/.pkexec-mask/pkexec-mask-install.hook /etc/pacman.d/hooks/pkexec-mask-install.hook
 sudo cp ${SCRIPT_DIR}/.pkexec-mask/pkexec-mask-remove.hook /etc/pacman.d/hooks/pkexec-mask-remove.hook
 # -PKEXEC
+
+# +/ETC/ENVIRONMENT
+sudo /bin/bash -c "cat ${SCRIPT_DIR}/.etc-environment > /etc/environment"
+# -/ETC/ENVIRONMENT
