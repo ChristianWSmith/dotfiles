@@ -107,3 +107,11 @@ do
     sudo mv .tmp $file
 done
 # -FSCK SERVICES
+
+# +HUSH LOGIN
+touch ~/.hushlogin
+# -HUSH LOGIN
+
+# +SKIP SYSTEMD-BOOT
+sudo /bin/bash -c "echo 'timeout 0' > /boot/loader/loader.conf"
+# -SKIP SYSTEMD-BOOT
