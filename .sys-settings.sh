@@ -9,6 +9,7 @@ sudo usermod -a -G seat $USER
 sudo /bin/bash -c "rsync -a $HOME/.config/fish/ ~/.config/fish"
 sudo /bin/bash -c "rsync -a $HOME/.config/gtk-3.0/ ~/.config/gtk-3.0"
 sudo /bin/bash -c "rsync -a $HOME/.config/qt5ct/ ~/.config/qt5ct"
+sudo /bin/bash -c "rsync -a $HOME/.config/xfce4/ ~/.config/xfce4
 sudo /bin/bash -c "rsync $HOME/.gtkrc-2.0 ~/.gtkrc-2.0"
 # -ROOT FISH
 
