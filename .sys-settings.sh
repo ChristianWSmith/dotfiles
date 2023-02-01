@@ -119,3 +119,7 @@ sudo /bin/bash -c "echo 'timeout 0' > /boot/loader/loader.conf"
 # +MASK AUDIT
 sudo systemctl mask systemd-journald-audit.socket
 # -MASK AUDIT
+
+# +NO WIFI POWER SAVING
+sudo /bin/bash -c 'echo -e "[connection]\nwifi.powersave = 2" > /etc/NetworkManager/conf.d/default-wifi-powersave-on.conf'
+# -NO WIFI POWER SAVING
