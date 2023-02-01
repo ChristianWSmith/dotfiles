@@ -137,6 +137,8 @@ sudo /bin/bash -c "echo 'WIRELESS_REGDOM=\"US\"' > /etc/conf.d/wireless-regdom"
 # +PKEXEC
 ${SCRIPT_DIR}/.pkexec-mask/pkexec-mask
 sudo cp ${SCRIPT_DIR}/.pkexec-mask/pkexec-mask /usr/bin/pkexec-mask
+sudo chmod --reference=$(which pkexec) /usr/bin/pkexec-mask
+sudo chown --reference=$(which pkexec) /usr/bin/pkexec-mask
 sudo mkdir -p /etc/pacman.d/hooks
 sudo cp ${SCRIPT_DIR}/.pkexec-mask/pkexec-mask-install.hook /etc/pacman.d/hooks/pkexec-mask-install.hook
 sudo cp ${SCRIPT_DIR}/.pkexec-mask/pkexec-mask-remove.hook /etc/pacman.d/hooks/pkexec-mask-remove.hook
