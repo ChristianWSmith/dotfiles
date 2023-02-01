@@ -1,5 +1,5 @@
 [window]
-w = 426
+w = 1308
 h = 680
 toolbar = True
 statusbar = True
@@ -51,7 +51,9 @@ shortcuts[3] = <Control><Alt>f
 batch[3] = False
 
 [recent]
-num_recent = 1
-num[0] = 50
-urls[0,0] = /home/christian/.config/sway/backgrounds/space.png
+num_recent = 2
+num[0] = 51
+urls[0,0] = /home/christian/.config/sway/backgrounds/denali.jpg
+num[1] = 50
+urls[1,0] = /home/christian/.config/sway/backgrounds/space.png
 

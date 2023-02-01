@@ -31,6 +31,6 @@
 !.config/Thunar
 !.config/Thunar/**
 !.config/mirage
-!.config/mirage/**
+!.config/mirage/accel_map
 !.config/xfce4
 !.config/xfce4/**
