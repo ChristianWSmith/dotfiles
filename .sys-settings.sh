@@ -23,7 +23,7 @@ sudo chown root:root $autologin_file
 
 # +KERNEL OPTIONS
 entries=(/boot/loader/entries/*)
-kernel_options="quiet loglevel=3 systemd.show_status=auto rd.udev.log_level=3 vt.global_cursor_default=0"
+kernel_options="quiet loglevel=3 systemd.show_status=auto rd.udev.log_level=3 vt.global_cursor_default=0 nowatchdog modprobe.blacklist=sp5100_tco audit=0"
 option_keys=()
 for token in ${kernel_options[@]}
 do
@@ -115,3 +115,7 @@ touch ~/.hushlogin
 # +SKIP SYSTEMD-BOOT
 sudo /bin/bash -c "echo 'timeout 0' > /boot/loader/loader.conf"
 # -SKIP SYSTEMD-BOOT
+
+# +MASK AUDIT
+sudo systemctl mask systemd-journald-audit.socket
+# -MASK AUDIT
