@@ -125,3 +125,7 @@ sudo systemctl mask systemd-journald-audit.socket
 # +NO WIFI POWER SAVING
 sudo /bin/bash -c 'echo -e "[connection]\nwifi.powersave = 2" > /etc/NetworkManager/conf.d/default-wifi-powersave-on.conf'
 # -NO WIFI POWER SAVING
+
+# +PLYMOUTH THEME
+sudo plymouth-set-default-theme bgrt
+# -PLYMOUTH THEME
