@@ -102,6 +102,7 @@ pipewire-alsa
 pipewire-jack
 pipewire-pulse
 pkgconf
+polkit-gnome
 python
 python-pip
 qt5ct
