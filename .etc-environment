@@ -1,3 +1,5 @@
+QT_QPA_PLATFORM=wayland
 QT_QPA_PLATFORMTHEME=qt5ct
+QT_PLUGINS_PATH=/usr/lib/qt/plugins/
 GTK_THEME=Adw-dark
 GTK_ICON_THEME=Papirus-Dark
