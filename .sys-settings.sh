@@ -23,7 +23,7 @@ sudo chown root:root $autologin_file
 
 # +KERNEL OPTIONS
 entries=(/boot/loader/entries/*)
-kernel_options="quiet loglevel=3 splash systemd.show_status=auto rd.udev.log_level=3 vt.global_cursor_default=0 nowatchdog modprobe.blacklist=sp5100_tco audit=0"
+kernel_options="quiet splash vt.global_cursor_default=0 loglevel=3 systemd.show_status=auto rd.udev.log_level=3 nowatchdog modprobe.blacklist=sp5100_tco audit=0"
 option_keys=()
 for token in ${kernel_options[@]}
 do
@@ -127,5 +127,5 @@ sudo /bin/bash -c 'echo -e "[connection]\nwifi.powersave = 2" > /etc/NetworkMana
 # -NO WIFI POWER SAVING
 
 # +PLYMOUTH THEME
-sudo plymouth-set-default-theme bgrt
+sudo plymouth-set-default-theme spinner
 # -PLYMOUTH THEME
