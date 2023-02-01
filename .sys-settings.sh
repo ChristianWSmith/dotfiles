@@ -125,3 +125,7 @@ sudo systemctl mask systemd-journald-audit.socket
 # +NO WIFI POWER SAVING
 sudo /bin/bash -c 'echo -e "[connection]\nwifi.powersave = 2" > /etc/NetworkManager/conf.d/default-wifi-powersave-on.conf'
 # -NO WIFI POWER SAVING
+
+# +WIRELESS REGDOM
+sudo /bin/bash -c "echo 'WIRELESS_REGDOM=\"US\"' > /etc/conf.d/wireless-regdom"
+$ -WIRELESS REGDOM
