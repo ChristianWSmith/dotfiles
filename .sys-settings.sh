@@ -7,10 +7,8 @@ sudo usermod -a -G seat $USER
 
 # +ROOT FISH
 sudo /bin/bash -c "rsync -a $HOME/.config/fish/ ~/.config/fish"
-sudo /bin/bash -c "rsync -a $HOME/.config/gtk-3.0/ ~/.config/gtk-3.0"
-sudo /bin/bash -c "rsync -a $HOME/.config/qt5ct/ ~/.config/qt5ct"
-sudo /bin/bash -c "rsync -a $HOME/.config/xfce4/ ~/.config/xfce4
-sudo /bin/bash -c "rsync $HOME/.gtkrc-2.0 ~/.gtkrc-2.0"
+sudo /bin/bash -c "rsync $HOME/.vimrc ~/.vimrc"
+sudo /bin/bash -c "rsync $HOME/.bashrc ~/.bashrc"
 # -ROOT FISH
 
 # +AUTO LOGIN
@@ -133,3 +131,21 @@ sudo /bin/bash -c 'echo -e "[connection]\nwifi.powersave = 2" > /etc/NetworkMana
 # +WIRELESS REGDOM
 sudo /bin/bash -c "echo 'WIRELESS_REGDOM=\"US\"' > /etc/conf.d/wireless-regdom"
 $ -WIRELESS REGDOM
+
+# +PKEXEC
+if ! which pkexec-impl > /dev/null 2>&1
+then
+    if which pkexec > /dev/null 2>&1
+    then
+        old_pkexec=$(which pkexec)
+        sudo mv $(which pkexec) $(which pkexec)-impl
+        sudo touch $old_pkexec
+        sudo /bin/bash -c "tee -a $old_pkexec <<EOF
+#!/bin/bash
+
+pkexec-impl env XDG_RUNTIME_DIR=\\\$XDG_RUNTIME_DIR WAYLAND_DISPLAY=\\\$WAYLAND_DISPLAY QT_QPA_PLATFORMTHEME=\\\$QT_QPA_PLATFORMTHEME QT_QPA_PLATFORM=\\\$QT_QPA_PLATFORM QT_PLUGINS_PATH=\\\$QT_PLUGINS_PATH GTK_THEME=\\\$GTK_THEME GTK_ICON_THEME=\\\$GTK_ICON_THEME "\\\$@"
+EOF" > /dev/null
+        sudo chmod --reference=$(which pkexec-impl) $old_pkexec
+    fi
+fi
+# -PKEXEC
