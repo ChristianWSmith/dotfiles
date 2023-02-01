@@ -1,0 +1,12 @@
+[Trigger]
+Operation=Install
+Operation=Upgrade
+Type=Package
+Target=polkit
+Target=linux-zen
+
+[Action]
+Description=Mask pkexec binary to pass through some env vars
+When=PostTransaction
+NeedsTargets
+Exec=/bin/sh -c '/usr/bin/pkexec-mask'

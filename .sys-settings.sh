@@ -1,5 +1,7 @@
 #!/bin/bash
 
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+
 # +USER GROUPS
 sudo usermod -a -G wheel $USER
 sudo usermod -a -G seat $USER
@@ -133,19 +135,9 @@ sudo /bin/bash -c "echo 'WIRELESS_REGDOM=\"US\"' > /etc/conf.d/wireless-regdom"
 $ -WIRELESS REGDOM
 
 # +PKEXEC
-if ! which pkexec-impl > /dev/null 2>&1
-then
-    if which pkexec > /dev/null 2>&1
-    then
-        old_pkexec=$(which pkexec)
-        sudo mv $(which pkexec) $(which pkexec)-impl
-        sudo touch $old_pkexec
-        sudo /bin/bash -c "tee -a $old_pkexec <<EOF
-#!/bin/bash
-
-pkexec-impl env XDG_RUNTIME_DIR=\\\$XDG_RUNTIME_DIR WAYLAND_DISPLAY=\\\$WAYLAND_DISPLAY QT_QPA_PLATFORMTHEME=\\\$QT_QPA_PLATFORMTHEME QT_QPA_PLATFORM=\\\$QT_QPA_PLATFORM QT_PLUGINS_PATH=\\\$QT_PLUGINS_PATH GTK_THEME=\\\$GTK_THEME GTK_ICON_THEME=\\\$GTK_ICON_THEME "\\\$@"
-EOF" > /dev/null
-        sudo chmod --reference=$(which pkexec-impl) $old_pkexec
-    fi
-fi
+${SCRIPT_DIR}/.pkexec-mask/pkexec-mask
+sudo cp ${SCRIPT_DIR}/.pkexec-mask/pkexec-mask /usr/bin/pkexec-mask
+sudo mkdir -p /etc/pacman.d/hooks
+sudo cp ${SCRIPT_DIR}/.pkexec-mask/pkexec-mask-install.hook /etc/pacman.d/hooks/pkexec-mask-install.hook
+sudo cp ${SCRIPT_DIR}/.pkexec-mask/pkexec-mask-remove.hook /etc/pacman.d/hooks/pkexec-mask-remove.hook
 # -PKEXEC

@@ -1,5 +1,7 @@
 *
 !.gitignore
+!.pkexec-mask
+!.pkexec-mask/**
 !.sys-settings.sh
 !.laptop.sh
 !.desktop.sh

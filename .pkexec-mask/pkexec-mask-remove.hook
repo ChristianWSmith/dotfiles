@@ -1,0 +1,11 @@
+[Trigger]
+Operation=Remove
+Type=Package
+Target=polkit
+Target=linux-zen
+
+[Action]
+Description=Remove pkexec-impl
+When=PostTransaction
+NeedsTargets
+Exec=/bin/sh -c 'rm -f $(which pkexec-impl)'

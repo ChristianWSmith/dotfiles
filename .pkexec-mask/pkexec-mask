@@ -1,0 +1,18 @@
+#!/bin/bash
+# +PKEXEC
+if ! which pkexec-impl > /dev/null 2>&1
+then
+    if which pkexec > /dev/null 2>&1
+    then
+        old_pkexec=$(which pkexec)
+        sudo mv $(which pkexec) $(which pkexec)-impl
+        sudo touch $old_pkexec
+        sudo /bin/bash -c "tee -a $old_pkexec <<EOF
+#!/bin/bash
+
+pkexec-impl env XDG_RUNTIME_DIR=\\\$XDG_RUNTIME_DIR WAYLAND_DISPLAY=\\\$WAYLAND_DISPLAY QT_QPA_PLATFORMTHEME=\\\$QT_QPA_PLATFORMTHEME QT_QPA_PLATFORM=\\\$QT_QPA_PLATFORM QT_PLUGINS_PATH=\\\$QT_PLUGINS_PATH GTK_THEME=\\\$GTK_THEME GTK_ICON_THEME=\\\$GTK_ICON_THEME "\\\$@"
+EOF" > /dev/null
+        sudo chmod --reference=$(which pkexec-impl) $old_pkexec
+    fi
+fi
+# -PKEXEC
