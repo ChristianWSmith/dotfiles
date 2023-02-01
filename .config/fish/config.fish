@@ -8,4 +8,5 @@ if status is-interactive
     alias "update-etc-environment" "cat /etc/environment > ~/.etc-environment"
     alias "shutdown" "systemctl poweroff --no-wall"
     alias "reboot" "systemctl reboot --no-wall --reboot"
+    alias "baseline" "sudo timeshift --delete-all; sudo timeshift --create --comments 'base'"
 end
