@@ -1,6 +1,8 @@
 *
 !.gitignore
 !.sys-settings.sh
+!.laptop.sh
+!.desktop.sh
 !.packages
 !.vimrc
 !.etc-environment
