@@ -23,7 +23,7 @@ sudo chown root:root $autologin_file
 
 # +KERNEL OPTIONS
 entries=(/boot/loader/entries/*)
-kernel_options="quiet loglevel=3 systemd.show_status=auto rd.udev.log_level=3 vt.global_cursor_default=0 nowatchdog modprobe.blacklist=sp5100_tco audit=0"
+kernel_options="quiet loglevel=3 splash systemd.show_status=auto rd.udev.log_level=3 vt.global_cursor_default=0 nowatchdog modprobe.blacklist=sp5100_tco audit=0"
 option_keys=()
 for token in ${kernel_options[@]}
 do
@@ -72,6 +72,8 @@ do
     if [ "$key" = "HOOKS" ]
     then
         new_line=$(echo $line | sed 's/udev/systemd fsck/g')
+    new_line=$(echo $new_line | sed 's/systemd/systemd sd-plymouth/g')
+    new_line=$(echo $new_line | sed 's/sd-plymouth sd-plymouth/sd-plymouth/g')
         echo $new_line >> .tmp
     else
         echo $line >> .tmp    
@@ -91,11 +93,11 @@ do
     touch .tmp
     while IFS= read -r line
     do
-	key=$(echo $line | cut -d'=' -f1)
-	if [ "$key" != "StandardOutput" ] && [ "$key" != "StandardError" ]
-	then
-		echo $line >> .tmp
-	fi
+    key=$(echo $line | cut -d'=' -f1)
+    if [ "$key" != "StandardOutput" ] && [ "$key" != "StandardError" ]
+    then
+        echo $line >> .tmp
+    fi
         if [ "$line" = "[Service]" ]
         then
             echo "StandardOutput=null" >> .tmp
