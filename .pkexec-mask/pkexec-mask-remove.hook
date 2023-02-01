@@ -2,6 +2,8 @@
 Operation=Remove
 Type=Package
 Target=polkit
+Target=linux
+Target=linux-lts
 Target=linux-zen
 
 [Action]

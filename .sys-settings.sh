@@ -132,7 +132,7 @@ sudo /bin/bash -c 'echo -e "[connection]\nwifi.powersave = 2" > /etc/NetworkMana
 
 # +WIRELESS REGDOM
 sudo /bin/bash -c "echo 'WIRELESS_REGDOM=\"US\"' > /etc/conf.d/wireless-regdom"
-$ -WIRELESS REGDOM
+# -WIRELESS REGDOM
 
 # +PKEXEC
 ${SCRIPT_DIR}/.pkexec-mask/pkexec-mask
