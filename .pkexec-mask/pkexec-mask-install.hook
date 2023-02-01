@@ -11,4 +11,4 @@ Target=linux-zen
 Description=Mask pkexec binary to pass through some env vars
 When=PostTransaction
 NeedsTargets
-Exec=/bin/sh -c '/usr/bin/pkexec-mask'
+Exec=/bin/sh -c 'rm -f $(which pkexec-impl); /usr/bin/pkexec-mask'
