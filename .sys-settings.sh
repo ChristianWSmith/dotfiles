@@ -147,3 +147,10 @@ sudo cp ${SCRIPT_DIR}/.pkexec-mask/pkexec-mask-remove.hook /etc/pacman.d/hooks/p
 # +/ETC/ENVIRONMENT
 sudo /bin/bash -c "cat ${SCRIPT_DIR}/.etc-environment > /etc/environment"
 # -/ETC/ENVIRONMENT
+
+# +PIP
+for pip_package in $(cat ~/.pip-list)
+do
+    pip install $pip_package
+done
+# -PIP
