@@ -34,5 +34,4 @@
 !.config/Thunar/**
 !.config/mirage
 !.config/mirage/accel_map
-!.config/xfce4
-!.config/xfce4/**
+!.config/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
