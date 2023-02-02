@@ -146,7 +146,7 @@
     },
     "custom/screenshot": {
         "format": "",
-        "on-click": "grim -g $(slurp -d) - | wl-copy"
+        "on-click": "$HOME/.config/sway/scripts/launchers/screenshot.sh"
     },
     "custom/colorpicker": {
         "format": "",
