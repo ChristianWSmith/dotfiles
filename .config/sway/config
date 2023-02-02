@@ -34,7 +34,7 @@ bindsym $mod+d exec --no-startup-id /bin/bash -c '~/.config/sway/scripts/launche
 
 # apps
 bindsym $mod+w exec --no-startup-id /bin/bash -c '$WEB_BROWSER'
-bindsym $mod+f exec --no-startup-id /bin/bash -c '$FILE_BROWSER'
+bindsym $mod+e exec --no-startup-id /bin/bash -c '$FILE_BROWSER'
 
 # change focus
 bindsym $mod+$left focus left
