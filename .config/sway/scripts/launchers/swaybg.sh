@@ -1,7 +1,7 @@
 #!/bin/bash
 
 pkill -x swaybg
-backgrounds=(~/.wallpapers*)
+backgrounds=(~/.wallpapers/*)
 
 if [ "$backgrounds" != "$HOME/.wallpapers/*" ]
 then
