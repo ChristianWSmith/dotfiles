@@ -6,3 +6,6 @@ GTK_ICON_THEME=Papirus-Dark
 EDITOR=vim
 WEB_BROWSER=google-chrome-stable
 FILE_BROWSER=Thunar
+TERMINAL=footclient
+TUI_TASK_MANAGER=btop
+TUI_NETWORK_MANAGER=nmtui

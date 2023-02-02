@@ -79,11 +79,11 @@
     "cpu": {
         "format": "{usage}% ",
         "tooltip": true,
-        "on-click": "footclient btop" // TODO: decouple footclient
+        "on-click": "$TERMINAL $TUI_TASK_MANAGER"
     },
     "memory": {
         "format": "{}% ",
-        "on-click": "footclient btop" // TODO: decouple footclient
+        "on-click": "$TERMINAL $TUI_TASK_MANAGER"
     },
     "temperature": {
         // "thermal-zone": 2,
@@ -91,7 +91,8 @@
         "critical-threshold": 80,
         // "format-critical": "{temperatureC}°C {icon}",
         "format": "{temperatureC}°C {icon}",
-        "format-icons": ["", "", ""]
+        "format-icons": ["", "", ""],
+        "on-click": "$TERMINAL $TUI_TASK_MANAGER"
     },
     "backlight": {
         // "device": "acpi_video1",
@@ -123,7 +124,7 @@
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
         // "format-alt": "{ifname}: {ipaddr}/{cidr}",
-        "on-click": "footclient nmtui" // TODO: decouple footclient
+        "on-click": "$TERMINAL $TUI_NETWORK_MANAGER"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
