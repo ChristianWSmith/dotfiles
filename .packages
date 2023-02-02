@@ -12,7 +12,6 @@ bison
 btop
 caprine
 checkupdates-aur
-cmatrix
 cups
 debugedit
 discord
@@ -132,6 +131,7 @@ thunar
 thunderbird
 thunderbird-dark-reader
 timeshift
+tmatrix
 transmission-qt
 tumbler
 vim

@@ -1,4 +1,3 @@
-anytree
 argparse-extensions
 attrs
 btrfsutil
@@ -13,17 +12,14 @@ i3ipc
 idna
 lensfun
 lxml
-meson
 Mirage
 numpy
 packaging
 Pillow
 pip
 ply
-psutil
 pycairo
 pycparser
-Pygments
 PyGObject
 pyparsing
 python-xlib
