@@ -15,7 +15,6 @@ wget -O $wallpapers/gjEZAJ7.jpeg https://i.imgur.com/gjEZAJ7.jpeg
 wget -O $wallpapers/JHHx0AD.jpeg https://i.imgur.com/JHHx0AD.jpeg
 wget -O $wallpapers/PnSeZX3.jpeg https://i.imgur.com/PnSeZX3.jpeg
 wget -O $wallpapers/IVefonq.jpeg https://i.imgur.com/IVefonq.jpeg
-wget -O $wallpapers/XqJH9vD.jpeg https://i.imgur.com/XqJH9vD.jpeg
 wget -O $wallpapers/X92aA5Y.jpeg https://i.imgur.com/X92aA5Y.jpeg
 wget -O $wallpapers/Gb6xVGP.jpeg https://i.imgur.com/Gb6xVGP.jpeg
 wget -O $wallpapers/I3KJdGy.jpeg https://i.imgur.com/I3KJdGy.jpeg
