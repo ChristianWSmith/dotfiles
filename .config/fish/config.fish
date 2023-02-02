@@ -14,4 +14,5 @@ if status is-interactive
     alias "chx" "chmod +x"
     alias "remove-orphans" "yay -Qdtq | yay -Rns -"
     alias "adopt-orphans" "pacman -Qdtq | pacman -D --asexplicit -"
+    alias "current-bg" "~/.config/sway/scripts/helpers/current_swaybg.sh"
 end
