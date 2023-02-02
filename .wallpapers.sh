@@ -4,152 +4,232 @@ wallpapers=~/.wallpapers
 
 mkdir -p $wallpapers
 
-wget -O $wallpapers/sduLRvf.jpeg https://i.imgur.com/sduLRvf.jpeg
-wget -O $wallpapers/tXtwrPd.jpeg https://i.imgur.com/tXtwrPd.jpeg
-wget -O $wallpapers/IVyU5Im.jpeg https://i.imgur.com/IVyU5Im.jpeg
-wget -O $wallpapers/QguApMA.jpeg https://i.imgur.com/QguApMA.jpeg
-wget -O $wallpapers/Xulubox.jpeg https://i.imgur.com/Xulubox.jpeg
-wget -O $wallpapers/yxovJ4S.jpeg https://i.imgur.com/yxovJ4S.jpeg
-wget -O $wallpapers/fNXT1wc.jpeg https://i.imgur.com/fNXT1wc.jpeg
-wget -O $wallpapers/gjEZAJ7.jpeg https://i.imgur.com/gjEZAJ7.jpeg
-wget -O $wallpapers/JHHx0AD.jpeg https://i.imgur.com/JHHx0AD.jpeg
-wget -O $wallpapers/PnSeZX3.jpeg https://i.imgur.com/PnSeZX3.jpeg
-wget -O $wallpapers/IVefonq.jpeg https://i.imgur.com/IVefonq.jpeg
-wget -O $wallpapers/X92aA5Y.jpeg https://i.imgur.com/X92aA5Y.jpeg
-wget -O $wallpapers/Gb6xVGP.jpeg https://i.imgur.com/Gb6xVGP.jpeg
-wget -O $wallpapers/I3KJdGy.jpeg https://i.imgur.com/I3KJdGy.jpeg
-wget -O $wallpapers/fgfG6Hl.jpeg https://i.imgur.com/fgfG6Hl.jpeg
-wget -O $wallpapers/zlc7uSR.jpeg https://i.imgur.com/zlc7uSR.jpeg
-wget -O $wallpapers/PVU0dxc.jpeg https://i.imgur.com/PVU0dxc.jpeg
-wget -O $wallpapers/p53E302.jpeg https://i.imgur.com/p53E302.jpeg
-wget -O $wallpapers/OdjFda3.jpeg https://i.imgur.com/OdjFda3.jpeg
-wget -O $wallpapers/Pboz5mG.jpeg https://i.imgur.com/Pboz5mG.jpeg
-wget -O $wallpapers/c3hJOBE.jpeg https://i.imgur.com/c3hJOBE.jpeg
-wget -O $wallpapers/QO2wXxa.jpeg https://i.imgur.com/QO2wXxa.jpeg
-wget -O $wallpapers/QLJfdkH.jpeg https://i.imgur.com/QLJfdkH.jpeg
-wget -O $wallpapers/GqhO0RM.jpeg https://i.imgur.com/GqhO0RM.jpeg
-wget -O $wallpapers/TG87poQ.jpeg https://i.imgur.com/TG87poQ.jpeg
-wget -O $wallpapers/ivxdtnO.jpeg https://i.imgur.com/ivxdtnO.jpeg
-wget -O $wallpapers/0ic5msX.jpeg https://i.imgur.com/0ic5msX.jpeg
-wget -O $wallpapers/g2lgz0n.jpeg https://i.imgur.com/g2lgz0n.jpeg
-wget -O $wallpapers/EGgyVOq.jpeg https://i.imgur.com/EGgyVOq.jpeg
-wget -O $wallpapers/dNcRfqb.jpeg https://i.imgur.com/dNcRfqb.jpeg
-wget -O $wallpapers/FeawV44.jpeg https://i.imgur.com/FeawV44.jpeg
-wget -O $wallpapers/bCJxqkE.jpeg https://i.imgur.com/bCJxqkE.jpeg
-wget -O $wallpapers/c1YSqf0.jpeg https://i.imgur.com/c1YSqf0.jpeg
-wget -O $wallpapers/lmHsAqU.jpeg https://i.imgur.com/lmHsAqU.jpeg
-wget -O $wallpapers/uspc64E.jpeg https://i.imgur.com/uspc64E.jpeg
-wget -O $wallpapers/DGNgiv5.jpeg https://i.imgur.com/DGNgiv5.jpeg
-wget -O $wallpapers/OMuGvCj.jpeg https://i.imgur.com/OMuGvCj.jpeg
-wget -O $wallpapers/3kZpDVO.jpeg https://i.imgur.com/3kZpDVO.jpeg
-wget -O $wallpapers/4mL3UtW.jpeg https://i.imgur.com/4mL3UtW.jpeg
-wget -O $wallpapers/kA8ca1h.jpeg https://i.imgur.com/kA8ca1h.jpeg
-wget -O $wallpapers/KmtkDz2.jpeg https://i.imgur.com/KmtkDz2.jpeg
-wget -O $wallpapers/3JaOkVv.jpeg https://i.imgur.com/3JaOkVv.jpeg
-wget -O $wallpapers/0RCJwCT.jpeg https://i.imgur.com/0RCJwCT.jpeg
-wget -O $wallpapers/gWCHwKM.jpeg https://i.imgur.com/gWCHwKM.jpeg
-wget -O $wallpapers/7pY01Vl.png https://i.imgur.com/7pY01Vl.png
-wget -O $wallpapers/1ES3hPX.jpeg https://i.imgur.com/1ES3hPX.jpeg
-wget -O $wallpapers/3M2rek6.jpeg https://i.imgur.com/3M2rek6.jpeg
-wget -O $wallpapers/gfD7mMG.jpeg https://i.imgur.com/gfD7mMG.jpeg
-wget -O $wallpapers/7Kxx4LP.jpeg https://i.imgur.com/7Kxx4LP.jpeg
-wget -O $wallpapers/OHcyseE.jpeg https://i.imgur.com/OHcyseE.jpeg
-wget -O $wallpapers/ZrQcii7.jpeg https://i.imgur.com/ZrQcii7.jpeg
-wget -O $wallpapers/Wno68T7.jpeg https://i.imgur.com/Wno68T7.jpeg
-wget -O $wallpapers/Ow2gQFH.jpeg https://i.imgur.com/Ow2gQFH.jpeg
-wget -O $wallpapers/uIHa176.jpeg https://i.imgur.com/uIHa176.jpeg
-wget -O $wallpapers/9P54mou.jpeg https://i.imgur.com/9P54mou.jpeg
-wget -O $wallpapers/VEL80hT.jpeg https://i.imgur.com/VEL80hT.jpeg
-wget -O $wallpapers/VAG92vU.jpeg https://i.imgur.com/VAG92vU.jpeg
-wget -O $wallpapers/8pbvlmp.jpeg https://i.imgur.com/8pbvlmp.jpeg
-wget -O $wallpapers/pZfnmqf.jpeg https://i.imgur.com/pZfnmqf.jpeg
-wget -O $wallpapers/GZvvrFy.jpeg https://i.imgur.com/GZvvrFy.jpeg
-wget -O $wallpapers/rox4ye6.jpeg https://i.imgur.com/rox4ye6.jpeg
-wget -O $wallpapers/3vyjdZz.jpeg https://i.imgur.com/3vyjdZz.jpeg
-wget -O $wallpapers/ovOgQpN.jpeg https://i.imgur.com/ovOgQpN.jpeg
-wget -O $wallpapers/9y185KI.jpeg https://i.imgur.com/9y185KI.jpeg
-wget -O $wallpapers/7omqS0U.jpeg https://i.imgur.com/7omqS0U.jpeg
-wget -O $wallpapers/1mRl1nx.jpeg https://i.imgur.com/1mRl1nx.jpeg
-wget -O $wallpapers/dqCEoaB.jpeg https://i.imgur.com/dqCEoaB.jpeg
-wget -O $wallpapers/knPRmvA.jpeg https://i.imgur.com/knPRmvA.jpeg
-wget -O $wallpapers/0lSLfdI.jpeg https://i.imgur.com/0lSLfdI.jpeg
-wget -O $wallpapers/8I5IbpP.jpeg https://i.imgur.com/8I5IbpP.jpeg
-wget -O $wallpapers/f3GVoDb.jpeg https://i.imgur.com/f3GVoDb.jpeg
-wget -O $wallpapers/jG7Emga.jpeg https://i.imgur.com/jG7Emga.jpeg
-wget -O $wallpapers/y25BotJ.jpeg https://i.imgur.com/y25BotJ.jpeg
-wget -O $wallpapers/Wwzp07R.jpeg https://i.imgur.com/Wwzp07R.jpeg
-wget -O $wallpapers/qSrMh5U.jpeg https://i.imgur.com/qSrMh5U.jpeg
-wget -O $wallpapers/WtMFngV.jpeg https://i.imgur.com/WtMFngV.jpeg
-wget -O $wallpapers/zmhQcdK.jpeg https://i.imgur.com/zmhQcdK.jpeg
-wget -O $wallpapers/Mx7lcuL.jpeg https://i.imgur.com/Mx7lcuL.jpeg
-wget -O $wallpapers/n9QlyUY.jpeg https://i.imgur.com/n9QlyUY.jpeg
-wget -O $wallpapers/za7L69m.jpeg https://i.imgur.com/za7L69m.jpeg
-wget -O $wallpapers/HcA8253.jpeg https://i.imgur.com/HcA8253.jpeg
-wget -O $wallpapers/Gg4dbg5.jpeg https://i.imgur.com/Gg4dbg5.jpeg
-wget -O $wallpapers/XsyuyBX.jpeg https://i.imgur.com/XsyuyBX.jpeg
-wget -O $wallpapers/QIAB4VU.jpeg https://i.imgur.com/QIAB4VU.jpeg
-wget -O $wallpapers/OVr1Jyv.jpeg https://i.imgur.com/OVr1Jyv.jpeg
-wget -O $wallpapers/L8R7FgT.jpeg https://i.imgur.com/L8R7FgT.jpeg
-wget -O $wallpapers/8Be6Kmh.jpeg https://i.imgur.com/8Be6Kmh.jpeg
-wget -O $wallpapers/kuXgVGg.jpeg https://i.imgur.com/kuXgVGg.jpeg
-wget -O $wallpapers/Nu1FuSh.jpeg https://i.imgur.com/Nu1FuSh.jpeg
-wget -O $wallpapers/57118Db.jpeg https://i.imgur.com/57118Db.jpeg
-wget -O $wallpapers/NzZhsn5.jpeg https://i.imgur.com/NzZhsn5.jpeg
-wget -O $wallpapers/EQ2Y17s.jpeg https://i.imgur.com/EQ2Y17s.jpeg
-wget -O $wallpapers/ZHzash8.jpeg https://i.imgur.com/ZHzash8.jpeg
-wget -O $wallpapers/LquRPSZ.jpeg https://i.imgur.com/LquRPSZ.jpeg
-wget -O $wallpapers/ZOn0xR0.jpeg https://i.imgur.com/ZOn0xR0.jpeg
-wget -O $wallpapers/eSDlrID.jpeg https://i.imgur.com/eSDlrID.jpeg
-wget -O $wallpapers/L6WX4QX.jpeg https://i.imgur.com/L6WX4QX.jpeg
-wget -O $wallpapers/u27oejP.jpeg https://i.imgur.com/u27oejP.jpeg
-wget -O $wallpapers/CX1g1jT.jpeg https://i.imgur.com/CX1g1jT.jpeg
-wget -O $wallpapers/iiXsmnL.jpeg https://i.imgur.com/iiXsmnL.jpeg
-wget -O $wallpapers/mEjst5b.jpeg https://i.imgur.com/mEjst5b.jpeg
-wget -O $wallpapers/nxkGy0q.jpeg https://i.imgur.com/nxkGy0q.jpeg
-wget -O $wallpapers/1BDbhzP.jpeg https://i.imgur.com/1BDbhzP.jpeg
-wget -O $wallpapers/zz9fSw9.jpeg https://i.imgur.com/zz9fSw9.jpeg
-wget -O $wallpapers/vKAsa8Y.jpeg https://i.imgur.com/vKAsa8Y.jpeg
-wget -O $wallpapers/Swt89YB.jpeg https://i.imgur.com/Swt89YB.jpeg
-wget -O $wallpapers/q2tyKoX.jpeg https://i.imgur.com/q2tyKoX.jpeg
-wget -O $wallpapers/OIDTMve.jpeg https://i.imgur.com/OIDTMve.jpeg
-wget -O $wallpapers/HPntFwO.jpeg https://i.imgur.com/HPntFwO.jpeg
-wget -O $wallpapers/7A6UpSi.jpeg https://i.imgur.com/7A6UpSi.jpeg
-wget -O $wallpapers/M0XCF6i.jpeg https://i.imgur.com/M0XCF6i.jpeg
-wget -O $wallpapers/GjJmgcl.jpeg https://i.imgur.com/GjJmgcl.jpeg
-wget -O $wallpapers/BpmvNf0.jpeg https://i.imgur.com/BpmvNf0.jpeg
-wget -O $wallpapers/vi2lTKR.jpeg https://i.imgur.com/vi2lTKR.jpeg
-wget -O $wallpapers/yNGFKlK.jpeg https://i.imgur.com/yNGFKlK.jpeg
-wget -O $wallpapers/j19Gqdg.jpeg https://i.imgur.com/j19Gqdg.jpeg
-wget -O $wallpapers/kjBRZr5.jpeg https://i.imgur.com/kjBRZr5.jpeg
-wget -O $wallpapers/2NwRsVZ.jpeg https://i.imgur.com/2NwRsVZ.jpeg
-wget -O $wallpapers/CLBdlr6.jpeg https://i.imgur.com/CLBdlr6.jpeg
-wget -O $wallpapers/WLGQQRQ.jpeg https://i.imgur.com/WLGQQRQ.jpeg
-wget -O $wallpapers/3eLE5lV.jpeg https://i.imgur.com/3eLE5lV.jpeg
-wget -O $wallpapers/PnEgOSL.jpeg https://i.imgur.com/PnEgOSL.jpeg
-wget -O $wallpapers/I1Dr1P7.jpeg https://i.imgur.com/I1Dr1P7.jpeg
-wget -O $wallpapers/vJyBmL3.jpeg https://i.imgur.com/vJyBmL3.jpeg
-wget -O $wallpapers/TwhsROW.jpeg https://i.imgur.com/TwhsROW.jpeg
-wget -O $wallpapers/wMgQ8FP.jpeg https://i.imgur.com/wMgQ8FP.jpeg
-wget -O $wallpapers/SjSUnFs.jpeg https://i.imgur.com/SjSUnFs.jpeg
-wget -O $wallpapers/C8Ev0zM.jpeg https://i.imgur.com/C8Ev0zM.jpeg
-wget -O $wallpapers/b9uaoaZ.jpeg https://i.imgur.com/b9uaoaZ.jpeg
-wget -O $wallpapers/lI2sNqx.jpeg https://i.imgur.com/lI2sNqx.jpeg
-wget -O $wallpapers/zzZcQyF.jpeg https://i.imgur.com/zzZcQyF.jpeg
-wget -O $wallpapers/OVXD3on.jpeg https://i.imgur.com/OVXD3on.jpeg
-wget -O $wallpapers/65xoCiE.jpeg https://i.imgur.com/65xoCiE.jpeg
-wget -O $wallpapers/csxi2rG.jpeg https://i.imgur.com/csxi2rG.jpeg
-wget -O $wallpapers/d4eJWao.jpeg https://i.imgur.com/d4eJWao.jpeg
-wget -O $wallpapers/4i8XHrC.jpeg https://i.imgur.com/4i8XHrC.jpeg
-wget -O $wallpapers/ITf9HcE.jpeg https://i.imgur.com/ITf9HcE.jpeg
-wget -O $wallpapers/kVCqpbV.jpeg https://i.imgur.com/kVCqpbV.jpeg
-wget -O $wallpapers/sMtv49j.jpeg https://i.imgur.com/sMtv49j.jpeg
-wget -O $wallpapers/sN6N1LC.jpeg https://i.imgur.com/sN6N1LC.jpeg
-wget -O $wallpapers/1cs0yj1.jpeg https://i.imgur.com/1cs0yj1.jpeg
-wget -O $wallpapers/pwv30UB.jpeg https://i.imgur.com/pwv30UB.jpeg
-wget -O $wallpapers/6UR9Dyv.jpeg https://i.imgur.com/6UR9Dyv.jpeg
-wget -O $wallpapers/P75FOZX.jpeg https://i.imgur.com/P75FOZX.jpeg
-wget -O $wallpapers/pzMJg1I.jpeg https://i.imgur.com/pzMJg1I.jpeg
-wget -O $wallpapers/wG8FJKm.jpeg https://i.imgur.com/wG8FJKm.jpeg
-wget -O $wallpapers/2awMekY.jpeg https://i.imgur.com/2awMekY.jpeg
-wget -O $wallpapers/ScBB1Ho.jpeg https://i.imgur.com/ScBB1Ho.jpeg
-wget -O $wallpapers/QxQbKT2.jpeg https://i.imgur.com/QxQbKT2.jpeg
+wget -nc -O $wallpapers/sduLRvf.jpeg https://i.imgur.com/sduLRvf.jpeg
+wget -nc -O $wallpapers/tXtwrPd.jpeg https://i.imgur.com/tXtwrPd.jpeg
+wget -nc -O $wallpapers/IVyU5Im.jpeg https://i.imgur.com/IVyU5Im.jpeg
+wget -nc -O $wallpapers/QguApMA.jpeg https://i.imgur.com/QguApMA.jpeg
+wget -nc -O $wallpapers/Xulubox.jpeg https://i.imgur.com/Xulubox.jpeg
+wget -nc -O $wallpapers/yxovJ4S.jpeg https://i.imgur.com/yxovJ4S.jpeg
+wget -nc -O $wallpapers/fNXT1wc.jpeg https://i.imgur.com/fNXT1wc.jpeg
+wget -nc -O $wallpapers/gjEZAJ7.jpeg https://i.imgur.com/gjEZAJ7.jpeg
+wget -nc -O $wallpapers/JHHx0AD.jpeg https://i.imgur.com/JHHx0AD.jpeg
+wget -nc -O $wallpapers/PnSeZX3.jpeg https://i.imgur.com/PnSeZX3.jpeg
+wget -nc -O $wallpapers/IVefonq.jpeg https://i.imgur.com/IVefonq.jpeg
+wget -nc -O $wallpapers/X92aA5Y.jpeg https://i.imgur.com/X92aA5Y.jpeg
+wget -nc -O $wallpapers/Gb6xVGP.jpeg https://i.imgur.com/Gb6xVGP.jpeg
+wget -nc -O $wallpapers/I3KJdGy.jpeg https://i.imgur.com/I3KJdGy.jpeg
+wget -nc -O $wallpapers/fgfG6Hl.jpeg https://i.imgur.com/fgfG6Hl.jpeg
+wget -nc -O $wallpapers/zlc7uSR.jpeg https://i.imgur.com/zlc7uSR.jpeg
+wget -nc -O $wallpapers/PVU0dxc.jpeg https://i.imgur.com/PVU0dxc.jpeg
+wget -nc -O $wallpapers/p53E302.jpeg https://i.imgur.com/p53E302.jpeg
+wget -nc -O $wallpapers/OdjFda3.jpeg https://i.imgur.com/OdjFda3.jpeg
+wget -nc -O $wallpapers/Pboz5mG.jpeg https://i.imgur.com/Pboz5mG.jpeg
+wget -nc -O $wallpapers/c3hJOBE.jpeg https://i.imgur.com/c3hJOBE.jpeg
+wget -nc -O $wallpapers/QO2wXxa.jpeg https://i.imgur.com/QO2wXxa.jpeg
+wget -nc -O $wallpapers/QLJfdkH.jpeg https://i.imgur.com/QLJfdkH.jpeg
+wget -nc -O $wallpapers/GqhO0RM.jpeg https://i.imgur.com/GqhO0RM.jpeg
+wget -nc -O $wallpapers/TG87poQ.jpeg https://i.imgur.com/TG87poQ.jpeg
+wget -nc -O $wallpapers/ivxdtnO.jpeg https://i.imgur.com/ivxdtnO.jpeg
+wget -nc -O $wallpapers/0ic5msX.jpeg https://i.imgur.com/0ic5msX.jpeg
+wget -nc -O $wallpapers/g2lgz0n.jpeg https://i.imgur.com/g2lgz0n.jpeg
+wget -nc -O $wallpapers/EGgyVOq.jpeg https://i.imgur.com/EGgyVOq.jpeg
+wget -nc -O $wallpapers/dNcRfqb.jpeg https://i.imgur.com/dNcRfqb.jpeg
+wget -nc -O $wallpapers/FeawV44.jpeg https://i.imgur.com/FeawV44.jpeg
+wget -nc -O $wallpapers/bCJxqkE.jpeg https://i.imgur.com/bCJxqkE.jpeg
+wget -nc -O $wallpapers/c1YSqf0.jpeg https://i.imgur.com/c1YSqf0.jpeg
+wget -nc -O $wallpapers/lmHsAqU.jpeg https://i.imgur.com/lmHsAqU.jpeg
+wget -nc -O $wallpapers/uspc64E.jpeg https://i.imgur.com/uspc64E.jpeg
+wget -nc -O $wallpapers/DGNgiv5.jpeg https://i.imgur.com/DGNgiv5.jpeg
+wget -nc -O $wallpapers/OMuGvCj.jpeg https://i.imgur.com/OMuGvCj.jpeg
+wget -nc -O $wallpapers/3kZpDVO.jpeg https://i.imgur.com/3kZpDVO.jpeg
+wget -nc -O $wallpapers/4mL3UtW.jpeg https://i.imgur.com/4mL3UtW.jpeg
+wget -nc -O $wallpapers/kA8ca1h.jpeg https://i.imgur.com/kA8ca1h.jpeg
+wget -nc -O $wallpapers/KmtkDz2.jpeg https://i.imgur.com/KmtkDz2.jpeg
+wget -nc -O $wallpapers/3JaOkVv.jpeg https://i.imgur.com/3JaOkVv.jpeg
+wget -nc -O $wallpapers/0RCJwCT.jpeg https://i.imgur.com/0RCJwCT.jpeg
+wget -nc -O $wallpapers/gWCHwKM.jpeg https://i.imgur.com/gWCHwKM.jpeg
+wget -nc -O $wallpapers/7pY01Vl.png https://i.imgur.com/7pY01Vl.png
+wget -nc -O $wallpapers/1ES3hPX.jpeg https://i.imgur.com/1ES3hPX.jpeg
+wget -nc -O $wallpapers/3M2rek6.jpeg https://i.imgur.com/3M2rek6.jpeg
+wget -nc -O $wallpapers/gfD7mMG.jpeg https://i.imgur.com/gfD7mMG.jpeg
+wget -nc -O $wallpapers/7Kxx4LP.jpeg https://i.imgur.com/7Kxx4LP.jpeg
+wget -nc -O $wallpapers/OHcyseE.jpeg https://i.imgur.com/OHcyseE.jpeg
+wget -nc -O $wallpapers/ZrQcii7.jpeg https://i.imgur.com/ZrQcii7.jpeg
+wget -nc -O $wallpapers/Wno68T7.jpeg https://i.imgur.com/Wno68T7.jpeg
+wget -nc -O $wallpapers/Ow2gQFH.jpeg https://i.imgur.com/Ow2gQFH.jpeg
+wget -nc -O $wallpapers/uIHa176.jpeg https://i.imgur.com/uIHa176.jpeg
+wget -nc -O $wallpapers/9P54mou.jpeg https://i.imgur.com/9P54mou.jpeg
+wget -nc -O $wallpapers/VEL80hT.jpeg https://i.imgur.com/VEL80hT.jpeg
+wget -nc -O $wallpapers/VAG92vU.jpeg https://i.imgur.com/VAG92vU.jpeg
+wget -nc -O $wallpapers/8pbvlmp.jpeg https://i.imgur.com/8pbvlmp.jpeg
+wget -nc -O $wallpapers/pZfnmqf.jpeg https://i.imgur.com/pZfnmqf.jpeg
+wget -nc -O $wallpapers/GZvvrFy.jpeg https://i.imgur.com/GZvvrFy.jpeg
+wget -nc -O $wallpapers/rox4ye6.jpeg https://i.imgur.com/rox4ye6.jpeg
+wget -nc -O $wallpapers/3vyjdZz.jpeg https://i.imgur.com/3vyjdZz.jpeg
+wget -nc -O $wallpapers/ovOgQpN.jpeg https://i.imgur.com/ovOgQpN.jpeg
+wget -nc -O $wallpapers/9y185KI.jpeg https://i.imgur.com/9y185KI.jpeg
+wget -nc -O $wallpapers/7omqS0U.jpeg https://i.imgur.com/7omqS0U.jpeg
+wget -nc -O $wallpapers/1mRl1nx.jpeg https://i.imgur.com/1mRl1nx.jpeg
+wget -nc -O $wallpapers/dqCEoaB.jpeg https://i.imgur.com/dqCEoaB.jpeg
+wget -nc -O $wallpapers/knPRmvA.jpeg https://i.imgur.com/knPRmvA.jpeg
+wget -nc -O $wallpapers/0lSLfdI.jpeg https://i.imgur.com/0lSLfdI.jpeg
+wget -nc -O $wallpapers/8I5IbpP.jpeg https://i.imgur.com/8I5IbpP.jpeg
+wget -nc -O $wallpapers/f3GVoDb.jpeg https://i.imgur.com/f3GVoDb.jpeg
+wget -nc -O $wallpapers/jG7Emga.jpeg https://i.imgur.com/jG7Emga.jpeg
+wget -nc -O $wallpapers/y25BotJ.jpeg https://i.imgur.com/y25BotJ.jpeg
+wget -nc -O $wallpapers/Wwzp07R.jpeg https://i.imgur.com/Wwzp07R.jpeg
+wget -nc -O $wallpapers/qSrMh5U.jpeg https://i.imgur.com/qSrMh5U.jpeg
+wget -nc -O $wallpapers/WtMFngV.jpeg https://i.imgur.com/WtMFngV.jpeg
+wget -nc -O $wallpapers/zmhQcdK.jpeg https://i.imgur.com/zmhQcdK.jpeg
+wget -nc -O $wallpapers/Mx7lcuL.jpeg https://i.imgur.com/Mx7lcuL.jpeg
+wget -nc -O $wallpapers/n9QlyUY.jpeg https://i.imgur.com/n9QlyUY.jpeg
+wget -nc -O $wallpapers/za7L69m.jpeg https://i.imgur.com/za7L69m.jpeg
+wget -nc -O $wallpapers/HcA8253.jpeg https://i.imgur.com/HcA8253.jpeg
+wget -nc -O $wallpapers/Gg4dbg5.jpeg https://i.imgur.com/Gg4dbg5.jpeg
+wget -nc -O $wallpapers/XsyuyBX.jpeg https://i.imgur.com/XsyuyBX.jpeg
+wget -nc -O $wallpapers/QIAB4VU.jpeg https://i.imgur.com/QIAB4VU.jpeg
+wget -nc -O $wallpapers/OVr1Jyv.jpeg https://i.imgur.com/OVr1Jyv.jpeg
+wget -nc -O $wallpapers/L8R7FgT.jpeg https://i.imgur.com/L8R7FgT.jpeg
+wget -nc -O $wallpapers/8Be6Kmh.jpeg https://i.imgur.com/8Be6Kmh.jpeg
+wget -nc -O $wallpapers/kuXgVGg.jpeg https://i.imgur.com/kuXgVGg.jpeg
+wget -nc -O $wallpapers/Nu1FuSh.jpeg https://i.imgur.com/Nu1FuSh.jpeg
+wget -nc -O $wallpapers/57118Db.jpeg https://i.imgur.com/57118Db.jpeg
+wget -nc -O $wallpapers/NzZhsn5.jpeg https://i.imgur.com/NzZhsn5.jpeg
+wget -nc -O $wallpapers/EQ2Y17s.jpeg https://i.imgur.com/EQ2Y17s.jpeg
+wget -nc -O $wallpapers/ZHzash8.jpeg https://i.imgur.com/ZHzash8.jpeg
+wget -nc -O $wallpapers/LquRPSZ.jpeg https://i.imgur.com/LquRPSZ.jpeg
+wget -nc -O $wallpapers/ZOn0xR0.jpeg https://i.imgur.com/ZOn0xR0.jpeg
+wget -nc -O $wallpapers/eSDlrID.jpeg https://i.imgur.com/eSDlrID.jpeg
+wget -nc -O $wallpapers/L6WX4QX.jpeg https://i.imgur.com/L6WX4QX.jpeg
+wget -nc -O $wallpapers/u27oejP.jpeg https://i.imgur.com/u27oejP.jpeg
+wget -nc -O $wallpapers/CX1g1jT.jpeg https://i.imgur.com/CX1g1jT.jpeg
+wget -nc -O $wallpapers/iiXsmnL.jpeg https://i.imgur.com/iiXsmnL.jpeg
+wget -nc -O $wallpapers/mEjst5b.jpeg https://i.imgur.com/mEjst5b.jpeg
+wget -nc -O $wallpapers/nxkGy0q.jpeg https://i.imgur.com/nxkGy0q.jpeg
+wget -nc -O $wallpapers/1BDbhzP.jpeg https://i.imgur.com/1BDbhzP.jpeg
+wget -nc -O $wallpapers/zz9fSw9.jpeg https://i.imgur.com/zz9fSw9.jpeg
+wget -nc -O $wallpapers/vKAsa8Y.jpeg https://i.imgur.com/vKAsa8Y.jpeg
+wget -nc -O $wallpapers/Swt89YB.jpeg https://i.imgur.com/Swt89YB.jpeg
+wget -nc -O $wallpapers/q2tyKoX.jpeg https://i.imgur.com/q2tyKoX.jpeg
+wget -nc -O $wallpapers/OIDTMve.jpeg https://i.imgur.com/OIDTMve.jpeg
+wget -nc -O $wallpapers/HPntFwO.jpeg https://i.imgur.com/HPntFwO.jpeg
+wget -nc -O $wallpapers/7A6UpSi.jpeg https://i.imgur.com/7A6UpSi.jpeg
+wget -nc -O $wallpapers/M0XCF6i.jpeg https://i.imgur.com/M0XCF6i.jpeg
+wget -nc -O $wallpapers/GjJmgcl.jpeg https://i.imgur.com/GjJmgcl.jpeg
+wget -nc -O $wallpapers/BpmvNf0.jpeg https://i.imgur.com/BpmvNf0.jpeg
+wget -nc -O $wallpapers/vi2lTKR.jpeg https://i.imgur.com/vi2lTKR.jpeg
+wget -nc -O $wallpapers/yNGFKlK.jpeg https://i.imgur.com/yNGFKlK.jpeg
+wget -nc -O $wallpapers/j19Gqdg.jpeg https://i.imgur.com/j19Gqdg.jpeg
+wget -nc -O $wallpapers/kjBRZr5.jpeg https://i.imgur.com/kjBRZr5.jpeg
+wget -nc -O $wallpapers/2NwRsVZ.jpeg https://i.imgur.com/2NwRsVZ.jpeg
+wget -nc -O $wallpapers/CLBdlr6.jpeg https://i.imgur.com/CLBdlr6.jpeg
+wget -nc -O $wallpapers/WLGQQRQ.jpeg https://i.imgur.com/WLGQQRQ.jpeg
+wget -nc -O $wallpapers/3eLE5lV.jpeg https://i.imgur.com/3eLE5lV.jpeg
+wget -nc -O $wallpapers/PnEgOSL.jpeg https://i.imgur.com/PnEgOSL.jpeg
+wget -nc -O $wallpapers/I1Dr1P7.jpeg https://i.imgur.com/I1Dr1P7.jpeg
+wget -nc -O $wallpapers/vJyBmL3.jpeg https://i.imgur.com/vJyBmL3.jpeg
+wget -nc -O $wallpapers/TwhsROW.jpeg https://i.imgur.com/TwhsROW.jpeg
+wget -nc -O $wallpapers/wMgQ8FP.jpeg https://i.imgur.com/wMgQ8FP.jpeg
+wget -nc -O $wallpapers/SjSUnFs.jpeg https://i.imgur.com/SjSUnFs.jpeg
+wget -nc -O $wallpapers/C8Ev0zM.jpeg https://i.imgur.com/C8Ev0zM.jpeg
+wget -nc -O $wallpapers/b9uaoaZ.jpeg https://i.imgur.com/b9uaoaZ.jpeg
+wget -nc -O $wallpapers/lI2sNqx.jpeg https://i.imgur.com/lI2sNqx.jpeg
+wget -nc -O $wallpapers/zzZcQyF.jpeg https://i.imgur.com/zzZcQyF.jpeg
+wget -nc -O $wallpapers/OVXD3on.jpeg https://i.imgur.com/OVXD3on.jpeg
+wget -nc -O $wallpapers/65xoCiE.jpeg https://i.imgur.com/65xoCiE.jpeg
+wget -nc -O $wallpapers/csxi2rG.jpeg https://i.imgur.com/csxi2rG.jpeg
+wget -nc -O $wallpapers/d4eJWao.jpeg https://i.imgur.com/d4eJWao.jpeg
+wget -nc -O $wallpapers/4i8XHrC.jpeg https://i.imgur.com/4i8XHrC.jpeg
+wget -nc -O $wallpapers/ITf9HcE.jpeg https://i.imgur.com/ITf9HcE.jpeg
+wget -nc -O $wallpapers/kVCqpbV.jpeg https://i.imgur.com/kVCqpbV.jpeg
+wget -nc -O $wallpapers/sMtv49j.jpeg https://i.imgur.com/sMtv49j.jpeg
+wget -nc -O $wallpapers/sN6N1LC.jpeg https://i.imgur.com/sN6N1LC.jpeg
+wget -nc -O $wallpapers/1cs0yj1.jpeg https://i.imgur.com/1cs0yj1.jpeg
+wget -nc -O $wallpapers/pwv30UB.jpeg https://i.imgur.com/pwv30UB.jpeg
+wget -nc -O $wallpapers/6UR9Dyv.jpeg https://i.imgur.com/6UR9Dyv.jpeg
+wget -nc -O $wallpapers/P75FOZX.jpeg https://i.imgur.com/P75FOZX.jpeg
+wget -nc -O $wallpapers/pzMJg1I.jpeg https://i.imgur.com/pzMJg1I.jpeg
+wget -nc -O $wallpapers/wG8FJKm.jpeg https://i.imgur.com/wG8FJKm.jpeg
+wget -nc -O $wallpapers/2awMekY.jpeg https://i.imgur.com/2awMekY.jpeg
+wget -nc -O $wallpapers/ScBB1Ho.jpeg https://i.imgur.com/ScBB1Ho.jpeg
+wget -nc -O $wallpapers/QxQbKT2.jpeg https://i.imgur.com/QxQbKT2.jpeg
+
+# space
+wget -nc -O $wallpapers/OeEfSfO.jpeg https://i.imgur.com/OeEfSfO.jpeg 
+wget -nc -O $wallpapers/OeEfSfO.jpeg https://i.imgur.com/OeEfSfO.jpeg 
+wget -nc -O $wallpapers/Q1zLbmZ.jpeg https://i.imgur.com/Q1zLbmZ.jpeg 
+wget -nc -O $wallpapers/wubd2tB.jpeg https://i.imgur.com/wubd2tB.jpeg 
+wget -nc -O $wallpapers/GOniPl0.jpeg https://i.imgur.com/GOniPl0.jpeg 
+wget -nc -O $wallpapers/gjPQaoW.jpeg https://i.imgur.com/gjPQaoW.jpeg 
+wget -nc -O $wallpapers/PiSuOIm.jpeg https://i.imgur.com/PiSuOIm.jpeg 
+wget -nc -O $wallpapers/C1HRtQN.jpeg https://i.imgur.com/C1HRtQN.jpeg 
+wget -nc -O $wallpapers/NDLV2dp.jpeg https://i.imgur.com/NDLV2dp.jpeg 
+wget -nc -O $wallpapers/myX9Q4f.jpeg https://i.imgur.com/myX9Q4f.jpeg 
+wget -nc -O $wallpapers/s01CNmS.jpeg https://i.imgur.com/s01CNmS.jpeg 
+wget -nc -O $wallpapers/CcqtfAH.jpeg https://i.imgur.com/CcqtfAH.jpeg 
+wget -nc -O $wallpapers/7CfE9rj.jpeg https://i.imgur.com/7CfE9rj.jpeg 
+wget -nc -O $wallpapers/20MZU0Z.jpeg https://i.imgur.com/20MZU0Z.jpeg 
+wget -nc -O $wallpapers/eevng0R.jpeg https://i.imgur.com/eevng0R.jpeg 
+wget -nc -O $wallpapers/JS7Tf9B.jpeg https://i.imgur.com/JS7Tf9B.jpeg 
+wget -nc -O $wallpapers/FBt6op0.jpeg https://i.imgur.com/FBt6op0.jpeg 
+wget -nc -O $wallpapers/xWNQjRU.jpeg https://i.imgur.com/xWNQjRU.jpeg 
+wget -nc -O $wallpapers/BSvCdHv.jpeg https://i.imgur.com/BSvCdHv.jpeg 
+wget -nc -O $wallpapers/MVfCFHH.jpeg https://i.imgur.com/MVfCFHH.jpeg 
+wget -nc -O $wallpapers/Qg3C7zR.jpeg https://i.imgur.com/Qg3C7zR.jpeg 
+wget -nc -O $wallpapers/IuPKMzc.jpeg https://i.imgur.com/IuPKMzc.jpeg 
+wget -nc -O $wallpapers/lfXNLKA.jpeg https://i.imgur.com/lfXNLKA.jpeg 
+wget -nc -O $wallpapers/eQOX78Q.jpeg https://i.imgur.com/eQOX78Q.jpeg 
+wget -nc -O $wallpapers/YfUFrWF.jpeg https://i.imgur.com/YfUFrWF.jpeg 
+wget -nc -O $wallpapers/BDeaofO.jpeg https://i.imgur.com/BDeaofO.jpeg 
+wget -nc -O $wallpapers/Xc1EHww.jpeg https://i.imgur.com/Xc1EHww.jpeg 
+wget -nc -O $wallpapers/eFnnOMC.jpeg https://i.imgur.com/eFnnOMC.jpeg 
+wget -nc -O $wallpapers/dqtZCgN.jpeg https://i.imgur.com/dqtZCgN.jpeg 
+wget -nc -O $wallpapers/1QgGnSs.jpeg https://i.imgur.com/1QgGnSs.jpeg 
+wget -nc -O $wallpapers/HKPMJBD.jpeg https://i.imgur.com/HKPMJBD.jpeg 
+wget -nc -O $wallpapers/fYgr9Ka.jpeg https://i.imgur.com/fYgr9Ka.jpeg 
+wget -nc -O $wallpapers/WrPQcoH.jpeg https://i.imgur.com/WrPQcoH.jpeg 
+wget -nc -O $wallpapers/kfZud2w.jpeg https://i.imgur.com/kfZud2w.jpeg 
+wget -nc -O $wallpapers/YJZoNnU.jpeg https://i.imgur.com/YJZoNnU.jpeg 
+wget -nc -O $wallpapers/g8MGeRI.jpeg https://i.imgur.com/g8MGeRI.jpeg 
+wget -nc -O $wallpapers/hZVHmlx.jpeg https://i.imgur.com/hZVHmlx.jpeg 
+wget -nc -O $wallpapers/sNXbewV.jpeg https://i.imgur.com/sNXbewV.jpeg 
+wget -nc -O $wallpapers/i7k6wbK.jpeg https://i.imgur.com/i7k6wbK.jpeg 
+wget -nc -O $wallpapers/TA6Jz4d.jpeg https://i.imgur.com/TA6Jz4d.jpeg 
+wget -nc -O $wallpapers/bQipxFE.jpeg https://i.imgur.com/bQipxFE.jpeg 
+wget -nc -O $wallpapers/cXD0k06.jpeg https://i.imgur.com/cXD0k06.jpeg 
+wget -nc -O $wallpapers/hopp9yf.jpeg https://i.imgur.com/hopp9yf.jpeg 
+wget -nc -O $wallpapers/WsVU99l.jpeg https://i.imgur.com/WsVU99l.jpeg 
+wget -nc -O $wallpapers/qqwAxPh.jpeg https://i.imgur.com/qqwAxPh.jpeg 
+wget -nc -O $wallpapers/Po13au9.jpeg https://i.imgur.com/Po13au9.jpeg 
+wget -nc -O $wallpapers/HS17uML.jpeg https://i.imgur.com/HS17uML.jpeg 
+wget -nc -O $wallpapers/ppN1z7a.jpeg https://i.imgur.com/ppN1z7a.jpeg 
+wget -nc -O $wallpapers/jYea2zk.jpeg https://i.imgur.com/jYea2zk.jpeg 
+wget -nc -O $wallpapers/Rv1Bu2y.jpeg https://i.imgur.com/Rv1Bu2y.jpeg 
+wget -nc -O $wallpapers/1LGVHl9.jpeg https://i.imgur.com/1LGVHl9.jpeg 
+wget -nc -O $wallpapers/I28nXp0.jpeg https://i.imgur.com/I28nXp0.jpeg 
+wget -nc -O $wallpapers/Cxvsgk9.jpeg https://i.imgur.com/Cxvsgk9.jpeg 
+wget -nc -O $wallpapers/TAwlQQR.jpeg https://i.imgur.com/TAwlQQR.jpeg 
+wget -nc -O $wallpapers/rlRu44t.jpeg https://i.imgur.com/rlRu44t.jpeg 
+wget -nc -O $wallpapers/00V76T1.jpeg https://i.imgur.com/00V76T1.jpeg 
+wget -nc -O $wallpapers/AMwf5nn.jpeg https://i.imgur.com/AMwf5nn.jpeg 
+wget -nc -O $wallpapers/zGkGr1K.jpeg https://i.imgur.com/zGkGr1K.jpeg 
+wget -nc -O $wallpapers/klqKzX9.jpeg https://i.imgur.com/klqKzX9.jpeg 
+wget -nc -O $wallpapers/l7L39vG.jpeg https://i.imgur.com/l7L39vG.jpeg 
+wget -nc -O $wallpapers/pSd2rUC.jpeg https://i.imgur.com/pSd2rUC.jpeg 
+wget -nc -O $wallpapers/JpJujTb.jpeg https://i.imgur.com/JpJujTb.jpeg 
+wget -nc -O $wallpapers/c1vhYXC.png https://i.imgur.com/c1vhYXC.png 
+wget -nc -O $wallpapers/tEztBlR.png https://i.imgur.com/tEztBlR.png 
+wget -nc -O $wallpapers/QefAMZO.png https://i.imgur.com/QefAMZO.png 
+wget -nc -O $wallpapers/WIqXbrl.png https://i.imgur.com/WIqXbrl.png 
+wget -nc -O $wallpapers/7e158X1.png https://i.imgur.com/7e158X1.png 
+wget -nc -O $wallpapers/aSanRPt.jpeg https://i.imgur.com/aSanRPt.jpeg 
+wget -nc -O $wallpapers/8pWnCKj.jpeg https://i.imgur.com/8pWnCKj.jpeg 
+wget -nc -O $wallpapers/WhA5MFA.jpeg https://i.imgur.com/WhA5MFA.jpeg 
+wget -nc -O $wallpapers/MNt8dDh.jpeg https://i.imgur.com/MNt8dDh.jpeg 
+wget -nc -O $wallpapers/qz6sF0q.jpeg https://i.imgur.com/qz6sF0q.jpeg 
+wget -nc -O $wallpapers/30a95LY.jpeg https://i.imgur.com/30a95LY.jpeg 
+wget -nc -O $wallpapers/Fm9fKBA.jpeg https://i.imgur.com/Fm9fKBA.jpeg 
+wget -nc -O $wallpapers/Rpq9Mee.jpeg https://i.imgur.com/Rpq9Mee.jpeg 
+wget -nc -O $wallpapers/fj7dQKM.jpeg https://i.imgur.com/fj7dQKM.jpeg 
+wget -nc -O $wallpapers/vWVhN2V.jpeg https://i.imgur.com/vWVhN2V.jpeg 
+wget -nc -O $wallpapers/eViLl6L.jpeg https://i.imgur.com/eViLl6L.jpeg 
