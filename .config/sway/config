@@ -32,6 +32,9 @@ bindsym $mod+Shift+q kill
 # runner
 bindsym $mod+d exec --no-startup-id /bin/bash -c '~/.config/sway/scripts/launchers/fuzzel.sh'
 
+# browser
+bindsym $mod+w exec --no-startup-id /bin/bash -c '$BROWSER'
+
 # change focus
 bindsym $mod+$left focus left
 bindsym $mod+$down focus down
