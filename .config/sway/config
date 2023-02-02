@@ -205,3 +205,7 @@ exec_always /usr/bin/foot --server
 # +POLKIT
 exec_always /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 # -POLKIT
+
+# +ALTERNATING LAYOUT
+exec_always ~/.config/sway/scripts/launchers/alternating_layout.sh
+# -ALTERNATING LAYOUT
