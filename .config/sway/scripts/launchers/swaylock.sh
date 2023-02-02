@@ -2,14 +2,7 @@
 
 pkill -x swaylock
 
-blue="#3584e4"
-red="#c01c28"
-green="#26a269"
-yellow="#cd9309"
-gray="#242424"
-black="#000000"
-white="#ffffff"
-transparent="#00000000"
+source ~/.config/sway/scripts/helpers/adwaita_colors.sh
 
 swaylock_command="swaylock "
 swaylock_command="$swaylock_command --color $gray" #                  Turn the screen into the given color instead of white.
