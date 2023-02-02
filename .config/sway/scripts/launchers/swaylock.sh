@@ -40,19 +40,10 @@ swaylock_command="$swaylock_command --text-caps-lock-color $transparent" #   Set
 swaylock_command="$swaylock_command --text-ver-color $transparent" #         Sets the color of the text when verifying.
 swaylock_command="$swaylock_command --text-wrong-color $transparent" #       Sets the color of the text when invalid.
 
-swaybg_file=""
-for ps_token in $(ps -ef | grep swaybg)
-do
-    if test -f $ps_token
-    then
-        swaybg_file=$ps_token
-        break
-    fi
-done
+swaybg_file=$(~/.config/sway/scripts/helpers/current_swaybg.sh)
 
 if [ "$swaybg_file" != "" ]
 then
-    echo "HERE"
     echo "$swaybg_file"
     swaylock_command="$swaylock_command --image $swaybg_file"
 else
