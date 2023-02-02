@@ -1,7 +1,7 @@
 #!/bin/bash
 
 pkill -x swaybg
-backgrounds=($(find ~/.wallpapers | tr ' ' '\n'))
+backgrounds=($(find ~/.wallpapers -type f | tr ' ' '\n'))
 
 
 background=${backgrounds[$RANDOM%${#backgrounds[@]}]}
