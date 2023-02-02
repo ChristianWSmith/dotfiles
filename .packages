@@ -12,6 +12,7 @@ bison
 btop
 caprine
 checkupdates-aur
+cmatrix
 cups
 debugedit
 discord
@@ -48,6 +49,7 @@ gst-plugins-ugly
 gvfs
 gzip
 htop
+hyprpicker-git
 inkscape
 innoextract
 intel-ucode
