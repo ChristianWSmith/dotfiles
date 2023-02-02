@@ -1,0 +1,52 @@
+#!/usr/bin/env python
+
+import argparse
+import asyncio
+
+from functools import partial
+
+from i3ipc import Event
+from i3ipc.aio import Connection
+
+
+def is_floating(container) -> bool:
+    return container.type == "floating_con"
+
+
+async def set_splitting(i3, _, width: int) -> None:
+    focused = (await i3.get_tree()).find_focused()
+    if focused is None:
+        return
+    workspace = focused.workspace()
+    tiled_windows = [leaf for leaf in workspace.leaves() if not is_floating(leaf)]
+    if len(tiled_windows) == 1:
+        await focused.command("splith")
+    elif len(tiled_windows) == 2:
+        left, right = tiled_windows
+        await left.command("splitv")
+        await right.command("splitv")
+        await right.command(f"resize set width {width} ppt")
+
+
+async def amain():
+    parser = argparse.ArgumentParser(description="Stack layout for sway wm.")
+    parser.add_argument(
+        "width",
+        type=int,
+        nargs="?",
+        default=50,
+        help="Optional width of second window in %%. Default: %(default)s",
+    )
+    args = parser.parse_args()
+    width = min(max(args.width, 0), 100)
+    i3 = await Connection(auto_reconnect=True).connect()
+    i3.on(Event.WINDOW_NEW, partial(set_splitting, width=width))  # type: ignore
+    i3.on(Event.WINDOW_CLOSE, partial(set_splitting, width=width))  # type: ignore
+    await i3.main()
+
+
+def main():
+    asyncio.run(amain())
+
+if __name__ == "__main__":
+    main()
