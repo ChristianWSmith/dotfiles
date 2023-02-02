@@ -12,4 +12,6 @@ if status is-interactive
     alias "reboot" "systemctl reboot --no-wall --reboot"
     alias "baseline" "sudo timeshift --delete-all; sudo timeshift --create --comments 'base'"
     alias "chx" "chmod +x"
+    alias "remove-orphans" "yay -Qdtq | yay -Rns -"
+    alias "adopt-orphans" "pacman -Qdtq | pacman -D --asexplicit -"
 end
