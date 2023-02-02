@@ -23,6 +23,8 @@
 !.config/waybar/**
 !.config/foot
 !.config/foot/**
+!.config/dunst
+!.config/dunst/**
 !.config/qt5ct
 !.config/qt5ct/**
 !.gtkrc-2.0

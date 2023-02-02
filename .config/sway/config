@@ -206,3 +206,7 @@ exec_always /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 # +DEFAULT LAYOUT
 exec_always ~/.config/sway/scripts/launchers/master_stack_layout.sh &
 # -DEFAULT LAYOUT
+
+# +DUNST
+exec_always ~/.config/sway/scripts/launchers/dunst.sh &
+# -DUSNT
