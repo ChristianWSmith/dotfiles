@@ -1,10 +1,8 @@
 #!/bin/bash
 
 pkill -x swaybg
-backgrounds=(~/.wallpapers/*)
+backgrounds=($(find ~/.wallpapers | tr ' ' '\n'))
 
-if [ "$backgrounds" != "$HOME/.wallpapers/*" ]
-then
-	background=${backgrounds[$RANDOM%${#backgrounds[@]}]}
-	swaybg -m fill -i $background &
-fi
+
+background=${backgrounds[$RANDOM%${#backgrounds[@]}]}
+swaybg -m fill -i $background &
