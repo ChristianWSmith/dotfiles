@@ -63,7 +63,7 @@ then
     echo "$swaybg_file"
     swaylock_command="$swaylock_command --image $swaybg_file"
 else
-    backgrounds=(~/.config/sway/backgrounds/*)
+    backgrounds=(~/.wallpapers*)
     if [ "$backgrounds" != "" ]
     then
         background=${backgrounds[$RANDOM%${#backgrounds[@]}]}

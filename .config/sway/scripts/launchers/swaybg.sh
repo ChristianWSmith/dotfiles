@@ -1,9 +1,9 @@
 #!/bin/bash
 
 pkill -x swaybg
-backgrounds=(~/.config/sway/backgrounds/*)
+backgrounds=(~/.wallpapers*)
 
-if [ "$backgrounds" != "$HOME/.config/sway/backgrounds/*" ]
+if [ "$backgrounds" != "$HOME/.wallpapers/*" ]
 then
 	background=${backgrounds[$RANDOM%${#backgrounds[@]}]}
 	swaybg -m fill -i $background &
