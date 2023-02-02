@@ -162,10 +162,8 @@ set_collection space
 wget -nc -O $outdir/OeEfSfO.jpeg https://i.imgur.com/OeEfSfO.jpeg 
 wget -nc -O $outdir/OeEfSfO.jpeg https://i.imgur.com/OeEfSfO.jpeg 
 wget -nc -O $outdir/Q1zLbmZ.jpeg https://i.imgur.com/Q1zLbmZ.jpeg 
-wget -nc -O $outdir/wubd2tB.jpeg https://i.imgur.com/wubd2tB.jpeg 
 wget -nc -O $outdir/GOniPl0.jpeg https://i.imgur.com/GOniPl0.jpeg 
 wget -nc -O $outdir/gjPQaoW.jpeg https://i.imgur.com/gjPQaoW.jpeg 
-wget -nc -O $outdir/C1HRtQN.jpeg https://i.imgur.com/C1HRtQN.jpeg 
 wget -nc -O $outdir/NDLV2dp.jpeg https://i.imgur.com/NDLV2dp.jpeg 
 wget -nc -O $outdir/myX9Q4f.jpeg https://i.imgur.com/myX9Q4f.jpeg 
 wget -nc -O $outdir/s01CNmS.jpeg https://i.imgur.com/s01CNmS.jpeg 
@@ -173,10 +171,7 @@ wget -nc -O $outdir/CcqtfAH.jpeg https://i.imgur.com/CcqtfAH.jpeg
 wget -nc -O $outdir/7CfE9rj.jpeg https://i.imgur.com/7CfE9rj.jpeg 
 wget -nc -O $outdir/20MZU0Z.jpeg https://i.imgur.com/20MZU0Z.jpeg 
 wget -nc -O $outdir/JS7Tf9B.jpeg https://i.imgur.com/JS7Tf9B.jpeg 
-wget -nc -O $outdir/FBt6op0.jpeg https://i.imgur.com/FBt6op0.jpeg 
 wget -nc -O $outdir/xWNQjRU.jpeg https://i.imgur.com/xWNQjRU.jpeg 
-wget -nc -O $outdir/BSvCdHv.jpeg https://i.imgur.com/BSvCdHv.jpeg 
-wget -nc -O $outdir/MVfCFHH.jpeg https://i.imgur.com/MVfCFHH.jpeg 
 wget -nc -O $outdir/Qg3C7zR.jpeg https://i.imgur.com/Qg3C7zR.jpeg 
 wget -nc -O $outdir/IuPKMzc.jpeg https://i.imgur.com/IuPKMzc.jpeg 
 wget -nc -O $outdir/lfXNLKA.jpeg https://i.imgur.com/lfXNLKA.jpeg 
@@ -187,10 +182,8 @@ wget -nc -O $outdir/eFnnOMC.jpeg https://i.imgur.com/eFnnOMC.jpeg
 wget -nc -O $outdir/dqtZCgN.jpeg https://i.imgur.com/dqtZCgN.jpeg 
 wget -nc -O $outdir/1QgGnSs.jpeg https://i.imgur.com/1QgGnSs.jpeg 
 wget -nc -O $outdir/HKPMJBD.jpeg https://i.imgur.com/HKPMJBD.jpeg 
-wget -nc -O $outdir/fYgr9Ka.jpeg https://i.imgur.com/fYgr9Ka.jpeg 
 wget -nc -O $outdir/WrPQcoH.jpeg https://i.imgur.com/WrPQcoH.jpeg 
 wget -nc -O $outdir/kfZud2w.jpeg https://i.imgur.com/kfZud2w.jpeg 
-wget -nc -O $outdir/YJZoNnU.jpeg https://i.imgur.com/YJZoNnU.jpeg 
 wget -nc -O $outdir/g8MGeRI.jpeg https://i.imgur.com/g8MGeRI.jpeg 
 wget -nc -O $outdir/sNXbewV.jpeg https://i.imgur.com/sNXbewV.jpeg 
 wget -nc -O $outdir/i7k6wbK.jpeg https://i.imgur.com/i7k6wbK.jpeg 
@@ -199,11 +192,8 @@ wget -nc -O $outdir/qqwAxPh.jpeg https://i.imgur.com/qqwAxPh.jpeg
 wget -nc -O $outdir/Po13au9.jpeg https://i.imgur.com/Po13au9.jpeg 
 wget -nc -O $outdir/ppN1z7a.jpeg https://i.imgur.com/ppN1z7a.jpeg 
 wget -nc -O $outdir/Rv1Bu2y.jpeg https://i.imgur.com/Rv1Bu2y.jpeg 
-wget -nc -O $outdir/1LGVHl9.jpeg https://i.imgur.com/1LGVHl9.jpeg 
 wget -nc -O $outdir/Cxvsgk9.jpeg https://i.imgur.com/Cxvsgk9.jpeg 
 wget -nc -O $outdir/TAwlQQR.jpeg https://i.imgur.com/TAwlQQR.jpeg 
-wget -nc -O $outdir/rlRu44t.jpeg https://i.imgur.com/rlRu44t.jpeg 
-wget -nc -O $outdir/00V76T1.jpeg https://i.imgur.com/00V76T1.jpeg 
 wget -nc -O $outdir/AMwf5nn.jpeg https://i.imgur.com/AMwf5nn.jpeg 
 wget -nc -O $outdir/l7L39vG.jpeg https://i.imgur.com/l7L39vG.jpeg 
 wget -nc -O $outdir/pSd2rUC.jpeg https://i.imgur.com/pSd2rUC.jpeg 
@@ -219,7 +209,6 @@ wget -nc -O $outdir/WhA5MFA.jpeg https://i.imgur.com/WhA5MFA.jpeg
 wget -nc -O $outdir/MNt8dDh.jpeg https://i.imgur.com/MNt8dDh.jpeg 
 wget -nc -O $outdir/qz6sF0q.jpeg https://i.imgur.com/qz6sF0q.jpeg 
 wget -nc -O $outdir/30a95LY.jpeg https://i.imgur.com/30a95LY.jpeg 
-wget -nc -O $outdir/Fm9fKBA.jpeg https://i.imgur.com/Fm9fKBA.jpeg 
 wget -nc -O $outdir/Rpq9Mee.jpeg https://i.imgur.com/Rpq9Mee.jpeg 
 wget -nc -O $outdir/fj7dQKM.jpeg https://i.imgur.com/fj7dQKM.jpeg 
 wget -nc -O $outdir/vWVhN2V.jpeg https://i.imgur.com/vWVhN2V.jpeg 
