@@ -60,6 +60,8 @@
     },
     "idle_inhibitor": {
         "format": "{icon}",
+        "tooltip-format-activated": "Idle Disabled",
+        "tooltip-format-deactivated": "Idle Enabled",
         "format-icons": {
             "activated": "",
             "deactivated": ""
@@ -76,7 +78,7 @@
     },
     "cpu": {
         "format": "{usage}% ",
-        "tooltip": false,
+        "tooltip": true,
         "on-click": "footclient btop" // TODO: decouple footclient
     },
     "memory": {
@@ -116,8 +118,8 @@
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "{signalStrength}% ",
-        "format-ethernet": "{ipaddr}/{cidr} ",
-        "tooltip-format": "{ifname} via {gwaddr} ",
+        "format-ethernet": "",
+        "tooltip-format": "{essid}",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
         // "format-alt": "{ifname}: {ipaddr}/{cidr}",
