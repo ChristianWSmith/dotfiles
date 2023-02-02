@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+script_dir=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
 # +USER GROUPS
 sudo usermod -a -G wheel $USER
@@ -135,17 +135,17 @@ sudo /bin/bash -c "echo 'WIRELESS_REGDOM=\"US\"' > /etc/conf.d/wireless-regdom"
 # -WIRELESS REGDOM
 
 # +PKEXEC
-${SCRIPT_DIR}/.pkexec-mask/pkexec-mask
-sudo cp ${SCRIPT_DIR}/.pkexec-mask/pkexec-mask /usr/bin/pkexec-mask
+${script_dir}/.pkexec-mask/pkexec-mask
+sudo cp ${script_dir}/.pkexec-mask/pkexec-mask /usr/bin/pkexec-mask
 sudo chmod --reference=$(which pkexec) /usr/bin/pkexec-mask
 sudo chown --reference=$(which pkexec) /usr/bin/pkexec-mask
 sudo mkdir -p /etc/pacman.d/hooks
-sudo cp ${SCRIPT_DIR}/.pkexec-mask/pkexec-mask-install.hook /etc/pacman.d/hooks/pkexec-mask-install.hook
-sudo cp ${SCRIPT_DIR}/.pkexec-mask/pkexec-mask-remove.hook /etc/pacman.d/hooks/pkexec-mask-remove.hook
+sudo cp ${script_dir}/.pkexec-mask/pkexec-mask-install.hook /etc/pacman.d/hooks/pkexec-mask-install.hook
+sudo cp ${script_dir}/.pkexec-mask/pkexec-mask-remove.hook /etc/pacman.d/hooks/pkexec-mask-remove.hook
 # -PKEXEC
 
 # +/ETC/ENVIRONMENT
-sudo /bin/bash -c "cat ${SCRIPT_DIR}/.etc-environment > /etc/environment"
+sudo /bin/bash -c "cat ${script_dir}/.etc-environment > /etc/environment"
 # -/ETC/ENVIRONMENT
 
 # +PIP
@@ -164,4 +164,5 @@ sed -i '/Notifications.SlideDirection/ s/"[A-Za-z]*"/"None"/' StopAnimations/res
 sed -i '/Notifications.FadeInTime/ s/"0.[0-9+]*"/"0.0"/' StopAnimations/resource/styles/* #no fade in time for notifications
 sed -i '/Notifications.FadeOutTime/ s/"0.[0-9+]*"/"0.0"/' StopAnimations/resource/styles/* #no fade out time for notifications
 sed -i '/Notifications.StackSize/ s/"[0-9]*"/"5"/' StopAnimations/resource/styles/* #show max 5 notifications instead of max 3 at the same time
+cd $script_dir
 # -NO STEAM ANIMATIONS SKIN
