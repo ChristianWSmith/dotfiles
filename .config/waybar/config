@@ -157,7 +157,7 @@
     },
     "custom/colorpicker": {
         "format": "",
-        "on-click": "sleep 0.1; hyprpicker | tr -d '\n' | wl-copy"
+        "on-click": "sleep 0.1; $HOME/.config/sway/scripts/launchers/color_picker.sh"
     },
     "custom/powermenu": {
         "format": "",

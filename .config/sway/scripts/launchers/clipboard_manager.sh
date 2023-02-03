@@ -5,7 +5,7 @@ pkill -x fuzzel
 list=$(cliphist list)
 if [ "$list" = "" ]
 then
-    notify-send "The clipboard is empty."
+    notify-send -t 1000 "The clipboard is empty."
     exit
 fi
 

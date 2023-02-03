@@ -173,6 +173,10 @@ exec_always {
 }
 # -GNOME SETTINGS
 
+bindsym $mod+c exec --no-startup-id ~/.config/sway/scripts/launchers/clipboard_manager.sh copy
+bindsym $mod+s exec --no-startup-id ~/.config/sway/scripts/launchers/screenshot.sh
+bindsym $mod+p exec --no-startup-id ~/.config/sway/scripts/launchers/color_picker.sh
+
 # +EXIT MODE
 bindsym $mod+Shift+e exec --no-startup-id ~/.config/sway/scripts/launchers/power_menu.sh
 # -EXIT MODE
