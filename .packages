@@ -111,6 +111,7 @@ pipewire-pulse
 pkgconf
 polkit-gnome
 python
+python-i3ipc
 python-pip
 python-six
 qt5-wayland
