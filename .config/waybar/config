@@ -147,9 +147,9 @@
     },
     "custom/clipboard": {
         "format": "",
-        "on-click": "pkill fuzzel; cliphist list | fuzzel --dmenu --prompt='Copy: ' | cliphist decode | wl-copy",
-        "on-click-right": "pkill fuzzel; cliphist list | fuzzel --dmenu --prompt='Delete: ' | cliphist delete",
-        "on-click-middle": "pkill fuzzel; /bin/bash -c 'if [ \"$(echo -e \"(N)o\n(Y)es\" | fuzzel --dmenu --prompt=\"Delete clipboard history? \")\" = \"(Y)es\" ] ; then rm $HOME/.cache/cliphist/db; fi'"
+        "on-click": "pkill fuzzel; cliphist list | fuzzel --dmenu --prompt='Copy: ' --lines $(cliphist list | wc -l) | cliphist decode | wl-copy",
+        "on-click-right": "pkill fuzzel; cliphist list | fuzzel --dmenu --prompt='Delete: ' --lines $(cliphist list | wc -l) | cliphist delete",
+        "on-click-middle": "pkill fuzzel; /bin/bash -c 'if [ \"$(echo -e \"(N)o\n(Y)es\" | fuzzel --dmenu --lines 2 --prompt=\"Delete clipboard history? \")\" = \"(Y)es\" ] ; then rm $HOME/.cache/cliphist/db; fi'"
     },
     "custom/screenshot": {
         "format": "",
