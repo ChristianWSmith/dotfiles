@@ -122,7 +122,7 @@
         "format-ethernet": "",
         "tooltip-format": "{essid}",
         "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "0% ⚠",
+        "format-disconnected": " 0% ⚠",
         // "format-alt": "{ifname}: {ipaddr}/{cidr}",
         "on-click": "$TERMINAL $HOME/.config/sway/scripts/launchers/nmtui.sh"
     },
