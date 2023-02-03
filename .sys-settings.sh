@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# TODO: split this whole thing into subscripts 
+
 script_dir=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
 # +UPDATE
