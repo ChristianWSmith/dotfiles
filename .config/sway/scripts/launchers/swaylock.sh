@@ -2,20 +2,11 @@
 
 pkill -x swaylock
 
-swaylock_command="swaylock"
+image=$(~/.config/sway/scripts/helpers/current_swaybg.sh)
 
-swaybg_file=$(~/.config/sway/scripts/helpers/current_swaybg.sh)
-
-if [ "$swaybg_file" != "" ]
+if [ "$image" = "" ]
 then
-    swaylock_command="$swaylock_command --image $swaybg_file"
-else
-    backgrounds=(~/.wallpapers*)
-    if [ "$backgrounds" != "" ]
-    then
-        background=${backgrounds[$RANDOM%${#backgrounds[@]}]}
-        swaylock_command="$swaylock_command --image $background"
-    fi
+    image=$(~/.config/sway/scripts/helpers/random_bg.sh)
 fi
 
-$swaylock_command &
+swaylock --image $image
