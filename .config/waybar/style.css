@@ -68,7 +68,7 @@ button:hover {
 }
 
 #mode {
-    background-color: #64727D;
+    background-color: rgba(100, 114, 125, 0.5);
     border-bottom: 3px solid #ffffff;
 }
 
@@ -94,7 +94,6 @@ button:hover {
 #mpd { 
     color: #ffffff;
     padding: 0 10px;
-    color: #ffffff;
 }
 
 #window,
