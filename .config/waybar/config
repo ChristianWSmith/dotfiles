@@ -7,7 +7,7 @@
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "sway/mode", "sway/scratchpad", "custom/media"],
     "modules-center": [],
-    "modules-right": ["tray", "custom/clipboard", "custom/screenshot", "custom/colorpicker", "idle_inhibitor", "pulseaudio", "network", "cpu", "memory", "temperature", "battery", "clock"],
+    "modules-right": ["tray", "custom/clipboard", "custom/screenshot", "custom/colorpicker", "idle_inhibitor", "pulseaudio", "network", "cpu", "memory", "temperature", "battery", "clock", "custom/powermenu"],
     // Modules configuration
     "sway/workspaces": {
         "disable-scroll": true,
@@ -149,7 +149,7 @@
         "format": "",
         "on-click": "pkill fuzzel; cliphist list | fuzzel --dmenu --prompt='Copy: ' | cliphist decode | wl-copy",
         "on-click-right": "pkill fuzzel; cliphist list | fuzzel --dmenu --prompt='Delete: ' | cliphist delete",
-        "on-click-middle": "pkill fuzzel; /bin/bash -c 'if [ \"$(echo -e \"(N)o\n(Y)es\" | fuzzel --dmenu --prompt=\"Delete clipboard history? \")\" = \"Yes\" ] ; then rm $HOME/.cache/cliphist/db; fi'"
+        "on-click-middle": "pkill fuzzel; /bin/bash -c 'if [ \"$(echo -e \"(N)o\n(Y)es\" | fuzzel --dmenu --prompt=\"Delete clipboard history? \")\" = \"(Y)es\" ] ; then rm $HOME/.cache/cliphist/db; fi'"
     },
     "custom/screenshot": {
         "format": "",
@@ -158,6 +158,10 @@
     "custom/colorpicker": {
         "format": "",
         "on-click": "sleep 0.1; hyprpicker | tr -d '\n' | wl-copy"
+    },
+    "custom/powermenu": {
+        "format": "",
+        "on-click": "$HOME/.config/sway/scripts/launchers/power_menu.sh",
     },
     "custom/media": {
         "format": "{icon} {}",

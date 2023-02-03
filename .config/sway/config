@@ -174,19 +174,7 @@ exec_always {
 # -GNOME SETTINGS
 
 # +EXIT MODE
-set $exit "exit: [l]ock, [r]eboot, [s]hutdown"
-mode $exit {
-    bindsym --to-code {
-        s exec systemctl poweroff --no-wall
-        r exec systemctl reboot --no-wall
-        l exec ~/.config/sway/scripts/launchers/swaylock.sh &; mode "default"
-    
-        Return mode "default"
-        Escape mode "default"
-        $mod+Shift+e mode "default"
-    }
-}
-bindsym --to-code $mod+Shift+e mode $exit
+bindsym $mod+Shift+e exec --no-startup-id ~/.config/sway/scripts/launchers/power_menu.sh
 # -EXIT MODE
 
 # +APPEARANCE
