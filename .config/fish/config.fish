@@ -16,3 +16,18 @@ if status is-interactive
     alias "adopt-orphans" "pacman -Qdtq | pacman -D --asexplicit -"
     alias "current-bg" "~/.config/sway/scripts/helpers/current_swaybg.sh"
 end
+alias "nmtui" "/bin/bash -c \"NEWT_COLORS='
+        root=blue,black
+        border=blue,black
+        title=blue,black
+        roottext=white,black
+        window=blue,black
+        textbox=white,black
+        button=black,blue
+        compactbutton=white,black
+        listbox=white,black
+        actlistbox=black,white
+        actsellistbox=black,blue
+        checkbox=blue,black
+        actcheckbox=black,blue
+        ' nmtui\""
