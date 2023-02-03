@@ -12,7 +12,7 @@ white="#ffffffff"
 transparent="#00000000"
 
 fuzzel --icon-theme=$GTK_ICON_THEME \
-    --font="Noto Sans Mono:pixelsize=16" \
+    --font="Noto Sans Mono:style=Bold:pixelsize=16" \
     --background-color=$gray \
     --text-color=$white \
     --match-color=$blue \
