@@ -124,7 +124,7 @@
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
         // "format-alt": "{ifname}: {ipaddr}/{cidr}",
-        "on-click": "$TERMINAL $TUI_NETWORK_MANAGER"
+        "on-click": "$TERMINAL $HOME/.config/sway/scripts/launchers/nmtui.sh"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float

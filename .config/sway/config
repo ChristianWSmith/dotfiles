@@ -1,5 +1,7 @@
 font pango:Noto Sans Mono 11
 
+input 1189:32769:BenQ_ZOWIE_BenQ_ZOWIE_Gaming_Mouse scroll_factor 2.0
+
 exec --no-startup-id dex --autostart --environment sway
 
 # Use pactl to adjust volume in PulseAudio.
@@ -125,6 +127,9 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
+
+# cycle wallpapers
+bindsym $mod+Shift+b exec --no-startup-id ~/.config/sway/scripts/launchers/swaybg.sh &
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
