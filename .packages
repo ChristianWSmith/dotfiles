@@ -99,6 +99,7 @@ openssh
 otf-font-awesome
 pacdep
 pacman
+pacman-cleanup-hook
 pacman-contrib
 papirus-icon-theme
 patch
@@ -118,6 +119,7 @@ reflector
 reflector-pacman-hook-git
 rsync
 rtl88x2bu-dkms-git
+seahorse
 sed
 slurp
 smartmontools
