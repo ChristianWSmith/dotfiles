@@ -7,7 +7,7 @@
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "sway/mode", "sway/scratchpad", "custom/media"],
     "modules-center": [],
-    "modules-right": ["tray", "custom/screenshot", "custom/colorpicker", "idle_inhibitor", "pulseaudio", "network", "cpu", "memory", "temperature", "battery", "clock"],
+    "modules-right": ["tray", "custom/clipboard", "custom/screenshot", "custom/colorpicker", "idle_inhibitor", "pulseaudio", "network", "cpu", "memory", "temperature", "battery", "clock"],
     // Modules configuration
     "sway/workspaces": {
         "disable-scroll": true,
@@ -144,6 +144,12 @@
             "default": ["", "", ""]
         },
         "on-click": "pavucontrol"
+    },
+    "custom/clipboard": {
+        "format": "",
+        "on-click": "pkill fuzzel; cliphist list | fuzzel --dmenu --prompt='Restore: ' | cliphist decode | wl-copy",
+        "on-click-right": "pkill fuzzel; cliphist list | fuzzel --dmenu --prompt='Delete: ' | cliphist delete",
+        "on-click-middle": "pkill fuzzel; /bin/bash -c 'if [ \"$(echo -e \"Yes\nNo\" | fuzzel --dmenu --prompt=\"Delete clipboard history? \")\" = \"Yes\" ] ; then cliphist wipe; fi'"
     },
     "custom/screenshot": {
         "format": "",
