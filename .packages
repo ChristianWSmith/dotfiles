@@ -119,6 +119,7 @@ reflector
 reflector-pacman-hook-git
 rsync
 rtl88x2bu-dkms-git
+rust
 seahorse
 sed
 slurp

@@ -23,6 +23,8 @@
 !.config/waybar/**
 !.config/foot
 !.config/foot/**
+!.config/fuzzel
+!.config/fuzzel/**
 !.config/dunst
 !.config/dunst/**
 !.config/qt5ct
