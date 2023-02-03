@@ -124,7 +124,7 @@
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": " 0% ⚠",
         // "format-alt": "{ifname}: {ipaddr}/{cidr}",
-        "on-click": "$TERMINAL fish -c '$TUI_NETWORK_MANAGER'"
+        "on-click": "$TERMINAL $SHELL -c '$TUI_NETWORK_MANAGER'"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
