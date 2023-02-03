@@ -1,5 +1,7 @@
 #!/bin/bash
 
+pkill -x fuzzel
+
 LOCK=" (L)ock"
 REBOOT=" (R)eboot"
 SHUTDOWN=" (S)hutdown"
