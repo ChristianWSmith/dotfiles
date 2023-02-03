@@ -112,6 +112,7 @@ pkgconf
 polkit-gnome
 python
 python-pip
+python-six
 qt5-wayland
 qt5ct
 ranger
