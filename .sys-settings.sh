@@ -2,6 +2,10 @@
 
 script_dir=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
+# +UPDATE
+sudo pacman -Syu
+# -UPDATE
+
 # +USER GROUPS
 sudo usermod -a -G wheel $USER
 sudo usermod -a -G seat $USER
