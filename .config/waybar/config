@@ -122,7 +122,7 @@
         "format-ethernet": "",
         "tooltip-format": "{essid}",
         "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Disconnected ⚠",
+        "format-disconnected": "0% ⚠",
         // "format-alt": "{ifname}: {ipaddr}/{cidr}",
         "on-click": "$TERMINAL $HOME/.config/sway/scripts/launchers/nmtui.sh"
     },
@@ -147,7 +147,7 @@
     },
     "custom/clipboard": {
         "format": "",
-        "on-click": "pkill fuzzel; cliphist list | fuzzel --dmenu --prompt='Restore: ' | cliphist decode | wl-copy",
+        "on-click": "pkill fuzzel; cliphist list | fuzzel --dmenu --prompt='Copy: ' | cliphist decode | wl-copy",
         "on-click-right": "pkill fuzzel; cliphist list | fuzzel --dmenu --prompt='Delete: ' | cliphist delete",
         "on-click-middle": "pkill fuzzel; /bin/bash -c 'if [ \"$(echo -e \"Yes\nNo\" | fuzzel --dmenu --prompt=\"Delete clipboard history? \")\" = \"Yes\" ] ; then cliphist wipe; fi'"
     },
