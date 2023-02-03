@@ -21,6 +21,8 @@
 !.config/btop/**
 !.config/waybar
 !.config/waybar/**
+!.swaylock
+!.swaylock/**
 !.config/foot
 !.config/foot/**
 !.config/fuzzel
