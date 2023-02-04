@@ -21,7 +21,6 @@ ply
 pycairo
 pycparser
 PyGObject
-pyparsing
 python-xlib
 PyYAML
 ranger-fm
