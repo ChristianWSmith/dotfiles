@@ -108,7 +108,9 @@ pavucontrol
 pipewire
 pipewire-alsa
 pipewire-jack
+pipewire-media-session
 pipewire-pulse
+pipewire-v4l2
 pkgconf
 polkit-gnome
 python
@@ -153,8 +155,9 @@ which
 wine
 wireless-regdb
 wireless_tools
-wireplumber
 wl-clipboard
+xdg-desktop-portal
+xdg-desktop-portal-wlr
 xdg-utils
 xf86-video-amdgpu
 xf86-video-ati
