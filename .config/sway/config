@@ -185,6 +185,7 @@ client.background       #ffffff
 
 
 # +waybar widget binds
+bindsym $mod+o exec --no-startup-id ~/.config/sway/scripts/launchers/emoji_picker.sh
 bindsym $mod+c exec --no-startup-id ~/.config/sway/scripts/launchers/clipboard_manager.sh copy
 bindsym $mod+s exec --no-startup-id ~/.config/sway/scripts/launchers/screenshot.sh
 bindsym $mod+p exec --no-startup-id ~/.config/sway/scripts/launchers/color_picker.sh
