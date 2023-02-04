@@ -43,6 +43,8 @@
 !.config/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
 !.vim
 !.vim/**
+!.config/rtsp-simple-server
+!.config/rtsp-simple-server/**
 !.local
 !.local/share
 !.local/share/Steam

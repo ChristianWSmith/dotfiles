@@ -123,6 +123,7 @@ reflector
 reflector-pacman-hook-git
 rsync
 rtl88x2bu-dkms-git
+rtsp-simple-server-bin
 rust
 sed
 slurp
