@@ -111,6 +111,11 @@ FORMAT=$(echo "$FORMAT" | \
 tree=$(swaymsg -t get_tree)
 count=$(echo "$tree" | grep "app_id" | wc -l)
 
+if [ "$count" = "0" ]
+then
+    notify-send "No windows to list."
+    exit
+fi
 # Get the container ID from the node tree
 CON_ID=$(echo "$tree" | \
     jq -r ".nodes[] 
