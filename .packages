@@ -1,5 +1,6 @@
 a52dec
 adw-gtk-theme
+adw-gtk3
 adwaita-dark
 adwaita-qt5
 amd-ucode
@@ -7,6 +8,7 @@ archlinux-keyring
 autoconf
 automake
 base
+bemoji
 binutils
 bison
 btop
@@ -86,6 +88,7 @@ man-db
 mirage
 mokutil
 mpd
+mplayer
 nano
 neofetch
 network-manager-applet
@@ -128,6 +131,7 @@ rust
 sed
 slurp
 smartmontools
+stacer
 steam
 steam-native-runtime
 sudo
