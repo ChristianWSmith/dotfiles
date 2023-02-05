@@ -30,7 +30,7 @@ bindsym $mod+Return exec footclient # TODO: decouple foot
 bindsym $mod+Shift+q kill
 
 # runner
-bindsym $mod+d exec --no-startup-id /bin/bash -c "pkill fuzzel; fuzzel"
+bindsym $mod+d exec --no-startup-id ~/.config/sway/scripts/helpers/new_fuzzel.sh
 
 # apps
 bindsym $mod+w exec --no-startup-id /bin/bash -c '$WEB_BROWSER'

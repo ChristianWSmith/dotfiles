@@ -1,12 +1,10 @@
 #!/bin/bash
 
-pkill -x fuzzel
-
 LOCK=" (L)ock"
 REBOOT=" (R)eboot"
 SHUTDOWN=" (S)hutdown"
 
-result=$(echo -e "$LOCK\n$REBOOT\n$SHUTDOWN" | fuzzel --dmenu --lines 3)
+result=$(echo -e "$LOCK\n$REBOOT\n$SHUTDOWN" | ~/.config/sway/scripts/helpers/new_fuzzel.sh --dmenu --lines 3)
 
 if [ "$result" = "$LOCK" ]
 then
