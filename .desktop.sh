@@ -2,8 +2,8 @@
 
 rm -f ~/.config/sway/display
 /bin/bash -c 'tee -a ~/.config/sway/display <<EOF
-set \$wsL "L "
-set \$wsR "R "
+set \$wsL "L"
+set \$wsR "R"
 
 output DP-1 pos 1920 0 res 1920x1080
 output DP-2 pos 0 0 res 1920x1080
