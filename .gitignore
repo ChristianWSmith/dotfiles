@@ -11,6 +11,7 @@
 !.vimrc
 !.etc-environment
 !.config
+!.config/appimagelauncher.cfg
 !.config/sway
 !.config/sway/**
 .config/sway/display
