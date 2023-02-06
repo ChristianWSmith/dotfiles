@@ -168,7 +168,7 @@
     },
     "custom/screenshot": {
         "return-type": "json",
-        "exec": "echo \"{\\\"text\\\": \\\"\\\", \\\"tooltip\\\": \\\"Screenshot\\\"}\"",
+        "exec": "echo \"{\\\"text\\\": \\\"\\\", \\\"tooltip\\\": \\\"Screenshot\\\"}\"",
         "interval": "once",
         "on-click": "$HOME/.config/sway/scripts/launchers/screenshot.sh"
     },
