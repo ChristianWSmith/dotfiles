@@ -154,26 +154,34 @@
     },
     "custom/emoji": {
         "return-type": "json",
-        "exec": "$HOME/.config/sway/scripts/helpers/waybar_icon.sh emoji",
+        "exec": "echo \"{\\\"text\\\": \\\"\\\", \\\"tooltip\\\": \\\"Emoji Picker\\\"}\"",
         "interval": "once",
         "on-click": "$HOME/.config/sway/scripts/launchers/emoji_picker.sh"
     },
     "custom/clipboard": {
-        "format": "",
+        "return-type": "json",
+        "exec": "echo \"{\\\"text\\\": \\\"\\\", \\\"tooltip\\\": \\\"Clipboard History\\\"}\"",
+        "interval": "once",
         "on-click": "$HOME/.config/sway/scripts/launchers/clipboard_manager.sh copy",
         "on-click-right": "$HOME/.config/sway/scripts/launchers/clipboard_manager.sh delete",
         "on-click-middle": "$HOME/.config/sway/scripts/launchers/clipboard_manager.sh wipe"
     },
     "custom/screenshot": {
-        "format": "",
+        "return-type": "json",
+        "exec": "echo \"{\\\"text\\\": \\\"\\\", \\\"tooltip\\\": \\\"Screenshot\\\"}\"",
+        "interval": "once",
         "on-click": "$HOME/.config/sway/scripts/launchers/screenshot.sh"
     },
     "custom/colorpicker": {
-        "format": "",
+        "return-type": "json",
+        "exec": "echo \"{\\\"text\\\": \\\"\\\", \\\"tooltip\\\": \\\"Color Picker\\\"}\"",
+        "interval": "once",
         "on-click": "sleep 0.1; $HOME/.config/sway/scripts/launchers/color_picker.sh"
     },
     "custom/powermenu": {
-        "format": "",
+        "return-type": "json",
+        "exec": "echo \"{\\\"text\\\": \\\"\\\", \\\"tooltip\\\": \\\"Power Menu\\\"}\"",
+        "interval": "once",
         "on-click": "$HOME/.config/sway/scripts/launchers/power_menu.sh",
     },
     "custom/media": {
