@@ -8,6 +8,10 @@ script_dir=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 sudo pacman -Syu
 # -UPDATE
 
+# +INSTALL PACKAGES
+yay -S --needed $(cat ~/.packages)
+# -INSTALL PACKAGES
+
 # +USER GROUPS
 sudo usermod -a -G wheel $USER
 sudo usermod -a -G seat $USER
@@ -172,3 +176,7 @@ sed -i '/Notifications.FadeOutTime/ s/"0.[0-9+]*"/"0.0"/' StopAnimations/resourc
 sed -i '/Notifications.StackSize/ s/"[0-9]*"/"5"/' StopAnimations/resource/styles/* #show max 5 notifications instead of max 3 at the same time
 cd $script_dir
 # -NO STEAM ANIMATIONS SKIN
+
+# +WALLPAPER
+~/.wallpapers.sh
+# -WALLPAPER
