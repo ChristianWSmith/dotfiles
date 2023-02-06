@@ -13,6 +13,7 @@
 !.config
 !.config/sway
 !.config/sway/**
+.config/sway/display
 !.config/waybar
 !.config/waybar/**
 !.config/fish
