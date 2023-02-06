@@ -146,13 +146,16 @@
         "on-click": "pavucontrol"
     },
     "custom/updates": {
+        "return-type": "json",
         "exec": "$HOME/.config/sway/scripts/helpers/update_reminder.sh",
         "format": "{}",
         "interval": 3600,
         "on-click": "$TERMINAL $HOME/.config/sway/scripts/helpers/update.sh"
     },
     "custom/emoji": {
-        "format": "",
+        "return-type": "json",
+        "exec": "$HOME/.config/sway/scripts/helpers/waybar_icon.sh emoji",
+        "interval": "once",
         "on-click": "$HOME/.config/sway/scripts/launchers/emoji_picker.sh"
     },
     "custom/clipboard": {

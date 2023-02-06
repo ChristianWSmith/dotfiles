@@ -3,7 +3,11 @@
 if [ "$(checkupdates)" ] || [ "$(checkupdates-aur)" ]
 then
     notify-send -t 5000 "Updates needed."
-    echo ""
+    text=""
+    tooltip="Updates required."
 else
-    echo ""
+    text=""
+    tooltip="Up to date."
 fi
+
+echo "{\"text\": \"$text\", \"tooltip\": \"$tooltip\"}"
