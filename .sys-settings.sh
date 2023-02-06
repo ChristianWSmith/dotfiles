@@ -8,6 +8,22 @@ script_dir=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 sudo pacman -Syu
 # -UPDATE
 
+
+# +GIT AND YAY
+if ! which git > /dev/null 2>&1
+then
+    sudo pacman -S git
+fi
+if ! which yay > /dev/null 2>&1
+then
+    git clone https://aur.archlinux.org/yay.git
+    cd yay
+    makepkg -si
+    cd ..
+    rm -rf yay
+fi
+# -GIT AND YAY
+
 # +INSTALL PACKAGES
 yay -S --needed $(cat ~/.packages)
 # -INSTALL PACKAGES
