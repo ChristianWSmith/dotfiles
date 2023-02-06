@@ -170,7 +170,6 @@ wget -nc -O $outdir/s01CNmS.jpeg https://i.imgur.com/s01CNmS.jpeg
 wget -nc -O $outdir/CcqtfAH.jpeg https://i.imgur.com/CcqtfAH.jpeg 
 wget -nc -O $outdir/20MZU0Z.jpeg https://i.imgur.com/20MZU0Z.jpeg 
 wget -nc -O $outdir/JS7Tf9B.jpeg https://i.imgur.com/JS7Tf9B.jpeg 
-wget -nc -O $outdir/xWNQjRU.jpeg https://i.imgur.com/xWNQjRU.jpeg 
 wget -nc -O $outdir/Qg3C7zR.jpeg https://i.imgur.com/Qg3C7zR.jpeg 
 wget -nc -O $outdir/IuPKMzc.jpeg https://i.imgur.com/IuPKMzc.jpeg 
 wget -nc -O $outdir/lfXNLKA.jpeg https://i.imgur.com/lfXNLKA.jpeg 
