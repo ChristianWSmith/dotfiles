@@ -3,7 +3,7 @@
 list=$(cliphist list)
 if [ "$list" = "" ]
 then
-    notify-send -t 1000 "The clipboard is empty."
+    notify-send -t 5000 "The clipboard is empty."
     exit
 fi
 

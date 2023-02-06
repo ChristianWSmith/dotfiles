@@ -7,7 +7,7 @@
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "sway/mode", "sway/scratchpad"],
     "modules-center": [],
-    "modules-right": ["tray", "custom/emoji", "custom/clipboard", "custom/screenshot", "custom/colorpicker", "idle_inhibitor", "pulseaudio", "network", "cpu", "memory", "temperature", "battery", "clock", "custom/powermenu"],
+    "modules-right": ["tray", "custom/updates", "custom/emoji", "custom/clipboard", "custom/screenshot", "custom/colorpicker", "idle_inhibitor", "pulseaudio", "network", "cpu", "memory", "temperature", "battery", "clock", "custom/powermenu"],
     // Modules configuration
     "sway/workspaces": {
         "disable-scroll": true,
@@ -144,6 +144,12 @@
             "default": ["", "", ""]
         },
         "on-click": "pavucontrol"
+    },
+    "custom/updates": {
+        "exec": "$HOME/.config/sway/scripts/helpers/update_reminder.sh",
+        "format": "{}",
+        "interval": 3600,
+        "on-click": "$TERMINAL $HOME/.config/sway/scripts/helpers/update.sh"
     },
     "custom/emoji": {
         "format": "",
