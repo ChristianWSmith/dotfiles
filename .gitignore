@@ -24,6 +24,8 @@
 !.config/fish/**
 !.config/btop
 !.config/btop/**
+!.config/ranger
+!.config/ranger/**
 !.config/waybar
 !.config/waybar/**
 !.swaylock
