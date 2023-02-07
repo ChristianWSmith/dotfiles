@@ -193,6 +193,11 @@ sed -i '/Notifications.StackSize/ s/"[0-9]*"/"5"/' StopAnimations/resource/style
 cd $script_dir
 # -NO STEAM ANIMATIONS SKIN
 
+# +XDG DESKTOP PORTAL
+systemctl --user mask xdg-desktop-portal
+systemctl --user mask xdg-desktop-portal-wlr
+# -XDG DESKTOP PORTAL
+
 # +WALLPAPER
 ~/.wallpapers.sh
 # -WALLPAPER
