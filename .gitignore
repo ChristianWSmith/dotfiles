@@ -11,6 +11,8 @@
 !.vimrc
 !.etc-environment
 !.config
+!.config/electron-flags.conf
+!.config/electron13-flags.conf
 !.config/appimagelauncher.cfg
 !.config/sway
 !.config/sway/**
