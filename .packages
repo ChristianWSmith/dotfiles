@@ -18,7 +18,7 @@ checkupdates-aur
 cliphist
 cups
 debugedit
-discord
+discord_arch_electron
 dmenu
 dunst
 dvd+rw-tools
@@ -44,6 +44,7 @@ gettext
 gimp
 git
 gnome-font-viewer
+google-chrome
 grep
 grim
 groff

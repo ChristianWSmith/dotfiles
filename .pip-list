@@ -31,7 +31,6 @@ Pillow
 pip
 platformdirs
 ply
-pwquality
 pycairo
 pycparser
 pydantic
