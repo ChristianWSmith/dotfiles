@@ -13,5 +13,4 @@ do
         tooltip="Up to date."
     fi
     echo "{\"text\": \"$text\", \"tooltip\": \"$tooltip\"}" > ~/.update_reminder
-    sleep 3600
 done

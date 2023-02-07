@@ -1,5 +1,6 @@
 *
 !.gitignore
+!.crontab
 !.pip-list
 !.pkexec-mask
 !.pkexec-mask/**

@@ -198,6 +198,12 @@ systemctl --user mask xdg-desktop-portal
 systemctl --user mask xdg-desktop-portal-wlr
 # -XDG DESKTOP PORTAL
 
+# +CRON
+sudo systemctl enable cronie
+sudo systemctl start cronie
+crontab ~/.crontab
+# -CRON
+
 # +WALLPAPER
 ~/.wallpapers.sh
 # -WALLPAPER
