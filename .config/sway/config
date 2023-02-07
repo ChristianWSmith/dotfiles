@@ -234,4 +234,5 @@ exec_always ~/.config/sway/scripts/launchers/dunst.sh &
 exec wl-paste --watch cliphist store
 # -CLIPHIST
 
+exec ~/.config/sway/scripts/helpers/update_reminder.sh
 exec ~/.config/sway/scripts/helpers/enable_screenshare.sh

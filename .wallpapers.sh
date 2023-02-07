@@ -541,7 +541,6 @@ download https://i.imgur.com/T14hxYC.jpeg
 download https://i.imgur.com/uGryrgF.jpeg
 download https://i.imgur.com/SaqcdaA.jpeg
 download https://i.imgur.com/HZ31D0X.jpeg
-download https://i.imgur.com/zx1oDdo.jpeg
 download https://i.imgur.com/JFFfvGD.jpeg
 download https://i.imgur.com/YUmkuf9.jpeg
 download https://i.imgur.com/scDDcWw.jpeg
