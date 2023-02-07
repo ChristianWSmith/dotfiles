@@ -198,6 +198,10 @@ systemctl --user mask xdg-desktop-portal
 systemctl --user mask xdg-desktop-portal-wlr
 # -XDG DESKTOP PORTAL
 
+# +CHROMIUM
+sudo /bin/bash -c "echo --enable-features=WebRTCPipeWireCapturer > /etc/chromium-flags.conf"
+# -CHROMIUM
+
 # +WALLPAPER
 ~/.wallpapers.sh
 # -WALLPAPER

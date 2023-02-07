@@ -10,6 +10,10 @@
 !.packages
 !.vimrc
 !.etc-environment
+!.local
+!.local/share
+!.local/share/applications
+!.local/share/applications/discord.desktop
 !.config
 !.config/electron-flags.conf
 !.config/electron13-flags.conf
