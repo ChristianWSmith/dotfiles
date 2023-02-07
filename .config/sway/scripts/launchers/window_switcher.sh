@@ -6,7 +6,7 @@ set -e # error if a command as non 0 exit
 set -u # error if undefined variable
 
 # Default parameters
-FORMAT="%W | %A - %T"
+FORMAT=":%W | %A - %T"
 DMENU="dmenu"
 
 # Doc
