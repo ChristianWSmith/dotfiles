@@ -1,6 +1,9 @@
 font pango:Noto Sans Mono 11
 
 # input 1189:32769:BenQ_ZOWIE_BenQ_ZOWIE_Gaming_Mouse scroll_factor 2.0
+input type:touchpad {
+    natural_scroll enabled
+}
 
 exec --no-startup-id dex --autostart --environment sway
 
