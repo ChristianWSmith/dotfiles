@@ -13,6 +13,7 @@
 !.config
 !.config/electron-flags.conf
 !.config/electron13-flags.conf
+!.config/electron19-flags.conf
 !.config/appimagelauncher.cfg
 !.config/sway
 !.config/sway/**
