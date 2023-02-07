@@ -34,7 +34,7 @@ bindsym $mod+d exec --no-startup-id ~/.config/sway/scripts/helpers/new_fuzzel.sh
 
 # apps
 bindsym $mod+w exec --no-startup-id /bin/bash -c '$WEB_BROWSER'
-bindsym $mod+e exec --no-startup-id /bin/bash -c '$TERMINAL $TUI_FILE_BROWSER'
+bindsym $mod+e exec --no-startup-id /bin/bash -c '$TERMINAL --title=$TUI_FILE_BROWSER $TUI_FILE_BROWSER'
 
 # change focus
 bindsym $mod+$left focus left
