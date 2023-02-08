@@ -89,6 +89,7 @@ mokutil
 mpd
 mpv
 nano
+nemo
 neofetch
 network-manager-applet
 networkmanager
@@ -138,7 +139,6 @@ swaybg
 swayidle
 swaylock
 texinfo
-thunar
 thunderbird
 thunderbird-dark-reader
 timeshift
