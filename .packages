@@ -55,6 +55,7 @@ gvfs
 gzip
 htop
 hyprpicker-git
+imv
 inkscape
 innoextract
 intel-ucode
@@ -84,7 +85,6 @@ lxappearance
 m4
 make
 man-db
-mirage
 mokutil
 mpd
 mpv
