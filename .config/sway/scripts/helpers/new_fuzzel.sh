@@ -2,4 +2,4 @@
 
 pkill -x fuzzel
 
-fuzzel $@
+fuzzel "$@"
