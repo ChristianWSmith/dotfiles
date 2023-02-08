@@ -87,7 +87,6 @@ man-db
 mirage
 mokutil
 mpd
-mplayer
 mpv
 nano
 neofetch
@@ -171,4 +170,6 @@ xorg-xinit
 xorg-xwayland
 xorg-xwininfo
 yay-git
+zathura
+zathura-pdf-poppler
 zeit-git
