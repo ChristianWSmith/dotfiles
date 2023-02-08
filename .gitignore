@@ -49,10 +49,6 @@
 !.config/gtk-3.0/**
 !.config/neofetch
 !.config/neofetch/**
-!.config/Thunar
-!.config/Thunar/**
-!.config/mirage
-!.config/mirage/accel_map
 !.config/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
 !.vim
 !.vim/**
