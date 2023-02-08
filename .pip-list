@@ -22,7 +22,6 @@ lensfun
 lxml
 mercurial
 meson
-Mirage
 more-itertools
 numpy
 ordered-set
@@ -31,6 +30,7 @@ Pillow
 pip
 platformdirs
 ply
+pulsemixer
 pwquality
 pycairo
 pycparser

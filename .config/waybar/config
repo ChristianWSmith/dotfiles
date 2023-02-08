@@ -143,7 +143,7 @@
             "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "pavucontrol"
+        "on-click": "$TERMINAL --title=$TUI_VOLUME_CONTROL $TUI_VOLUME_CONTROL"
     },
     "custom/updates": {
         "return-type": "json",

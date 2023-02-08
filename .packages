@@ -114,6 +114,7 @@ pipewire-pulse
 pipewire-v4l2
 pkgconf
 polkit-gnome
+pulsemixer
 python
 python-i3ipc
 python-pip
