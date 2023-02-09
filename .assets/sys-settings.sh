@@ -25,7 +25,7 @@ fi
 # -GIT AND YAY
 
 # +INSTALL PACKAGES
-yay -S --needed $(cat ~/.packages)
+yay -S --needed $(cat ~/.assests/package-list)
 # -INSTALL PACKAGES
 
 # +USER GROUPS
@@ -161,21 +161,21 @@ sudo /bin/bash -c "echo 'WIRELESS_REGDOM=\"US\"' > /etc/conf.d/wireless-regdom"
 # -WIRELESS REGDOM
 
 # +PKEXEC
-${script_dir}/.pkexec-mask/pkexec-mask
-sudo cp ${script_dir}/.pkexec-mask/pkexec-mask /usr/bin/pkexec-mask
+~/.assets/pkexec-mask/pkexec-mask
+sudo cp ~/.assets/pkexec-mask/pkexec-mask /usr/bin/pkexec-mask
 sudo chmod --reference=$(which pkexec) /usr/bin/pkexec-mask
 sudo chown --reference=$(which pkexec) /usr/bin/pkexec-mask
 sudo mkdir -p /etc/pacman.d/hooks
-sudo cp ${script_dir}/.pkexec-mask/pkexec-mask-install.hook /etc/pacman.d/hooks/pkexec-mask-install.hook
-sudo cp ${script_dir}/.pkexec-mask/pkexec-mask-remove.hook /etc/pacman.d/hooks/pkexec-mask-remove.hook
+sudo cp ~/.assets/pkexec-mask/pkexec-mask-install.hook /etc/pacman.d/hooks/pkexec-mask-install.hook
+sudo cp ~/.assets/pkexec-mask/pkexec-mask-remove.hook /etc/pacman.d/hooks/pkexec-mask-remove.hook
 # -PKEXEC
 
 # +/ETC/ENVIRONMENT
-sudo /bin/bash -c "cat ${script_dir}/.etc-environment > /etc/environment"
+sudo /bin/bash -c "cat $HOME/.assets/etc-environment > /etc/environment"
 # -/ETC/ENVIRONMENT
 
 # +PIP
-for pip_package in $(cat ~/.pip-list)
+for pip_package in $(cat ~/.assets/pip-list)
 do
     pip install $pip_package
 done
@@ -201,9 +201,9 @@ systemctl --user mask xdg-desktop-portal-wlr
 # +CRON
 sudo systemctl enable cronie
 sudo systemctl start cronie
-crontab ~/.crontab
+crontab ~/.assets/crontab-dump
 # -CRON
 
 # +WALLPAPER
-~/.wallpapers.sh
+~/.assets/wallpapers.sh
 # -WALLPAPER
