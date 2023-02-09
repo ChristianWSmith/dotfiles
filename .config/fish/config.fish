@@ -6,10 +6,10 @@ if status is-interactive
     end
     fish_add_path ~/.local/bin
     alias "fc" "footclient & disown"
-    alias "update-crontab" "crontab -l > ~/.assets/crontab-dump"
-    alias "update-package-list" "yay -Qe | cut -d' ' -f1 > ~/.assets/package-list"
-    alias "update-etc-environment" "cat /etc/environment > ~/.assets/etc-environment"
-    alias "update-pip-list" "pip list | tail -n +3 | cut -d' ' -f1 > ~/.assets/pip-list"
+    alias "update-crontab" "crontab -l > ~/.assets/lists/crontab-dump"
+    alias "update-package-list" "yay -Qe | cut -d' ' -f1 > ~/.assets/lists/package-list"
+    alias "update-etc-environment" "cat /etc/environment > ~/.assets/lists/etc-environment"
+    alias "update-pip-list" "pip list | tail -n +3 | cut -d' ' -f1 > ~/.assets/lists/pip-list"
     alias "update-dump-all" "update-crontab; update-package-list; update-etc-environment; update-pip-list"
     alias "shutdown" "systemctl poweroff --no-wall"
     alias "reboot" "systemctl reboot --no-wall --reboot"

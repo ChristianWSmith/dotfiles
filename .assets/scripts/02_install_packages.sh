@@ -1,3 +1,3 @@
 #!/bin/bash
 
-yay -S --needed $(cat ~/.assets/package-list)
+yay -S --needed $(cat ~/.assets/lists/package-list)
