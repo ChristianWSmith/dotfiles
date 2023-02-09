@@ -31,7 +31,6 @@ pip
 platformdirs
 ply
 pulsemixer
-pwquality
 pycairo
 pycparser
 pydantic
