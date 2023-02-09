@@ -3,9 +3,6 @@ Operation=Install
 Operation=Upgrade
 Type=Package
 Target=polkit
-Target=linux
-Target=linux-lts
-Target=linux-zen
 
 [Action]
 Description=Mask pkexec binary to pass through some env vars
