@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 
-import argparse
 import asyncio
 
 from functools import partial
@@ -24,8 +23,6 @@ async def set_splitting(sway, _) -> None:
 
 
 async def amain():
-    parser = argparse.ArgumentParser(description="Stack layout for sway wm.")
-    args = parser.parse_args()
     sway = await Connection(auto_reconnect=True).connect()
     sway.on(Event.WINDOW_NEW, partial(set_splitting))  # type: ignore
     sway.on(Event.WINDOW_CLOSE, partial(set_splitting))  # type: ignore
