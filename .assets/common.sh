@@ -8,5 +8,7 @@ fi
 
 for script in $(ls ~/.assets/scripts)
 do
+    echo "+ $script"
     ~/.assets/scripts/$script
+    echo "- $script"
 done
