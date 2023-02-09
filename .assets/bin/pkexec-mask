@@ -1,5 +1,5 @@
 #!/bin/bash
-# +PKEXEC
+
 if ! which pkexec-impl > /dev/null 2>&1
 then
     if which pkexec > /dev/null 2>&1
@@ -15,4 +15,3 @@ EOF" > /dev/null
         sudo chmod --reference=$(which pkexec-impl) $old_pkexec
     fi
 fi
-# -PKEXEC
