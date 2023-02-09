@@ -25,7 +25,7 @@ fi
 # -GIT AND YAY
 
 # +INSTALL PACKAGES
-yay -S --needed $(cat ~/.assests/package-list)
+yay -S --needed $(cat ~/.assets/package-list)
 # -INSTALL PACKAGES
 
 # +USER GROUPS
