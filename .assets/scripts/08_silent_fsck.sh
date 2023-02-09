@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 sudo rm -f .tmp
 touch .tmp

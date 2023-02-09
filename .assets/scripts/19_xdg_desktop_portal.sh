@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 systemctl --user mask xdg-desktop-portal
 systemctl --user mask xdg-desktop-portal-wlr

@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 autologin_file="/etc/systemd/system/getty@tty1.service.d/autologin.conf"
 sudo /bin/bash -c "rm -f $autologin_file; tee -a $autologin_file <<EOF

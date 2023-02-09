@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 ~/.assets/bin/pkexec-mask
 sudo cp ~/.assets/bin/pkexec-mask /usr/bin/pkexec-mask

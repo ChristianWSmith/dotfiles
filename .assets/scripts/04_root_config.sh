@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 sudo /bin/bash -c "rsync -a $HOME/.config/fish/ ~/.config/fish"
 sudo /bin/bash -c "rsync $HOME/.vimrc ~/.vimrc"

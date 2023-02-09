@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 fsck_services=("/usr/lib/systemd/system/systemd-fsck@.service" "/usr/lib/systemd/system/systemd-fsck-root.service")
 for file in ${fsck_services[@]}

@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 entries=(/boot/loader/entries/*)
 kernel_options="quiet loglevel=3 vt.global_cursor_default=0 systemd.show_status=auto rd.udev.log_level=3 nowatchdog modprobe.blacklist=sp5100_tco audit=0"

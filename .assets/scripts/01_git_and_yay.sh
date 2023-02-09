@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 if ! which git > /dev/null 2>&1
 then
