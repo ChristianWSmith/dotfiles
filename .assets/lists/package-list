@@ -52,6 +52,7 @@ gst-plugin-pipewire
 gst-plugins-bad
 gst-plugins-good
 gst-plugins-ugly
+gtklock
 gvfs
 gzip
 htop
@@ -139,8 +140,6 @@ smartmontools
 steam
 steam-native-runtime
 sudo
-swayidle
-swaylock
 texinfo
 thunderbird
 thunderbird-dark-reader
