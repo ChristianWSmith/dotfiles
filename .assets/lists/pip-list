@@ -12,6 +12,9 @@ i3ipc
 idna
 lensfun
 lxml
+Mako
+Markdown
+MarkupSafe
 meson
 numpy
 packaging

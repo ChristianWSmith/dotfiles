@@ -1,5 +1,6 @@
 #!/bin/bash
 
+sleep 0.1
 hyprpicker | tr -d '\n' | wl-copy
 if [ "$(wl-paste)" ]
 then

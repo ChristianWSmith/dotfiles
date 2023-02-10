@@ -130,13 +130,13 @@
         "return-type": "json",
         "exec": "echo \"{\\\"text\\\": \\\"\\\", \\\"tooltip\\\": \\\"Color Picker\\\"}\"",
         "interval": "once",
-        "on-click": "sleep 0.1; $HOME/.config/scripts/launchers/color_picker.sh"
+        "on-click": "$HOME/.config/scripts/launchers/color_picker.sh"
     },
     "custom/powermenu": {
         "return-type": "json",
         "exec": "echo \"{\\\"text\\\": \\\"\\\", \\\"tooltip\\\": \\\"Power Menu\\\"}\"",
         "interval": "once",
-        "on-click": "$HOME/.config/scripts/launchers/power_menu.sh",
+        "on-click": "wlogout",
     },
     "custom/media": {
         "format": "{icon} {}",
