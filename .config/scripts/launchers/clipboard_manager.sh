@@ -10,18 +10,18 @@ fi
 if [ "$1" = "copy" ]
 then
     lines=$(echo "$list" | wc -l)
-    echo "$list" | ~/.config/sway/scripts/helpers/new_fuzzel.sh --dmenu --prompt="Copy: " --lines $lines | cliphist decode | wl-copy
+    echo "$list" | ~/.config/scripts/helpers/new_fuzzel.sh --dmenu --prompt="Copy: " --lines $lines | cliphist decode | wl-copy
     notify-send -t 5000 "Copied to clipboard."
 elif [ "$1" = "delete" ]
 then
     lines=$(echo "$list" | wc -l)
-    echo "$list" | ~/.config/sway/scripts/helpers/new_fuzzel.sh --dmenu --prompt="Delete: " --lines $lines | cliphist delete
+    echo "$list" | ~/.config/scripts/helpers/new_fuzzel.sh --dmenu --prompt="Delete: " --lines $lines | cliphist delete
     notify-send -t 5000 "Deleted from clipboard."
 elif [ "$1" = "wipe" ]
 then
     YES="(Y)es"
     NO="(N)o"
-    answer=$(echo -e "$NO\n$YES" | ~/.config/sway/scripts/helpers/new_fuzzel.sh --dmenu --lines 2 --prompt="Delete clipboard history? ")
+    answer=$(echo -e "$NO\n$YES" | ~/.config/scripts/helpers/new_fuzzel.sh --dmenu --lines 2 --prompt="Delete clipboard history? ")
     if [ "$answer" = "$YES" ]
     then
         rm ~/.cache/cliphist/db

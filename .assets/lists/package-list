@@ -57,6 +57,7 @@ gzip
 htop
 hybrid-bar
 hyprland-bin
+hyprpaper-git
 hyprpicker-git
 imv
 inkscape
@@ -138,7 +139,6 @@ smartmontools
 steam
 steam-native-runtime
 sudo
-sway
 swaybg
 swayidle
 swaylock

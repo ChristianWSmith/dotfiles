@@ -129,7 +129,7 @@ CON_ID=$(echo "$tree" | \
            id: .apps.id, app_id: .apps.app_id, name: .apps.name }
         | $FORMAT
         | tostring" | \
-    $HOME/.config/sway/scripts/helpers/new_fuzzel.sh --dmenu --lines $count)
+    $HOME/.config/scripts/helpers/new_fuzzel.sh --dmenu --lines $count)
 
 # Requires the actual `id` to be at the end and between paretheses
 CON_ID=${CON_ID##*(}

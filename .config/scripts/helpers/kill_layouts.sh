@@ -1,6 +1,6 @@
 #!/bin/bash
 
-layout_scripts=(~/.config/sway/scripts/layouts/*)
+layout_scripts=(~/.config/scripts/layouts/*)
 
 
 for layout_script in ${layout_scripts[@]}

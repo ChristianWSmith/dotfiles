@@ -33,7 +33,7 @@ bindsym $mod+Return exec footclient # TODO: decouple foot
 bindsym $mod+Shift+q kill
 
 # runner
-bindsym $mod+d exec --no-startup-id ~/.config/sway/scripts/helpers/new_fuzzel.sh
+bindsym $mod+d exec --no-startup-id ~/.config/scripts/helpers/new_fuzzel.sh
 
 # apps
 bindsym $mod+w exec --no-startup-id /bin/bash -c '$WEB_BROWSER'
@@ -135,7 +135,7 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 bindsym $mod+Shift+c reload
 
 # cycle wallpapers
-bindsym $mod+Shift+b exec --no-startup-id ~/.config/sway/scripts/launchers/swaybg.sh &
+bindsym $mod+Shift+b exec --no-startup-id ~/.config/scripts/launchers/swaybg.sh &
 
 # resize window (you can also use the mouse for that)
 mode "" {
@@ -191,15 +191,15 @@ client.background       #ffffff
 
 
 # +waybar widget binds
-bindsym $mod+o exec --no-startup-id ~/.config/sway/scripts/launchers/emoji_picker.sh
-bindsym $mod+c exec --no-startup-id ~/.config/sway/scripts/launchers/clipboard_manager.sh copy
-bindsym $mod+s exec --no-startup-id ~/.config/sway/scripts/launchers/screenshot.sh
-bindsym $mod+p exec --no-startup-id ~/.config/sway/scripts/launchers/color_picker.sh
-bindsym $mod+q exec --no-startup-id ~/.config/sway/scripts/launchers/window_switcher.sh
+bindsym $mod+o exec --no-startup-id ~/.config/scripts/launchers/emoji_picker.sh
+bindsym $mod+c exec --no-startup-id ~/.config/scripts/launchers/clipboard_manager.sh copy
+bindsym $mod+s exec --no-startup-id ~/.config/scripts/launchers/screenshot.sh
+bindsym $mod+p exec --no-startup-id ~/.config/scripts/launchers/color_picker.sh
+bindsym $mod+q exec --no-startup-id ~/.config/scripts/launchers/window_switcher.sh
 # -waybar widget binds
 
 # +EXIT MODE
-bindsym $mod+Shift+e exec --no-startup-id ~/.config/sway/scripts/launchers/power_menu.sh
+bindsym $mod+Shift+e exec --no-startup-id ~/.config/scripts/launchers/power_menu.sh
 # -EXIT MODE
 
 # +APPEARANCE
@@ -210,8 +210,8 @@ for_window [class="^.*"] border pixel 2
 
 # +UI
 # TODO: does this need exec_always?
-exec_always ~/.config/sway/scripts/launchers/swaybg.sh &
-exec_always ~/.config/sway/scripts/launchers/waybar.sh &
+exec_always ~/.config/scripts/launchers/swaybg.sh &
+exec_always ~/.config/scripts/launchers/waybar.sh &
 # -UI
 
 # +FOOT
@@ -226,16 +226,16 @@ exec_always /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
 # +DEFAULT LAYOUT
 # TODO: does this need exec_always?
-exec_always ~/.config/sway/scripts/launchers/master_stack_layout.sh &
+exec_always ~/.config/scripts/launchers/master_stack_layout.sh &
 # -DEFAULT LAYOUT
 
 # +DUNST 
 # TODO: does this need exec_always?
-exec_always ~/.config/sway/scripts/launchers/dunst.sh &
+exec_always ~/.config/scripts/launchers/dunst.sh &
 # -DUSNT
 
 # +CLIPHIST
 exec wl-paste --watch cliphist store
 # -CLIPHIST
 
-exec ~/.config/sway/scripts/helpers/enable_screenshare.sh
+exec ~/.config/scripts/helpers/enable_screenshare.sh
