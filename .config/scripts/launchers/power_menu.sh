@@ -8,7 +8,7 @@ result=$(echo -e "$LOCK\n$REBOOT\n$SHUTDOWN" | ~/.config/scripts/helpers/new_fuz
 
 if [ "$result" = "$LOCK" ]
 then
-    ~/.config/scripts/launchers/swaylock.sh
+    gtklock
 elif [ "$result" = "$REBOOT" ]
 then
     systemctl reboot --no-wall
