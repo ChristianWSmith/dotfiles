@@ -5,17 +5,15 @@
     // "width": 1280, // Waybar width
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
-    "modules-left": ["wlr/workspaces", "sway/mode", "sway/scratchpad"],
+    "modules-left": ["wlr/workspaces"],
     "modules-center": [],
     "modules-right": ["tray", "custom/updates", "custom/emoji", "custom/clipboard", "custom/screenshot", "custom/colorpicker", "idle_inhibitor", "pulseaudio", "network", "cpu", "memory", "temperature", "battery", "clock", "custom/powermenu"],
     // Modules configuration
-    "sway/workspaces": {
-        "disable-scroll": true,
-        "all-outputs": false,
-    },
     "wlr/workspaces": {
         "on-click": "activate",
         "format": "{icon}",
+        "sort-by-coordinates": true,
+        "sort-by-name": false
     },
     "keyboard-state": {
         "numlock": true,
@@ -25,16 +23,6 @@
             "locked": "",
             "unlocked": ""
         }
-    },
-    "sway/mode": {
-        "format": "{}"
-    },
-    "sway/scratchpad": {
-        "format": "{icon} {count}",
-        "show-empty": false,
-        "format-icons": ["", ""],
-        "tooltip": true,
-        "tooltip-format": "{app}: {title}"
     },
     "mpd": {
         "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",

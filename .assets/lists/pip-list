@@ -12,6 +12,7 @@ i3ipc
 idna
 lensfun
 lxml
+meson
 numpy
 packaging
 Pillow
