@@ -24,9 +24,7 @@
 !.config/appimagelauncher.cfg
 !.config/hypr
 !.config/hypr/**
-!.config/sway
-!.config/sway/**
-.config/sway/display
+.config/hypr/display.conf
 !.config/waybar
 !.config/waybar/**
 !.config/fish
@@ -38,8 +36,6 @@
 .config/ranger/colorschemes/__pycache__
 !.config/waybar
 !.config/waybar/**
-!.swaylock
-!.swaylock/**
 !.config/foot
 !.config/foot/**
 !.config/fuzzel

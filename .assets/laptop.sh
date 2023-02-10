@@ -6,5 +6,8 @@ if [ "$EUID" -eq 0 ]
     exit
 fi
 
-rm -f ~/.config/hypr/display
-touch ~/.config/hypr/display
+rm -f ~/.config/hypr/display.conf
+/bin/bash -c 'tee -a ~/.config/hypr/display.conf <<EOF
+monitor=,preferred,auto,auto
+EOF' > /dev/null
+
