@@ -8,7 +8,22 @@ fi
 
 rm -f ~/.config/hypr/display.conf
 /bin/bash -c 'tee -a ~/.config/hypr/display.conf <<EOF
-monitor=,preferred,auto,auto
+monitor=DP-2, 1920x1080, 0x0, 1
+monitor=DP-1, 1920x1080, 1920x0, 1
+monitor=DP-3, 1920x1080, 3840x0, 1
+
+wsbind=L,DP-2
+wsbind=R,DP-3
+wsbind=1,DP-1
+wsbind=2,DP-1
+wsbind=3,DP-1
+wsbind=4,DP-1
+wsbind=5,DP-1
+wsbind=6,DP-1
+wsbind=7,DP-1
+wsbind=8,DP-1
+wsbind=9,DP-1
+wsbind=10,DP-1
 EOF' > /dev/null
 
 sudo /bin/bash -c 'rm -f /etc/modprobe.d/88x2bu.conf; tee -a /etc/modprobe.d/88x2bu.conf <<EOF
