@@ -6,8 +6,8 @@ if [ "$EUID" -eq 0 ]
     exit
 fi
 
-rm -f ~/.config/sway/display
-/bin/bash -c 'tee -a ~/.config/sway/display <<EOF
+rm -f ~/.config/hypr/display
+/bin/bash -c 'tee -a ~/.config/hypr/display <<EOF
 set \$wsL "L"
 set \$wsR "R"
 

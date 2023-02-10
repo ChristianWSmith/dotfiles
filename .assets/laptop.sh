@@ -6,5 +6,5 @@ if [ "$EUID" -eq 0 ]
     exit
 fi
 
-rm -f ~/.config/sway/display
-touch ~/.config/sway/display
+rm -f ~/.config/hypr/display
+touch ~/.config/hypr/display
