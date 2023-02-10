@@ -22,6 +22,8 @@
 !.config/electron13-flags.conf
 !.config/electron19-flags.conf
 !.config/appimagelauncher.cfg
+!.config/gtklock
+!.config/gtklock/**
 !.config/hypr
 !.config/hypr/**
 .config/hypr/display.conf

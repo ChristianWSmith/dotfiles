@@ -12,7 +12,7 @@
     "wlr/workspaces": {
         "on-click": "activate",
         "format": "{icon}",
-        "sort-by-coordinates": true,
+        "sort-by-number": true,
         "sort-by-name": false
     },
     "idle_inhibitor": {
