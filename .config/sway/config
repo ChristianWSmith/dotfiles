@@ -247,3 +247,4 @@ exec_always ~/.config/scripts/launchers/dunst.sh &
 exec wl-paste --watch cliphist store
 # -CLIPHIST
 
+exec ~/.config/scripts/layouts/master_stack.py &
