@@ -10,6 +10,6 @@ do
         echo "removing $file ($dimensions)"
         rm $file
         file_name=$(basename $file)
-        sed -i "/$file_name/d" ~/.wallpapers.sh
+        sed -i "/$file_name/d" ~/.assets/scripts/*_wallpapers.sh
     fi
 done
