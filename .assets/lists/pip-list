@@ -19,6 +19,7 @@ jaraco.functools
 jaraco.text
 lensfun
 lxml
+mercurial
 more-itertools
 numpy
 ordered-set
@@ -28,6 +29,7 @@ pip
 platformdirs
 ply
 pulsemixer
+pycairo
 pycparser
 pydantic
 PyGObject

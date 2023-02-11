@@ -2,7 +2,7 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
     set -g fish_greeting
     if [ "$XDG_VTNR" = "1" ] && [ -z "$DISPLAY" ]
-        while ! /usr/bin/sway 2>&1 > /dev/null; :; end
+        while ! ~/.config/scripts/launchers/sway.sh 2>&1 > /dev/null; :; end
     end
     fish_add_path ~/.local/bin
     alias "fc" "footclient & disown"
