@@ -224,11 +224,6 @@ exec_always /usr/bin/foot --server
 exec_always /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 # -POLKIT
 
-# +DEFAULT LAYOUT
-# TODO: does this need exec_always?
-exec_always ~/.config/scripts/launchers/master_stack_layout.sh &
-# -DEFAULT LAYOUT
-
 # +DUNST 
 # TODO: does this need exec_always?
 exec_always ~/.config/scripts/launchers/dunst.sh &
