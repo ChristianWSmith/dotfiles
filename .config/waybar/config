@@ -150,39 +150,39 @@
         "exec": "cat $HOME/.update_reminder",
         "format": "{}",
         "interval": 1,
-        "on-click": "$TERMINAL --title=Update $HOME/.config/sway/scripts/helpers/update.sh"
+        "on-click": "$TERMINAL --title=Update $HOME/.config/scripts/helpers/update.sh"
     },
     "custom/emoji": {
         "return-type": "json",
         "exec": "echo \"{\\\"text\\\": \\\"\\\", \\\"tooltip\\\": \\\"Emoji Picker\\\"}\"",
         "interval": "once",
-        "on-click": "$HOME/.config/sway/scripts/launchers/emoji_picker.sh"
+        "on-click": "$HOME/.config/scripts/launchers/emoji_picker.sh"
     },
     "custom/clipboard": {
         "return-type": "json",
         "exec": "echo \"{\\\"text\\\": \\\"\\\", \\\"tooltip\\\": \\\"Clipboard History\\\"}\"",
         "interval": "once",
-        "on-click": "$HOME/.config/sway/scripts/launchers/clipboard_manager.sh copy",
-        "on-click-right": "$HOME/.config/sway/scripts/launchers/clipboard_manager.sh delete",
-        "on-click-middle": "$HOME/.config/sway/scripts/launchers/clipboard_manager.sh wipe"
+        "on-click": "$HOME/.config/scripts/launchers/clipboard_manager.sh copy",
+        "on-click-right": "$HOME/.config/scripts/launchers/clipboard_manager.sh delete",
+        "on-click-middle": "$HOME/.config/scripts/launchers/clipboard_manager.sh wipe"
     },
     "custom/screenshot": {
         "return-type": "json",
         "exec": "echo \"{\\\"text\\\": \\\"\\\", \\\"tooltip\\\": \\\"Screenshot\\\"}\"",
         "interval": "once",
-        "on-click": "$HOME/.config/sway/scripts/launchers/screenshot.sh"
+        "on-click": "$HOME/.config/scripts/launchers/screenshot.sh"
     },
     "custom/colorpicker": {
         "return-type": "json",
         "exec": "echo \"{\\\"text\\\": \\\"\\\", \\\"tooltip\\\": \\\"Color Picker\\\"}\"",
         "interval": "once",
-        "on-click": "sleep 0.1; $HOME/.config/sway/scripts/launchers/color_picker.sh"
+        "on-click": "sleep 0.1; $HOME/.config/scripts/launchers/color_picker.sh"
     },
     "custom/powermenu": {
         "return-type": "json",
         "exec": "echo \"{\\\"text\\\": \\\"\\\", \\\"tooltip\\\": \\\"Power Menu\\\"}\"",
         "interval": "once",
-        "on-click": "$HOME/.config/sway/scripts/launchers/power_menu.sh",
+        "on-click": "$HOME/.config/scripts/launchers/power_menu.sh",
     },
     "custom/media": {
         "format": "{icon} {}",

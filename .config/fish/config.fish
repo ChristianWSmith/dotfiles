@@ -17,9 +17,9 @@ if status is-interactive
     alias "chx" "chmod +x"
     alias "remove-orphans" "yay -Qdtq | yay -Rns -"
     alias "adopt-orphans" "pacman -Qdtq | pacman -D --asexplicit -"
-    alias "current-bg" "~/.config/sway/scripts/helpers/current_swaybg.sh"
-    alias "remove-bg" "~/.config/sway/scripts/helpers/remove_bg.sh"
-    alias "swaylock" "~/.config/sway/scripts/launchers/swaylock.sh"
+    alias "current-bg" "~/.config/scripts/helpers/current_swaybg.sh"
+    alias "remove-bg" "~/.config/scripts/helpers/remove_bg.sh"
+    alias "swaylock" "~/.config/scripts/launchers/swaylock.sh"
 end
 set "NEWT_COLORS" "'
          root=blue,black
