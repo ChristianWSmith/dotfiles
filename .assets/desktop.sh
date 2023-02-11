@@ -12,10 +12,8 @@ monitor=DP-2, 1920x1080, 0x0, 1
 monitor=DP-1, 1920x1080@240, 1920x0, 1
 monitor=DP-3, 1920x1080, 3840x0, 1
 
-bind = $mainMod, Minus, workspace, 11
-bind = $mainMod, Equal, workspace, 12
-bind = $mainMod SHIFT, Minus, movetoworkspace, 11
-bind = $mainMod SHIFT, Equal, movetoworkspace, 12
+bind = $mainMod SHIFT, left, movewindow, mon:l
+bind = $mainMod SHIFT, right, movewindow, mon:r
 
 wsbind=11,DP-2
 wsbind=12,DP-3
