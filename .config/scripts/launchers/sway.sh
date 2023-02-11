@@ -17,4 +17,4 @@ export XDG_CURRENT_DESKTOP=sway
 export TUI_VOLUME_CONTROL=pulsemixer
 export GUI_VOLUME_CONTROL=pavucontrol
 
-/usr/bin/sway
+dbus-run-session sway

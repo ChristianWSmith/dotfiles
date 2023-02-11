@@ -238,4 +238,5 @@ exec_always ~/.config/scripts/launchers/dunst.sh &
 exec wl-paste --watch cliphist store
 # -CLIPHIST
 
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
 exec ~/.config/scripts/helpers/enable_screenshare.sh
