@@ -62,7 +62,7 @@ set $swap_down mark --add "_swap", focus down, swap container with mark "_swap",
 set $swap_up mark --add "_swap", focus up, swap container with mark "_swap", focus up, unmark "_swap"
 set $swap_right mark --add "_swap", focus right, swap container with mark "_swap", focus right, unmark "_swap"
 
-# swap focused window
+# move focused window
 bindsym $mod+Shift+$left move left
 bindsym $mod+Shift+$down move down
 bindsym $mod+Shift+$up move up
