@@ -9,11 +9,16 @@ fi
 rm -f ~/.config/hypr/display.conf
 /bin/bash -c 'tee -a ~/.config/hypr/display.conf <<EOF
 monitor=DP-2, 1920x1080, 0x0, 1
-monitor=DP-1, 1920x1080, 1920x0, 1
+monitor=DP-1, 1920x1080@240, 1920x0, 1
 monitor=DP-3, 1920x1080, 3840x0, 1
 
-wsbind=L,DP-2
-wsbind=R,DP-3
+bind = $mainMod, Minus, workspace, 11
+bind = $mainMod, Equal, workspace, 12
+bind = $mainMod SHIFT, Minus, movetoworkspace, 11
+bind = $mainMod SHIFT, Equal, movetoworkspace, 12
+
+wsbind=11,DP-2
+wsbind=12,DP-3
 wsbind=1,DP-1
 wsbind=2,DP-1
 wsbind=3,DP-1
