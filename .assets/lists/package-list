@@ -52,12 +52,9 @@ gst-plugin-pipewire
 gst-plugins-bad
 gst-plugins-good
 gst-plugins-ugly
-gtklock-git
 gvfs
 gzip
 htop
-hyprland-git
-hyprpaper-git
 hyprpicker-git
 imv
 inkscape
@@ -139,6 +136,10 @@ smartmontools
 steam
 steam-native-runtime
 sudo
+sway
+swaybg
+swayidle
+swaylock
 texinfo
 thunderbird
 thunderbird-dark-reader
@@ -150,7 +151,7 @@ vim
 vkd3d
 vlc
 vulkan-radeon
-waybar-hyprland-git
+waybar
 wget
 which
 wine
@@ -158,7 +159,6 @@ wireless-regdb
 wireless_tools
 wireplumber
 wl-clipboard
-wlogout-git
 wlrobs-hg
 xdg-desktop-portal
 xdg-desktop-portal-wlr

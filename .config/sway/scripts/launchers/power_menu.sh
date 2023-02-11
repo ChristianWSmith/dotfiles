@@ -1,0 +1,18 @@
+#!/bin/bash
+
+LOCK=" (L)ock"
+REBOOT=" (R)eboot"
+SHUTDOWN=" (S)hutdown"
+
+result=$(echo -e "$LOCK\n$REBOOT\n$SHUTDOWN" | ~/.config/sway/scripts/helpers/new_fuzzel.sh --dmenu --lines 3)
+
+if [ "$result" = "$LOCK" ]
+then
+    ~/.config/sway/scripts/launchers/swaylock.sh
+elif [ "$result" = "$REBOOT" ]
+then
+    systemctl reboot --no-wall
+elif [ "$result" = "$SHUTDOWN" ]
+then
+    systemctl poweroff --no-wall
+fi

@@ -1,6 +1,5 @@
 #!/bin/bash
 
-neofetch
 echo "Updating..."
 if yay -Syu --needed --norebuild --noredownload --nocleanmenu --nodiffmenu --noremovemake
 then

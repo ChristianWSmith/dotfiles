@@ -1,33 +1,62 @@
 {
-    "layer": "top", // Waybar at top layer
+    // "layer": "top", // Waybar at top layer
     // "position": "bottom", // Waybar position (top|bottom|left|right)
     "height": 30, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
-    "modules-left": ["wlr/workspaces"],
+    "modules-left": ["sway/workspaces", "sway/mode", "sway/scratchpad"],
     "modules-center": [],
     "modules-right": ["tray", "custom/updates", "custom/emoji", "custom/clipboard", "custom/screenshot", "custom/colorpicker", "idle_inhibitor", "pulseaudio", "network", "cpu", "memory", "temperature", "battery", "clock", "custom/powermenu"],
     // Modules configuration
-    "wlr/workspaces": {
-        "on-click": "activate",
-        "format": "{icon}",
-        "sort-by-number": true,
-        "sort-by-name": false,
+    "sway/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": false,
+    },
+    "keyboard-state": {
+        "numlock": true,
+        "capslock": true,
+        "format": "{name} {icon}",
         "format-icons": {
-            "1": "1",
-            "2": "2",
-            "3": "3",
-            "4": "4",
-            "5": "5",
-            "6": "6",
-            "7": "7",
-            "8": "8",
-            "9": "9",
-            "10": "10",
-            "11": "L",
-            "12": "R"
+            "locked": "",
+            "unlocked": ""
         }
+    },
+    "sway/mode": {
+        "format": "{}"
+    },
+    "sway/scratchpad": {
+        "format": "{icon} {count}",
+        "show-empty": false,
+        "format-icons": ["", ""],
+        "tooltip": true,
+        "tooltip-format": "{app}: {title}"
+    },
+    "mpd": {
+        "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
+        "format-disconnected": "Disconnected ",
+        "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
+        "unknown-tag": "N/A",
+        "interval": 2,
+        "consume-icons": {
+            "on": " "
+        },
+        "random-icons": {
+            "off": "<span color=\"#f53c3c\"></span> ",
+            "on": " "
+        },
+        "repeat-icons": {
+            "on": " "
+        },
+        "single-icons": {
+            "on": "1 "
+        },
+        "state-icons": {
+            "paused": "",
+            "playing": ""
+        },
+        "tooltip-format": "MPD (connected)",
+        "tooltip-format-disconnected": "MPD (disconnected)"
     },
     "idle_inhibitor": {
         "format": "{icon}",
@@ -84,6 +113,9 @@
         // "format-full": "",
         "format-icons": ["", "", "", "", ""]
     },
+    "battery#bat2": {
+        "bat": "BAT2"
+    },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "{signalStrength}% ",
@@ -118,39 +150,39 @@
         "exec": "cat $HOME/.update_reminder",
         "format": "{}",
         "interval": 1,
-        "on-click": "$TERMINAL --title=Update $HOME/.config/scripts/helpers/update.sh"
+        "on-click": "$TERMINAL --title=Update $HOME/.config/sway/scripts/helpers/update.sh"
     },
     "custom/emoji": {
         "return-type": "json",
         "exec": "echo \"{\\\"text\\\": \\\"\\\", \\\"tooltip\\\": \\\"Emoji Picker\\\"}\"",
         "interval": "once",
-        "on-click": "$HOME/.config/scripts/launchers/emoji_picker.sh"
+        "on-click": "$HOME/.config/sway/scripts/launchers/emoji_picker.sh"
     },
     "custom/clipboard": {
         "return-type": "json",
         "exec": "echo \"{\\\"text\\\": \\\"\\\", \\\"tooltip\\\": \\\"Clipboard History\\\"}\"",
         "interval": "once",
-        "on-click": "$HOME/.config/scripts/launchers/clipboard_manager.sh copy",
-        "on-click-right": "$HOME/.config/scripts/launchers/clipboard_manager.sh delete",
-        "on-click-middle": "$HOME/.config/scripts/launchers/clipboard_manager.sh wipe"
+        "on-click": "$HOME/.config/sway/scripts/launchers/clipboard_manager.sh copy",
+        "on-click-right": "$HOME/.config/sway/scripts/launchers/clipboard_manager.sh delete",
+        "on-click-middle": "$HOME/.config/sway/scripts/launchers/clipboard_manager.sh wipe"
     },
     "custom/screenshot": {
         "return-type": "json",
         "exec": "echo \"{\\\"text\\\": \\\"\\\", \\\"tooltip\\\": \\\"Screenshot\\\"}\"",
         "interval": "once",
-        "on-click": "$HOME/.config/scripts/launchers/screenshot.sh"
+        "on-click": "$HOME/.config/sway/scripts/launchers/screenshot.sh"
     },
     "custom/colorpicker": {
         "return-type": "json",
         "exec": "echo \"{\\\"text\\\": \\\"\\\", \\\"tooltip\\\": \\\"Color Picker\\\"}\"",
         "interval": "once",
-        "on-click": "$HOME/.config/scripts/launchers/color_picker.sh"
+        "on-click": "sleep 0.1; $HOME/.config/sway/scripts/launchers/color_picker.sh"
     },
     "custom/powermenu": {
         "return-type": "json",
         "exec": "echo \"{\\\"text\\\": \\\"\\\", \\\"tooltip\\\": \\\"Power Menu\\\"}\"",
         "interval": "once",
-        "on-click": "wlogout",
+        "on-click": "$HOME/.config/sway/scripts/launchers/power_menu.sh",
     },
     "custom/media": {
         "format": "{icon} {}",

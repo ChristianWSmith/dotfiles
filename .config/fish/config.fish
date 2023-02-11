@@ -2,7 +2,7 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
     set -g fish_greeting
     if [ "$XDG_VTNR" = "1" ] && [ -z "$DISPLAY" ]
-        while ! ~/.config/scripts/launchers/hyprland.sh 2>&1 > /dev/null; :; end
+        while ! /usr/bin/sway 2>&1 > /dev/null; :; end
     end
     fish_add_path ~/.local/bin
     alias "fc" "footclient & disown"
@@ -17,6 +17,9 @@ if status is-interactive
     alias "chx" "chmod +x"
     alias "remove-orphans" "yay -Qdtq | yay -Rns -"
     alias "adopt-orphans" "pacman -Qdtq | pacman -D --asexplicit -"
+    alias "current-bg" "~/.config/sway/scripts/helpers/current_swaybg.sh"
+    alias "remove-bg" "~/.config/sway/scripts/helpers/remove_bg.sh"
+    alias "swaylock" "~/.config/sway/scripts/launchers/swaylock.sh"
 end
 set "NEWT_COLORS" "'
          root=blue,black

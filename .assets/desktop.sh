@@ -6,27 +6,31 @@ if [ "$EUID" -eq 0 ]
     exit
 fi
 
-rm -f ~/.config/hypr/display.conf
-/bin/bash -c 'tee -a ~/.config/hypr/display.conf <<EOF
-monitor=DP-2, 1920x1080, 0x0, 1
-monitor=DP-1, 1920x1080@240, 1920x0, 1
-monitor=DP-3, 1920x1080, 3840x0, 1
+rm -f ~/.config/sway/display
+/bin/bash -c 'tee -a ~/.config/sway/display <<EOF
+set \$wsL "L"
+set \$wsR "R"
 
-bind = $mainMod SHIFT, left, movewindow, mon:l
-bind = $mainMod SHIFT, right, movewindow, mon:r
+output DP-1 pos 1920 0 res 1920x1080
+output DP-2 pos 0 0 res 1920x1080
+output DP-3 pos 3840 0 res 1920x1080
 
-wsbind=11,DP-2
-wsbind=12,DP-3
-wsbind=1,DP-1
-wsbind=2,DP-1
-wsbind=3,DP-1
-wsbind=4,DP-1
-wsbind=5,DP-1
-wsbind=6,DP-1
-wsbind=7,DP-1
-wsbind=8,DP-1
-wsbind=9,DP-1
-wsbind=10,DP-1
+set \$monitor_left DP-2
+set \$monitor_center DP-1
+set \$monitor_right DP-3
+
+workspace \$ws1 output \$monitor_center
+workspace \$ws2 output \$monitor_center
+workspace \$ws3 output \$monitor_center
+workspace \$ws4 output \$monitor_center
+workspace \$ws5 output \$monitor_center
+workspace \$ws6 output \$monitor_center
+workspace \$ws7 output \$monitor_center
+workspace \$ws8 output \$monitor_center
+workspace \$ws9 output \$monitor_center
+workspace \$ws10 output \$monitor_center
+workspace \$wsL output \$monitor_left
+workspace \$wsR output \$monitor_right
 EOF' > /dev/null
 
 sudo /bin/bash -c 'rm -f /etc/modprobe.d/88x2bu.conf; tee -a /etc/modprobe.d/88x2bu.conf <<EOF
