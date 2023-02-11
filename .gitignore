@@ -15,6 +15,12 @@
 !.local/share
 !.local/share/applications
 !.local/share/applications/discord.desktop
+!.local/share/applications/messenger.desktop
+!.local/share/icons
+!.local/share/icons/discord.svg
+!.local/share/icons/foxwq.png
+!.local/share/icons/messenger.png
+!.local/share/icons/minecraft.png
 !.assets
 !.assets/**
 !.config
