@@ -4,7 +4,7 @@ StartupWMClass=messenger
 Comment=Facebook messenger.
 GenericName=Internet Messenger
 Exec=google-chrome-stable --new-window --enable-features=WebRTCPipeWireCapturer --app="https://www.messenger.com/login/"
-Icon=messenger
+Icon=fbmessenger
 Type=Application
 Categories=Network;InstantMessaging;
 Path=/usr/bin
