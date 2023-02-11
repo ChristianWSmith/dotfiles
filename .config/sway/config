@@ -7,12 +7,16 @@ input type:touchpad {
 
 exec --no-startup-id dex --autostart --environment sway
 
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
+exec systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
+exec xrandr --output XWAYLAND0 --primary
+exec ~/.config/scripts/helpers/enable_screenshare.sh
+
 # Use pactl to adjust volume in PulseAudio.
-set $refresh_swaystatus killall -SIGUSR1 swaystatus
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_swaystatus
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_swaystatus
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_swaystatus
-bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_swaystatus
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10%
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
 # use these keys for focus, movement, and resize directions when reaching for
 # the arrows is not convenient
@@ -139,24 +143,16 @@ bindsym $mod+Shift+b exec --no-startup-id ~/.config/scripts/launchers/swaybg.sh 
 
 # resize window (you can also use the mouse for that)
 mode "" {
-        # These bindings trigger as soon as you enter the resize mode
-
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
         bindsym $left       resize shrink width 10 px or 10 ppt
         bindsym $down       resize shrink height 10 px or 10 ppt
         bindsym $up         resize grow height 10 px or 10 ppt
         bindsym $right      resize grow width 10 px or 10 ppt
 
-        # same bindings, but for the arrow keys
         bindsym Left        resize shrink width 10 px or 10 ppt
         bindsym Down        resize shrink height 10 px or 10 ppt
         bindsym Up          resize grow height 10 px or 10 ppt
         bindsym Right       resize grow width 10 px or 10 ppt
 
-        # back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
         bindsym Escape mode "default"
         bindsym $mod+Shift+r mode "default"
@@ -175,7 +171,6 @@ mode "" {
     bindsym Up mark --add "_swap", focus up, swap container with mark "_swap", focus up, unmark "_swap"
     bindsym Right mark --add "_swap", focus right, swap container with mark "_swap", focus right, unmark "_swap"
     
-    # Return to default mode
     bindsym Return mode "default"
     bindsym Escape mode "default"
     bindsym $mod+Shift+s mode "defualt"
@@ -252,5 +247,3 @@ exec_always ~/.config/scripts/launchers/dunst.sh &
 exec wl-paste --watch cliphist store
 # -CLIPHIST
 
-exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
-exec ~/.config/scripts/helpers/enable_screenshare.sh
