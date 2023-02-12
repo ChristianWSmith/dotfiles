@@ -5,6 +5,8 @@ input type:touchpad {
     natural_scroll enabled
 }
 
+mouse_warping container
+
 exec --no-startup-id dex --autostart --environment sway
 
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
