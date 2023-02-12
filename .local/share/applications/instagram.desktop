@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Instagram
+StartupWMClass=instagram
+Comment=Instagram
+GenericName=Internet Messenger
+Exec=google-chrome-stable --new-window --enable-extensions --enable-features=WebRTCPipeWireCapturer --app="https://www.instagram.com/"
+Icon=instagram
+Type=Application
+Categories=Network;InstantMessaging;
+Path=/usr/bin
