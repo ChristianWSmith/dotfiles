@@ -20,6 +20,7 @@ if status is-interactive
     alias "current-bg" "~/.config/scripts/helpers/current_swaybg.sh"
     alias "remove-bg" "~/.config/scripts/helpers/remove_bg.sh"
     alias "swaylock" "~/.config/scripts/launchers/swaylock.sh"
+    alias "ex" "~/.config/scripts/helpers/ex.sh"
 end
 set "NEWT_COLORS" "'
          root=blue,black
