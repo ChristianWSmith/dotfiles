@@ -37,7 +37,7 @@ async def enforce_layout(workspace, sway):
 
     # evict non-masters
     for node in workspace.nodes:
-        if master_mark in node.marks
+        if master_mark in node.marks:
             if len(node.nodes) > 1:
                 for child in node.nodes[1:]:
                     if TEMP_MASTER_MARK not in child.marks:

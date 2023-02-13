@@ -91,8 +91,8 @@ async def move(sway):
         print(f"Usage: {sys.argv[0]} {MOVE_COMMAND} [{'|'.join(DIRECTIONS.keys())}]")
         exit(1)
 
-    forward = DIRECTIONS[sys.argv[1]][FORWARD]
-    backward = DIRECTIONS[sys.argv[1]][BACKWARD]
+    forward = DIRECTIONS[sys.argv[2]][FORWARD]
+    backward = DIRECTIONS[sys.argv[2]][BACKWARD]
 
     pre_tree = await sway.get_tree()
     pre_focused = pre_tree.find_focused()
@@ -108,7 +108,7 @@ async def move(sway):
         await sway.command(f"swap container with mark _swap; focus {forward}; unmark _swap")
     else:
         await sway.command(f"focus {backward}; unmark _swap")
-        await move_to_workspace_impl(pre_tree, pre_workspace, post_workspace, pre_focus)
+        await move_to_workspace_impl(pre_tree, pre_workspace, post_workspace, pre_focused)
 
 
 async def move_to_workspace(sway):
