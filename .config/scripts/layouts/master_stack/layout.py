@@ -5,21 +5,28 @@ from functools import partial
 from i3ipc import Event
 from i3ipc.aio import Connection
 from common import MASTER_PREFIX, STACK_PREFIX, TEMP_MASTER_MARK
-import subprocess
 
 
-async def enforce_layout_workspace(workspace, sway):
+async def enforce_layout(workspace, sway):
     tiled_windows = [leaf for leaf in workspace.leaves() if not leaf.type == "floating_con"]
     master_mark = MASTER_PREFIX + workspace.name
     stack_mark = STACK_PREFIX + workspace.name
+
     if len(tiled_windows) == 1:
+        # collapse needlessly long branches
         if workspace.nodes[0] != tiled_windows[0]:
             await tiled_windows[0].command("move up")
+
+        # set splitting
         await tiled_windows[0].command("splith")
     elif len(tiled_windows) == 2:
         left, right = tiled_windows
+
+        # set splitting
         await left.command("splitv")
         await right.command("splitv")
+
+        # set master/stack marks
         if master_mark not in left.parent.marks or stack_mark not in right.parent.marks:
             tree = await sway.get_tree()
             workspace = tree.find_by_id(workspace.id)
@@ -27,31 +34,20 @@ async def enforce_layout_workspace(workspace, sway):
             right = tree.find_by_id(right.id)
             await left.parent.command(f"mark --add {master_mark}")
             await right.parent.command(f"mark --add {stack_mark}")
-    if workspace.nodes and master_mark in workspace.nodes[0].marks and len(workspace.nodes[0].nodes) > 1:
-        for node in workspace.nodes[0].nodes[1:]:
-            if TEMP_MASTER_MARK not in node.marks:
-                await node.command(f"move container to mark {stack_mark}")
 
-
-async def enforce_layout(head, sway):
-    if head.type == "workspace":
-        await enforce_layout_workspace(head, sway)
-    else:
-        for node in head.nodes:
-            await enforce_layout(node, sway)
-
-
-def dump(head, prefix="-"):
-    print(prefix, head.type, head.name, head.marks)
-    for node in head.nodes:
-        dump(node, prefix + "-")
+    # evict non-masters
+    for node in workspace.nodes:
+        if master_mark in node.marks
+            if len(node.nodes) > 1:
+                for child in node.nodes[1:]:
+                    if TEMP_MASTER_MARK not in child.marks:
+                        await child.command(f"move container to mark {stack_mark}")
+            break
 
 
 async def trigger(sway, _) -> None:
-    tree = await sway.get_tree()
-    await enforce_layout(tree, sway)
-    # subprocess.run(["clear"])
-    # dump(await sway.get_tree())
+    for workspace in (await sway.get_tree()).workspaces():
+        await enforce_layout(workspace, sway)
 
 
 async def amain():

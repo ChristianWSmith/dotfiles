@@ -7,24 +7,36 @@ from i3ipc.aio import Connection
 import sys
 from common import MASTER_PREFIX, STACK_PREFIX, TEMP_MASTER_MARK
 
-commands = ["move", "move_to_workspace", "kill"]
 
-directions = {
-    "u": {
-        "f": "up",
-        "b": "down"
+MOVE_COMMAND = "move"
+MOVE_TO_WORKSPACE_COMMAND = "move_to_workspace"
+KILL_COMMAND = "kill"
+COMMANDS = [MOVE_COMMAND, MOVE_TO_WORKSPACE_COMMAND, KILL_COMMAND]
+
+DIRECTION_UP = "u"
+DIRECTION_DOWN = "d"
+DIRECTION_LEFT = "l"
+DIRECTION_RIGHT = "r"
+
+FORWARD = "f"
+BACKWARD = "b"
+
+DIRECTIONS = {
+    DIRECTION_UP: {
+        FORWARD: "up",
+        BACKWARD: "down"
     },
-    "d": {
-        "f": "down",
-        "b": "up"
+    DIRECTION_DOWN: {
+        FORWARD: "down",
+        BACKWARD: "up"
     },
-    "l": {
-        "f": "left",
-        "b": "right"
+    DIRECTION_LEFT: {
+        FORWARD: "left",
+        BACKWARD: "right"
     },
-    "r": {
-        "f": "right",
-        "b": "left"
+    DIRECTION_RIGHT: {
+        FORWARD: "right",
+        BACKWARD: "left"
     }
 }
 
@@ -75,12 +87,12 @@ async def move_to_workspace_impl(tree, from_workspace, to_workspace, focus):
 # COMMANDS
 
 async def move(sway):
-    if sys.argv[2] not in directions.keys():
-        print(f"Usage: {sys.argv[0]} move [{'|'.join(directions.keys())}]")
+    if sys.argv[2] not in DIRECTIONS.keys():
+        print(f"Usage: {sys.argv[0]} {MOVE_COMMAND} [{'|'.join(DIRECTIONS.keys())}]")
         exit(1)
 
-    forward = directions[sys.argv[1]]["f"]
-    backward = directions[sys.argv[1]]["b"]
+    forward = DIRECTIONS[sys.argv[1]][FORWARD]
+    backward = DIRECTIONS[sys.argv[1]][BACKWARD]
 
     pre_tree = await sway.get_tree()
     pre_focused = pre_tree.find_focused()
@@ -98,9 +110,10 @@ async def move(sway):
         await sway.command(f"focus {backward}; unmark _swap")
         await move_to_workspace_impl(pre_tree, pre_workspace, post_workspace, pre_focus)
 
+
 async def move_to_workspace(sway):
     if len(sys.argv) < 3:
-        print("Usage: {sys.argv[0]} move_to_workspace [workspace_name]")
+        print("Usage: {sys.argv[0]} {MOVE_TO_WORKSPACE_COMMAND} [workspace_name]")
         exit(1) 
     to_workspace_name = sys.argv[2]
     tree = await sway.get_tree()
@@ -112,9 +125,9 @@ async def move_to_workspace(sway):
             to_workspace = workspace
             break
     if to_workspace is None:
-        print("Error: Workspace \"{to_workspace_name}\" not found.")
-        exit(1)
-    await move_to_workspace_impl(tree, from_workspace, to_workspace, focus)
+        await focus.command(f"move container to workspace {to_workspace_name}")
+    else:
+        await move_to_workspace_impl(tree, from_workspace, to_workspace, focus)
 
 
 async def kill(sway):
@@ -134,18 +147,18 @@ async def kill(sway):
         await promote_post(workspace, master_mark)
 
 
+COMMAND_MAPPING = {
+    MOVE_COMMAND: move,
+    MOVE_TO_WORKSPACE_COMMAND: move_to_workspace,
+    KILL_COMMAND: kill
+}
+
 async def amain():
     sway = await Connection(auto_reconnect=True).connect()
-    
-    if sys.argv[1] == "move":
-        await move(sway)
-    elif sys.argv[1] == "move_to_workspace":
-        await move_to_workspace(sway)
-    elif sys.argv[1] == "kill":
-        await kill(sway)
-    else:
-        print("Error")
+    if len(sys.argv) < 2 or sys.argv[1] not in COMMANDS:
+        print(f"Usage: {sys.argv[0]} [{'|'.join(COMMANDS)}] <args>")
         exit(1)
+    await COMMAND_MAPPING[sys.argv[1]](sway)
 
 
 def main():
