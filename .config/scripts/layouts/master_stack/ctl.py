@@ -95,13 +95,13 @@ async def move_to_workspace_impl(sway, tree, from_workspace, to_workspace, focus
 
 # COMMANDS
 
-async def move(sway):
-    if sys.argv[2] not in DIRECTIONS.keys():
-        print(f"Usage: {sys.argv[0]} {MOVE_COMMAND} [{'|'.join(DIRECTIONS.keys())}]")
+async def move(sway, args):
+    if args[2] not in DIRECTIONS.keys():
+        print(f"Usage: {args[0]} {MOVE_COMMAND} [{'|'.join(DIRECTIONS.keys())}]")
         exit(1)
 
-    forward = DIRECTIONS[sys.argv[2]][FORWARD]
-    backward = DIRECTIONS[sys.argv[2]][BACKWARD]
+    forward = DIRECTIONS[args[2]][FORWARD]
+    backward = DIRECTIONS[args[2]][BACKWARD]
 
     pre_tree = await sway.get_tree()
     pre_focused = pre_tree.find_focused()
@@ -120,11 +120,11 @@ async def move(sway):
         await move_to_workspace_impl(sway, pre_tree, pre_workspace, post_workspace, pre_focused, focus_follow=True)
 
 
-async def move_to_workspace(sway):
-    if len(sys.argv) < 3:
-        print("Usage: {sys.argv[0]} {MOVE_TO_WORKSPACE_COMMAND} [workspace_name]")
+async def move_to_workspace(sway, args):
+    if len(args) < 3:
+        print("Usage: {args[0]} {MOVE_TO_WORKSPACE_COMMAND} [workspace_name]")
         exit(1) 
-    to_workspace_name = sys.argv[2]
+    to_workspace_name = args[2]
     tree = await sway.get_tree()
     focus = tree.find_focused()
     from_workspace = focus.workspace()
@@ -138,7 +138,7 @@ async def move_to_workspace(sway):
     await move_to_workspace_impl(sway, tree, from_workspace, to_workspace, focus)
 
 
-async def kill(sway):
+async def kill(sway, _):
     tree = await sway.get_tree()
     focused = tree.find_focused()
     workspace = focused.workspace()
@@ -161,16 +161,18 @@ COMMAND_MAPPING = {
     KILL_COMMAND: kill
 }
 
-async def amain():
-    sway = await Connection(auto_reconnect=True).connect()
+
+async def run_command(sway, args):
+    if sway is None:
+        sway = await Connection(auto_reconnect=True).connect()
+    await COMMAND_MAPPING[args[1]](sway, args)
+
+
+def main(): 
     if len(sys.argv) < 2 or sys.argv[1] not in COMMANDS:
         print(f"Usage: {sys.argv[0]} [{'|'.join(COMMANDS)}] <args>")
         exit(1)
-    await COMMAND_MAPPING[sys.argv[1]](sway)
-
-
-def main():
-    asyncio.run(amain())
+    asyncio.run(run_command(None, sys.argv))
 
 
 if __name__ == "__main__":

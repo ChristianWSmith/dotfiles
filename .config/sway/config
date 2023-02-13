@@ -242,4 +242,4 @@ exec_always ~/.config/scripts/launchers/dunst.sh &
 exec wl-paste --watch cliphist store
 # -CLIPHIST
 
-include ~/.config/sway/master_stack
+include ~/.config/sway/master_stack_client_server

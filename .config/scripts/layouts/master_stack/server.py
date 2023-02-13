@@ -1,28 +1,32 @@
 #!/usr/bin/env python
 
+from ctl import *
 import socket
 from socket import socket, gethostname
 from threading import Thread
-from random import random
-from time import sleep
 from queue import Queue
+import sys
 
 messages = Queue()
 processing = False
 
 
-def process():
+async def aprocess(sway):
     global processing
     processing = True
     while not messages.empty():
         message = messages.get()
-        print("processing", message)
-        sleep(random())
-        print("processed", message)
+        args = [sys.argv[0]] + message.split(" ")
+        await run_command(sway, args)
     processing = False
 
 
-def main():
+def process(sway):
+    asyncio.run(aprocess(sway))
+
+
+async def amain():
+    sway = await Connection(auto_reconnect=True).connect()
     host = gethostname()
     port = 5000
     server = socket()
@@ -31,11 +35,14 @@ def main():
     while True:
         conn, _ = server.accept()
         message = conn.recv(1024).decode()
-        print("received", message)
         messages.put(message)
         if not processing:
-            Thread(target=process).start()
+            Thread(target=process, args=(sway,)).start()
     conn.close()
+
+
+def main():
+    asyncio.run(amain())
 
 
 if __name__ == '__main__':
