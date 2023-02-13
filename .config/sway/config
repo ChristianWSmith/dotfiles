@@ -5,6 +5,11 @@ input type:touchpad {
     natural_scroll enabled
 }
 
+input type:keyboard {
+    repeat_delay 300
+    repeat_rate 50
+}
+
 mouse_warping container
 
 exec --no-startup-id dex --autostart --environment sway
