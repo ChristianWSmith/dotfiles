@@ -41,6 +41,12 @@ DIRECTIONS = {
 }
 
 
+class DummyNode():
+    def __init__(self, name):
+        self.name = name
+        self.nodes = []
+
+
 # HELPERS
 
 async def promote_pre(workspace, master_mark, stack_mark):
@@ -128,9 +134,8 @@ async def move_to_workspace(sway):
             to_workspace = workspace
             break
     if to_workspace is None:
-        await focus.command(f"move container to workspace {to_workspace_name}")
-    else:
-        await move_to_workspace_impl(sway, tree, from_workspace, to_workspace, focus)
+        to_workspace = DummyNode(to_workspace_name)
+    await move_to_workspace_impl(sway, tree, from_workspace, to_workspace, focus)
 
 
 async def kill(sway):
