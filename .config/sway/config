@@ -40,9 +40,6 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec $TERMINAL
 
-# kill focused window
-bindsym $mod+Shift+q kill
-
 # runner
 bindsym $mod+d exec --no-startup-id ~/.config/scripts/helpers/new_fuzzel.sh
 
@@ -62,30 +59,6 @@ bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
-
-# swap commands
-set $swap_left mark --add "_swap", focus left, swap container with mark "_swap", focus left, unmark "_swap"
-set $swap_down mark --add "_swap", focus down, swap container with mark "_swap", focus down, unmark "_swap"
-set $swap_up mark --add "_swap", focus up, swap container with mark "_swap", focus up, unmark "_swap"
-set $swap_right mark --add "_swap", focus right, swap container with mark "_swap", focus right, unmark "_swap"
-
-# move focused window
-bindsym $mod+Shift+$left move left
-bindsym $mod+Shift+$down move down
-bindsym $mod+Shift+$up move up
-bindsym $mod+Shift+$right move right
-
-# move focused window:
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Right move right
-
-# split in horizontal orientation
-bindsym $mod+h split h
-
-# split in vertical orientation
-bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -135,18 +108,6 @@ bindsym $mod+7 workspace number $ws7
 bindsym $mod+8 workspace number $ws8
 bindsym $mod+9 workspace number $ws9
 bindsym $mod+0 workspace number $ws10
-
-# move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace number $ws1
-bindsym $mod+Shift+2 move container to workspace number $ws2
-bindsym $mod+Shift+3 move container to workspace number $ws3
-bindsym $mod+Shift+4 move container to workspace number $ws4
-bindsym $mod+Shift+5 move container to workspace number $ws5
-bindsym $mod+Shift+6 move container to workspace number $ws6
-bindsym $mod+Shift+7 move container to workspace number $ws7
-bindsym $mod+Shift+8 move container to workspace number $ws8
-bindsym $mod+Shift+9 move container to workspace number $ws9
-bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -242,4 +203,4 @@ exec_always ~/.config/scripts/launchers/dunst.sh &
 exec wl-paste --watch cliphist store
 # -CLIPHIST
 
-include ~/.config/sway/master_stack_client_server
+include ~/.config/sway/master_stack
