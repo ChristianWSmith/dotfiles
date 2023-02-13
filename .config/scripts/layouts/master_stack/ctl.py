@@ -60,7 +60,7 @@ async def promote_post(workspace, master_mark):
             break
 
 
-async def move_to_workspace_impl(tree, from_workspace, to_workspace, focus):
+async def move_to_workspace_impl(sway, tree, from_workspace, to_workspace, focus, focus_follow=False):
     from_master_mark = MASTER_PREFIX + from_workspace.name
     to_stack_mark = STACK_PREFIX + to_workspace.name
 
@@ -82,6 +82,9 @@ async def move_to_workspace_impl(tree, from_workspace, to_workspace, focus):
 
     if promoted:
         await promote_post(from_workspace, from_master_mark)
+
+    if focus_follow:
+        await sway.command(f"[con_id={focus.id}] focus")
 
 
 # COMMANDS
@@ -108,7 +111,7 @@ async def move(sway):
         await sway.command(f"swap container with mark _swap; focus {forward}; unmark _swap")
     else:
         await sway.command(f"focus {backward}; unmark _swap")
-        await move_to_workspace_impl(pre_tree, pre_workspace, post_workspace, pre_focused)
+        await move_to_workspace_impl(sway, pre_tree, pre_workspace, post_workspace, pre_focused, focus_follow=True)
 
 
 async def move_to_workspace(sway):
@@ -127,7 +130,7 @@ async def move_to_workspace(sway):
     if to_workspace is None:
         await focus.command(f"move container to workspace {to_workspace_name}")
     else:
-        await move_to_workspace_impl(tree, from_workspace, to_workspace, focus)
+        await move_to_workspace_impl(sway, tree, from_workspace, to_workspace, focus)
 
 
 async def kill(sway):
