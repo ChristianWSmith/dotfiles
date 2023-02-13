@@ -32,8 +32,9 @@ async def enforce_layout(workspace, sway):
             workspace = tree.find_by_id(workspace.id)
             left = tree.find_by_id(left.id)
             right = tree.find_by_id(right.id)
-            await left.parent.command(f"mark --add {master_mark}")
-            await right.parent.command(f"mark --add {stack_mark}")
+            if left is not None and right is not None:
+                await left.parent.command(f"mark --add {master_mark}")
+                await right.parent.command(f"mark --add {stack_mark}")
 
     # evict non-masters
     for node in workspace.nodes:
