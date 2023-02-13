@@ -1,4 +1,5 @@
 #!/usr/bin/env python
 
-MASTER_PREFIX="master-"
-STACK_PREFIX="stack-"
+MASTER_PREFIX="_master-"
+STACK_PREFIX="_stack-"
+TEMP_MASTER_MARK="_temp"

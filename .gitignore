@@ -28,6 +28,7 @@
 !.config
 !.config/scripts
 !.config/scripts/**
+.config/scripts/layouts/master_stack/__pycache__
 !.config/electron-flags.conf
 !.config/electron13-flags.conf
 !.config/electron19-flags.conf

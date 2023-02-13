@@ -4,7 +4,7 @@ import asyncio
 from functools import partial
 from i3ipc import Event
 from i3ipc.aio import Connection
-from common import MASTER_PREFIX, STACK_PREFIX
+from common import MASTER_PREFIX, STACK_PREFIX, TEMP_MASTER_MARK
 import subprocess
 
 
@@ -22,10 +22,15 @@ async def enforce_layout_workspace(workspace, sway):
         await right.command("splitv")
         if master_mark not in left.parent.marks or stack_mark not in right.parent.marks:
             tree = await sway.get_tree()
+            workspace = tree.find_by_id(workspace.id)
             left = tree.find_by_id(left.id)
             right = tree.find_by_id(right.id)
             await left.parent.command(f"mark --add {master_mark}")
             await right.parent.command(f"mark --add {stack_mark}")
+    if workspace.nodes and master_mark in workspace.nodes[0].marks and len(workspace.nodes[0].nodes) > 1:
+        for node in workspace.nodes[0].nodes[1:]:
+            if TEMP_MASTER_MARK not in node.marks:
+                await node.command(f"move container to mark {stack_mark}")
 
 
 async def enforce_layout(head, sway):
