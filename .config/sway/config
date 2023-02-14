@@ -149,17 +149,6 @@ exec_always {
 }
 # -GNOME SETTINGS
 
-# +COLORS
-# class                 border  backgr. text    indicator child_border
-client.focused          #4c7899 #3584e4 #ffffff #00ffff   #3584e4
-client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
-client.unfocused        #333333 #222222 #888888 #292d2e   #222222
-client.urgent           #2f343a #c01c28 #ffffff #c01c28   #c01c28
-client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
-client.background       #ffffff
-# -COLORS
-
-
 # +waybar widget binds
 bindsym $mod+o exec --no-startup-id ~/.config/scripts/launchers/emoji_picker.sh
 bindsym $mod+c exec --no-startup-id ~/.config/scripts/launchers/clipboard_manager.sh copy
