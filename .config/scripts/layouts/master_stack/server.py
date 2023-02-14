@@ -32,11 +32,16 @@ async def amain():
     server.bind((gethostname(), PORT))
     server.listen(1)
     while True:
-        conn, _ = server.accept()
-        message = conn.recv(1024).decode()
-        messages.put(message)
-        if not processing:
-            Thread(target=process, args=(sway,)).start()
+        try:
+            conn, _ = server.accept()
+            message = conn.recv(1024).decode()
+            messages.put(message)
+            if not processing:
+                Thread(target=process, args=(sway,)).start()
+        except Exception as e:
+            f = open(f"{os.environ['HOME']}/.config/scripts/layouts/master_stack/server.log", "a")
+            f.write(str(e))
+            f.close()
     conn.close()
 
 
