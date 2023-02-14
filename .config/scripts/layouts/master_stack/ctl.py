@@ -82,15 +82,18 @@ async def move_to_workspace_impl(sway, tree, from_workspace, to_workspace, focus
             break
 
     if move_to_stack_mark:
-        await focus.command(f"move container to mark {to_stack_mark}")
+        if focus_follow:
+            await focus.command(f"move container to mark {to_stack_mark}, [con_id={focus.id}] focus")
+        else:
+            await focus.command(f"move container to mark {to_stack_mark}")
     else:
-        await focus.command(f"move container to workspace {to_workspace.name}")
+        if focus_follow:
+            await focus.command(f"move container to workspace {to_workspace.name}, [con_id={focus.id}] focus")
+        else:
+            await focus.command(f"move container to workspace {to_workspace.name}")
 
     if promoted:
         await promote_post(from_workspace, from_master_mark)
-
-    if focus_follow:
-        await sway.command(f"[con_id={focus.id}] focus")
 
 
 # COMMANDS

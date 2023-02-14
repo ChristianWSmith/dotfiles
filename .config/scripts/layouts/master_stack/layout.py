@@ -47,8 +47,11 @@ async def enforce_layout(workspace, sway):
 
 
 async def trigger(sway, _) -> None:
-    for workspace in (await sway.get_tree()).workspaces():
+    tree = await sway.get_tree()
+    focused = tree.find_focused()
+    for workspace in (tree).workspaces():
         await enforce_layout(workspace, sway)
+    await sway.command(f"[con_id={focused.id}] focus")
 
 
 async def amain():
