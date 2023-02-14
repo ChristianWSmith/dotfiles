@@ -165,7 +165,10 @@ COMMAND_MAPPING = {
 async def run_command(sway, args):
     if sway is None:
         sway = await Connection(auto_reconnect=True).connect()
-    await COMMAND_MAPPING[args[1]](sway, args)
+    try:
+        await COMMAND_MAPPING[args[1]](sway, args)
+    except:
+        pass
 
 
 def main(): 
