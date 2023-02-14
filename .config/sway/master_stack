@@ -35,5 +35,4 @@ bindsym $mod+Shift+8 exec ~/.config/scripts/layouts/master_stack/client.py move_
 bindsym $mod+Shift+9 exec ~/.config/scripts/layouts/master_stack/client.py move_to_workspace $ws9
 bindsym $mod+Shift+0 exec ~/.config/scripts/layouts/master_stack/client.py move_to_workspace $ws10
 
-exec ~/.config/scripts/layouts/master_stack/layout.py &
 exec ~/.config/scripts/layouts/master_stack/server.py &
