@@ -136,7 +136,7 @@ bindsym $mod+Shift+r mode ""
 
 # +GNOME SETTINGS
 set $gnome-schema org.gnome.desktop.interface
-exec_always {
+exec {
     gsettings set $gnome-schema gtk-theme 'Adwaita-dark'
     gsettings set $gnome-schema icon-theme 'Papirus-Dark'
     gsettings set $gnome-schema font-name 'Noto Sans Regular 11'
@@ -168,28 +168,13 @@ for_window [class="^.*"] border pixel 2
 # -APPEARANCE
 
 # +UI
-# TODO: does this need exec_always?
-exec_always ~/.config/scripts/launchers/swaybg.sh &
-exec_always ~/.config/scripts/launchers/waybar.sh &
+exec ~/.config/scripts/launchers/swaybg.sh
+exec ~/.config/scripts/launchers/waybar.sh
 # -UI
 
-# +FOOT
-# TODO: does this need exec_always?
-exec_always /usr/bin/foot --server
-# -FOOT
-
-# +POLKIT
-# TODO: does this need exec_always?
-exec_always /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-# -POLKIT
-
-# +DUNST 
-# TODO: does this need exec_always?
-exec_always ~/.config/scripts/launchers/dunst.sh &
-# -DUSNT
-
-# +CLIPHIST
+exec /usr/bin/foot --server
+exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec dunst
 exec wl-paste --watch cliphist store
-# -CLIPHIST
 
 include ~/.config/sway/master_stack
