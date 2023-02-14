@@ -29,8 +29,7 @@
 !.config/scripts
 !.config/scripts/**
 .config/scripts/layouts/master_stack/__pycache__
-.config/scripts/layouts/master_stack/ctl.log
-.config/scripts/layouts/master_stack/layout.log
+.config/scripts/layouts/master_stack/*.log
 !.config/electron-flags.conf
 !.config/electron13-flags.conf
 !.config/electron19-flags.conf
