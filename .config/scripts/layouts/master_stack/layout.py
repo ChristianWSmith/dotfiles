@@ -6,6 +6,7 @@ from functools import partial
 from i3ipc import Event
 from i3ipc.aio import Connection
 from common import MASTER_PREFIX, STACK_PREFIX, TEMP_MASTER_MARK
+import traceback
 
 
 async def enforce_layout(workspace, sway):
@@ -54,9 +55,9 @@ async def trigger(sway, _) -> None:
         for workspace in (tree).workspaces():
             await enforce_layout(workspace, sway)
         await sway.command(f"[con_id={focused.id}] focus")
-    except Exception as e:
+    except:
         f = open(f"{os.environ['HOME']}/.config/scripts/layouts/master_stack/layout.log", "a")
-        f.write(str(e))
+        f.write(str(traceback.format_exc()))
         f.close()
 
 

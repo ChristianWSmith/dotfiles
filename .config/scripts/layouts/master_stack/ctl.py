@@ -7,6 +7,7 @@ from i3ipc.aio import Connection
 import sys
 import os
 from common import MASTER_PREFIX, STACK_PREFIX, TEMP_MASTER_MARK
+import traceback
 
 
 MOVE_COMMAND = "move"
@@ -171,9 +172,9 @@ async def run_command(sway, args):
         sway = await Connection(auto_reconnect=True).connect()
     try:
         await COMMAND_MAPPING[args[1]](sway, args)
-    except Exception as e:
+    except:
         f = open(f"{os.environ['HOME']}/.config/scripts/layouts/master_stack/ctl.log", "a")
-        f.write(str(e))
+        f.write(str(traceback.format_exc()))
         f.close()
 
 

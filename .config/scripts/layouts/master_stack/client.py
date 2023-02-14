@@ -3,6 +3,8 @@
 from socket import gethostname, socket
 import sys
 from common import PORT
+import traceback
+import os
 
 
 def main():
@@ -12,9 +14,9 @@ def main():
         message = " ".join(sys.argv[1:])
         client_socket.send(message.encode())
         client_socket.close()
-    except Exception as e:
+    except:
         f = open(f"{os.environ['HOME']}/.config/scripts/layouts/master_stack/client.log", "a")
-        f.write(str(e))
+        f.write(str(traceback.format_exc()))
         f.close()
 
 

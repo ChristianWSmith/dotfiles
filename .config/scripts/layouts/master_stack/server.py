@@ -8,6 +8,7 @@ from threading import Thread
 from queue import PriorityQueue
 import sys
 from common import PORT
+import traceback
 
 
 messages = PriorityQueue()
@@ -51,9 +52,9 @@ def connection_handler(sway):
             message = conn.recv(1024).decode()
             messages.put((1, message))
             start_processing(sway)
-        except Exception as e:
+        except Exception:
             f = open(f"{os.environ['HOME']}/.config/scripts/layouts/master_stack/server.log", "a")
-            f.write(str(e))
+            f.write(str(traceback.format_exc()))
             f.close()
     conn.close()
 
