@@ -1,3 +1,7 @@
+# splitting
+bindsym $mod+v splitv
+bindsym $mod+h splith
+
 # kill
 bindsym $mod+Shift+q kill
 
