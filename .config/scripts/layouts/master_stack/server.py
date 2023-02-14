@@ -5,12 +5,12 @@ from layout import *
 import socket
 from socket import socket, gethostname
 from threading import Thread
-from queue import Queue
+from queue import PriorityQueue
 import sys
 from common import PORT
 
 
-messages = Queue()
+messages = PriorityQueue()
 processing = False
 
 
@@ -18,7 +18,7 @@ async def aprocess(sway):
     global processing
     processing = True
     while not messages.empty():
-        message = messages.get()
+        _, message = messages.get()
         if message == "layout":
             await trigger(sway, None) 
         else:
@@ -37,7 +37,7 @@ def start_processing(sway):
 
 
 async def layout_trigger(sway, _):
-    messages.put("layout")
+    messages.put((0, "layout"))
     start_processing(sway)
 
 
@@ -49,7 +49,7 @@ def connection_handler(sway):
         try:
             conn, _ = server.accept()
             message = conn.recv(1024).decode()
-            messages.put(message)
+            messages.put((1, message))
             start_processing(sway)
         except Exception as e:
             f = open(f"{os.environ['HOME']}/.config/scripts/layouts/master_stack/server.log", "a")
