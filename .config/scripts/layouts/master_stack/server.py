@@ -6,6 +6,7 @@ from socket import socket, gethostname
 from threading import Thread
 from queue import Queue
 import sys
+from common import PORT
 
 messages = Queue()
 processing = False
@@ -27,10 +28,8 @@ def process(sway):
 
 async def amain():
     sway = await Connection(auto_reconnect=True).connect()
-    host = gethostname()
-    port = 5000
     server = socket()
-    server.bind((host, port))
+    server.bind((gethostname(), PORT))
     server.listen(1)
     while True:
         conn, _ = server.accept()
