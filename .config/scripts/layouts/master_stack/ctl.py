@@ -171,7 +171,7 @@ async def run_command(sway, args):
     try:
         await COMMAND_MAPPING[args[1]](sway, args)
     except:
-        pass
+        pass # TODO: log this somewhere
 
 
 def main(): 
