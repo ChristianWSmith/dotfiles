@@ -21,7 +21,6 @@ async def aprocess():
     global sway
     processing = True
     while not messages.empty():
-        print(messages.qsize())
         _, message = messages.get()
         if message == "layout":
             status = await trigger(sway, None) 
@@ -29,7 +28,7 @@ async def aprocess():
             args = [sys.argv[0]] + message.split(" ")
             status = await run_command(sway, args)
         if not status:
-            sway = await Connection(auto_reconnect=True).connect()
+            pass # sway = await Connection(auto_reconnect=True).connect()
     processing = False
 
 
