@@ -13,33 +13,38 @@ import traceback
 
 messages = PriorityQueue()
 processing = False
+sway = None
 
 
-async def aprocess(sway):
+async def aprocess():
     global processing
+    global sway
     processing = True
     while not messages.empty():
+        print(messages.qsize())
         _, message = messages.get()
         if message == "layout":
-            await trigger(sway, None) 
+            status = await trigger(sway, None) 
         else:
             args = [sys.argv[0]] + message.split(" ")
-            await run_command(sway, args)
+            status = await run_command(sway, args)
+        if not status:
+            sway = await Connection(auto_reconnect=True).connect()
     processing = False
 
 
-def process(sway):
-    asyncio.run(aprocess(sway))
+def process():
+    asyncio.run(aprocess())
 
 
-def start_processing(sway):
+def start_processing():
     if not processing:
-        Thread(target=process, args=(sway,)).start()
+        Thread(target=process).start()
 
 
 async def layout_trigger(sway, _):
     messages.put((0, "layout"))
-    start_processing(sway)
+    start_processing()
 
 
 def connection_handler(sway):
@@ -51,7 +56,7 @@ def connection_handler(sway):
             conn, _ = server.accept()
             message = conn.recv(1024).decode()
             messages.put((1, message))
-            start_processing(sway)
+            start_processing()
         except Exception:
             f = open(f"{os.environ['HOME']}/.config/scripts/layouts/master_stack/server.log", "a")
             f.write(str(traceback.format_exc()))
@@ -60,6 +65,7 @@ def connection_handler(sway):
 
 
 async def amain():
+    global sway
     sway = await Connection(auto_reconnect=True).connect()
     sway.on(Event.WINDOW_NEW, partial(layout_trigger))
     sway.on(Event.WINDOW_MOVE, partial(layout_trigger))

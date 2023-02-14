@@ -48,17 +48,19 @@ async def enforce_layout(workspace, sway):
             break
 
 
-async def trigger(sway, _) -> None:
+async def trigger(sway, _):
     try:
         tree = await sway.get_tree()
         focused = tree.find_focused()
         for workspace in (tree).workspaces():
             await enforce_layout(workspace, sway)
         await sway.command(f"[con_id={focused.id}] focus")
+        return True
     except:
         f = open(f"{os.environ['HOME']}/.config/scripts/layouts/master_stack/layout.log", "a")
         f.write(str(traceback.format_exc()))
         f.close()
+        return False
 
 
 async def amain():

@@ -172,10 +172,12 @@ async def run_command(sway, args):
         sway = await Connection(auto_reconnect=True).connect()
     try:
         await COMMAND_MAPPING[args[1]](sway, args)
+        return True
     except:
         f = open(f"{os.environ['HOME']}/.config/scripts/layouts/master_stack/ctl.log", "a")
         f.write(str(traceback.format_exc()))
         f.close()
+        return False
 
 
 def main(): 
