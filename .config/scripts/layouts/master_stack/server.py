@@ -16,6 +16,14 @@ processing = False
 sway = None
 
 
+def sync_trigger(sway):
+    asyncio.run(trigger(sway, None))
+
+
+def sync_run_command(sway, args):
+    asyncio.run(run_command(sway, args))
+
+
 async def aprocess():
     global processing
     global sway
@@ -23,10 +31,24 @@ async def aprocess():
     while not messages.empty():
         _, message = messages.get()
         if message == "layout":
-            status = await trigger(sway, None) 
+            status = True
+            trigger_thread = Thread(target=sync_trigger, args=(sway,))
+            trigger_thread.start()
+            trigger_thread.join(1)
+            if trigger_thread.is_alive():
+                trigger_thread.terminate()
+                trigger_thread.join()
+                status = False
         else:
+            status = True
             args = [sys.argv[0]] + message.split(" ")
-            status = await run_command(sway, args)
+            run_command_thread = Thread(target=sync_run_command, args=(sway, args,))
+            run_command_thread.start()
+            run_command_thread.join(1)
+            if run_command_thread.is_alive():
+                run_command_thread.terminate()
+                run_command_thread.join()
+                status = False
         if not status:
             sway.main_quit()
             sway = await Connection(auto_reconnect=True).connect()
