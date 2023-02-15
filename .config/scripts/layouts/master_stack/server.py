@@ -28,7 +28,7 @@ async def aprocess():
             args = [sys.argv[0]] + message.split(" ")
             status = await run_command(sway, args)
         if not status:
-            await sway.main_quit()
+            sway.main_quit()
             sway = await Connection(auto_reconnect=True).connect()
     processing = False
 
