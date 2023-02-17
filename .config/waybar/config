@@ -12,6 +12,10 @@
     "sway/workspaces": {
         "disable-scroll": true,
         "all-outputs": false,
+        "format": "{icon}",
+        "format-icons": {
+            "_hidden": "",
+        },
     },
     "keyboard-state": {
         "numlock": true,
