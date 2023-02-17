@@ -25,6 +25,7 @@
 !.local/share/icons/minecraft.png
 !.assets
 !.assets/**
+.assets/cache
 !.config
 !.config/scripts
 !.config/scripts/**
