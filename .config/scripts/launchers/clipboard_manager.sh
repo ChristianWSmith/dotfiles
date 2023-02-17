@@ -1,6 +1,6 @@
 #!/bin/bash
 
-list=$(cliphist list)
+list=$(cliphist list | head -n20)
 if [ "$list" = "" ]
 then
     notify-send -t 5000 "The clipboard is empty."
