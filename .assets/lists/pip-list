@@ -19,6 +19,8 @@ jaraco.functools
 jaraco.text
 lensfun
 lxml
+mercurial
+meson
 more-itertools
 numpy
 ordered-set
@@ -29,8 +31,10 @@ platformdirs
 ply
 psutil
 pulsemixer
+pycairo
 pycparser
 pydantic
+Pygments
 PyGObject
 python-xlib
 PyYAML
