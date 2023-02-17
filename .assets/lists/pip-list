@@ -1,4 +1,3 @@
-anytree
 argparse-extensions
 attrs
 autocommand
@@ -20,11 +19,6 @@ jaraco.functools
 jaraco.text
 lensfun
 lxml
-Mako
-Markdown
-MarkupSafe
-mercurial
-meson
 more-itertools
 numpy
 ordered-set
@@ -35,10 +29,8 @@ platformdirs
 ply
 psutil
 pulsemixer
-pycairo
 pycparser
 pydantic
-Pygments
 PyGObject
 python-xlib
 PyYAML

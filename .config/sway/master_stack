@@ -9,30 +9,30 @@ client.background       #ffffff
 # -COLORS
 
 # kill
-bindsym $mod+Shift+q exec ~/.config/scripts/layouts/master_stack/client.py kill
+bindsym $mod+Shift+q exec /git/dsl-rs/target/release/client kill
 
 # move focused window
-bindsym $mod+Shift+$left exec ~/.config/scripts/layouts/master_stack/client.py move left
-bindsym $mod+Shift+$down exec ~/.config/scripts/layouts/master_stack/client.py move down
-bindsym $mod+Shift+$up exec ~/.config/scripts/layouts/master_stack/client.py move up
-bindsym $mod+Shift+$right exec ~/.config/scripts/layouts/master_stack/client.py move right
+bindsym $mod+Shift+$left exec /git/dsl-rs/target/release/client move left
+bindsym $mod+Shift+$down exec /git/dsl-rs/target/release/client move down
+bindsym $mod+Shift+$up exec /git/dsl-rs/target/release/client move up
+bindsym $mod+Shift+$right exec /git/dsl-rs/target/release/client move right
 
 # move focused window:
-bindsym $mod+Shift+Left exec ~/.config/scripts/layouts/master_stack/client.py move left
-bindsym $mod+Shift+Up exec ~/.config/scripts/layouts/master_stack/client.py move up
-bindsym $mod+Shift+Down exec ~/.config/scripts/layouts/master_stack/client.py move down
-bindsym $mod+Shift+Right exec ~/.config/scripts/layouts/master_stack/client.py move right
+bindsym $mod+Shift+Left exec /git/dsl-rs/target/release/client move left
+bindsym $mod+Shift+Up exec /git/dsl-rs/target/release/client move up
+bindsym $mod+Shift+Down exec /git/dsl-rs/target/release/client move down
+bindsym $mod+Shift+Right exec /git/dsl-rs/target/release/client move right
 
 # move focused container to workspace
-bindsym $mod+Shift+1 exec ~/.config/scripts/layouts/master_stack/client.py move_to_workspace $ws1
-bindsym $mod+Shift+2 exec ~/.config/scripts/layouts/master_stack/client.py move_to_workspace $ws2
-bindsym $mod+Shift+3 exec ~/.config/scripts/layouts/master_stack/client.py move_to_workspace $ws3
-bindsym $mod+Shift+4 exec ~/.config/scripts/layouts/master_stack/client.py move_to_workspace $ws4
-bindsym $mod+Shift+5 exec ~/.config/scripts/layouts/master_stack/client.py move_to_workspace $ws5
-bindsym $mod+Shift+6 exec ~/.config/scripts/layouts/master_stack/client.py move_to_workspace $ws6
-bindsym $mod+Shift+7 exec ~/.config/scripts/layouts/master_stack/client.py move_to_workspace $ws7
-bindsym $mod+Shift+8 exec ~/.config/scripts/layouts/master_stack/client.py move_to_workspace $ws8
-bindsym $mod+Shift+9 exec ~/.config/scripts/layouts/master_stack/client.py move_to_workspace $ws9
-bindsym $mod+Shift+0 exec ~/.config/scripts/layouts/master_stack/client.py move_to_workspace $ws10
+bindsym $mod+Shift+1 exec /git/dsl-rs/target/release/client move_to_workspace $ws1
+bindsym $mod+Shift+2 exec /git/dsl-rs/target/release/client move_to_workspace $ws2
+bindsym $mod+Shift+3 exec /git/dsl-rs/target/release/client move_to_workspace $ws3
+bindsym $mod+Shift+4 exec /git/dsl-rs/target/release/client move_to_workspace $ws4
+bindsym $mod+Shift+5 exec /git/dsl-rs/target/release/client move_to_workspace $ws5
+bindsym $mod+Shift+6 exec /git/dsl-rs/target/release/client move_to_workspace $ws6
+bindsym $mod+Shift+7 exec /git/dsl-rs/target/release/client move_to_workspace $ws7
+bindsym $mod+Shift+8 exec /git/dsl-rs/target/release/client move_to_workspace $ws8
+bindsym $mod+Shift+9 exec /git/dsl-rs/target/release/client move_to_workspace $ws9
+bindsym $mod+Shift+0 exec /git/dsl-rs/target/release/client move_to_workspace $ws10
 
-exec ~/.config/scripts/layouts/master_stack/server.py &
+exec /git/dsl-rs/target/release/server

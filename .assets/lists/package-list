@@ -15,10 +15,12 @@ bison
 btop
 checkupdates-aur
 cliphist
+code
 cups
 cups-pdf
 debugedit
 dmenu
+dolphin-emu
 dunst
 dvd+rw-tools
 dvdauthor
@@ -127,10 +129,11 @@ qt6-wayland
 ranger
 reflector
 reflector-pacman-hook-git
+river
 rsync
 rtl88x2bu-dkms-git
 rtsp-simple-server-bin
-rust
+rustup
 sed
 slurp
 smartmontools
