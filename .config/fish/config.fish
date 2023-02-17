@@ -5,6 +5,7 @@ if status is-interactive
         while ! ~/.config/scripts/launchers/sway.sh 2>&1 > /dev/null; :; end
     end
     fish_add_path ~/.local/bin
+    alias "fetch" "pfetch | lolcat -F 0.2"
     alias "fc" "footclient & disown"
     alias "update-crontab" "crontab -l > ~/.assets/lists/crontab-dump"
     alias "update-package-list" "yay -Qe | cut -d' ' -f1 > ~/.assets/lists/package-list"
@@ -21,6 +22,7 @@ if status is-interactive
     alias "remove-bg" "~/.config/scripts/helpers/remove_bg.sh"
     alias "swaylock" "~/.config/scripts/launchers/swaylock.sh"
     alias "ex" "~/.config/scripts/helpers/ex.sh"
+    fetch
 end
 set "NEWT_COLORS" "'
          root=blue,black

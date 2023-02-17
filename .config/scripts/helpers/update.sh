@@ -1,6 +1,6 @@
 #!/bin/bash
 
-neofetch
+pfetch | lolcat -F 0.2
 echo "Updating..."
 if yay -Syu --needed --norebuild --noredownload --nocleanmenu --nodiffmenu --noremovemake
 then
