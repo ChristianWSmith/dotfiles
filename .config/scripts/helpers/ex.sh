@@ -2,26 +2,26 @@
 
 ex ()
 {
-  if [ -f "$1" ] ; then
-    case $1 in
-      *.tar.bz2)   tar xjf $1   ;;
-      *.tar.gz)    tar xzf $1   ;;
-      *.bz2)       bunzip2 $1   ;;
-      *.rar)       unrar x $1   ;;
-      *.gz)        gunzip $1    ;;
-      *.tar)       tar xf $1    ;;
-      *.tbz2)      tar xjf $1   ;;
-      *.tgz)       tar xzf $1   ;;
-      *.zip)       unzip $1     ;;
-      *.Z)         uncompress $1;;
-      *.7z)        7z x $1      ;;
-      *.deb)       ar x $1      ;;
-      *.tar.xz)    tar xf $1    ;;
-      *.tar.zst)   unzstd $1    ;;
-      *)           echo "'$1' cannot be extracted via ex()" ;;
+  if [ -f "$@" ] ; then
+    case "$@" in
+      *.tar.bz2)   tar xjf "$@"   ;;
+      *.tar.gz)    tar xzf "$@"   ;;
+      *.bz2)       bunzip2 "$@"   ;;
+      *.rar)       unrar x "$@"   ;;
+      *.gz)        gunzip "$@"    ;;
+      *.tar)       tar xf "$@"    ;;
+      *.tbz2)      tar xjf "$@"   ;;
+      *.tgz)       tar xzf "$@"   ;;
+      *.zip)       unzip "$@"     ;;
+      *.Z)         uncompress "$@";;
+      *.7z)        7z x "$@"      ;;
+      *.deb)       ar x "$@"      ;;
+      *.tar.xz)    tar xf "$@"    ;;
+      *.tar.zst)   unzstd "$@"    ;;
+      *)           echo "'"$@"' cannot be extracted via ex()" ;;
     esac
   else
-    echo "'$1' is not a valid file"
+    echo "'$@' is not a valid file"
   fi
 }
 
