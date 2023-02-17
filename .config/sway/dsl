@@ -1,0 +1,38 @@
+# +COLORS
+# class                 border  backgr. text    indicator child_border
+client.focused          #00ffff #3584e4 #ffffff #00ffff   #00ffff
+client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
+client.unfocused        #333333 #222222 #888888 #292d2e   #222222
+client.urgent           #2f343a #c01c28 #ffffff #c01c28   #c01c28
+client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+client.background       #ffffff
+# -COLORS
+
+# kill
+bindsym $mod+Shift+q exec dsl-client kill
+
+# move focused window
+bindsym $mod+Shift+$left exec dsl-client move left
+bindsym $mod+Shift+$down exec dsl-client move down
+bindsym $mod+Shift+$up exec dsl-client move up
+bindsym $mod+Shift+$right exec dsl-client move right
+
+# move focused window:
+bindsym $mod+Shift+Left exec dsl-client move left
+bindsym $mod+Shift+Up exec dsl-client move up
+bindsym $mod+Shift+Down exec dsl-client move down
+bindsym $mod+Shift+Right exec dsl-client move right
+
+# move focused container to workspace
+bindsym $mod+Shift+1 exec dsl-client move_to_workspace $ws1
+bindsym $mod+Shift+2 exec dsl-client move_to_workspace $ws2
+bindsym $mod+Shift+3 exec dsl-client move_to_workspace $ws3
+bindsym $mod+Shift+4 exec dsl-client move_to_workspace $ws4
+bindsym $mod+Shift+5 exec dsl-client move_to_workspace $ws5
+bindsym $mod+Shift+6 exec dsl-client move_to_workspace $ws6
+bindsym $mod+Shift+7 exec dsl-client move_to_workspace $ws7
+bindsym $mod+Shift+8 exec dsl-client move_to_workspace $ws8
+bindsym $mod+Shift+9 exec dsl-client move_to_workspace $ws9
+bindsym $mod+Shift+0 exec dsl-client move_to_workspace $ws10
+
+exec dsl-server
