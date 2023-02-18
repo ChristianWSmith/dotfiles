@@ -1,6 +1,8 @@
 #!/bin/bash
 
-if (echo "Updating..."; pfetch; yay -Syu --needed --norebuild --noredownload --nocleanmenu --nodiffmenu --noremovemake; printf "Press any key to continue..."; read -n1 -p "") | lolcat
+(pfetch; echo "Updating...") | lolcat
+
+if yay -Syu --needed --norebuild --noredownload --nocleanmenu --nodiffmenu --noremovemake
 then
     notify-send -t 5000 "Update complete."
     text=""
@@ -11,3 +13,4 @@ else
     tooltip="Update failed."
 fi
 echo "{\"text\": \"$text\", \"tooltip\": \"$tooltip\"}" > ~/.update_reminder
+printf "Press any key to continue..."; read -n1 -p ""
