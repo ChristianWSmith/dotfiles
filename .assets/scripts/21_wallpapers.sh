@@ -496,7 +496,6 @@ download https://i.imgur.com/Dmd9CLk.jpeg
 download https://i.imgur.com/eDPt1Zh.jpeg
 download https://i.imgur.com/ESxQ3DV.jpeg
 download https://i.imgur.com/V2jstlB.jpeg
-download https://i.imgur.com/KLPrfgT.jpeg
 download https://i.imgur.com/xMT1xxT.jpeg
 download https://i.imgur.com/HHPfwKl.jpeg
 download https://i.imgur.com/S2SMYeC.jpeg
