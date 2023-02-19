@@ -27,8 +27,6 @@
 !.assets/**
 .assets/cache
 !.config
-!.config/dolphin-emu
-!.config/dolphin-emu/Qt.ini
 !.config/scripts
 !.config/scripts/**
 .config/scripts/layouts/master_stack/__pycache__
