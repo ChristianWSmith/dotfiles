@@ -2,7 +2,6 @@
 Name=Messenger
 StartupWMClass=messenger
 Comment=Facebook messenger.
-GenericName=Internet Messenger
 Exec=google-chrome-stable --new-window --enable-extensions --enable-features=WebRTCPipeWireCapturer --app="https://www.messenger.com/login/"
 Icon=fbmessenger
 Type=Application

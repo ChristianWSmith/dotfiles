@@ -15,6 +15,7 @@
 !.local/share
 !.local/share/applications
 !.local/share/applications/discord.desktop
+!.local/share/applications/zoom.desktop
 !.local/share/applications/messenger.desktop
 !.local/share/applications/gmail.desktop
 !.local/share/applications/instagram.desktop

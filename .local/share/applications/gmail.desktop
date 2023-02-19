@@ -2,7 +2,6 @@
 Name=Gmail
 StartupWMClass=gmail
 Comment=gmail
-GenericName=Email Client
 Exec=google-chrome-stable --new-window --enable-extensions --enable-features=WebRTCPipeWireCapturer --app="https://mail.google.com/mail/"
 Icon=gmail
 Type=Application
