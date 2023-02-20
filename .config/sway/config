@@ -162,6 +162,11 @@ bindsym $mod+q exec --no-startup-id ~/.config/scripts/launchers/window_switcher.
 bindsym $mod+Shift+e exec --no-startup-id ~/.config/scripts/launchers/power_menu.sh
 # -EXIT MODE
 
+# +layout switching
+bindsym $mod+m exec --no-startup-id ~/.config/scripts/layouts/dsl.sh
+bindsym $mod+Shift+m exec --no-startup-id ~/.config/scripts/layouts/default.sh
+# -layout switching
+
 # +APPEARANCE
 gaps inner 12
 gaps outer 15
