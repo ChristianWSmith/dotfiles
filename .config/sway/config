@@ -178,4 +178,4 @@ exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec dunst
 exec wl-paste --watch cliphist store
 
-include ~/.config/sway/dsl
+include ~/.config/sway/active_layout

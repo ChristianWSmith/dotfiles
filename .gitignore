@@ -38,6 +38,7 @@
 !.config/appimagelauncher.cfg
 !.config/sway
 !.config/sway/**
+.config/sway/active_layout
 .config/sway/display
 !.config/waybar
 !.config/waybar/**
