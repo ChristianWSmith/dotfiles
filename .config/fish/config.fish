@@ -20,6 +20,7 @@ if status is-interactive
     alias "adopt-orphans" "pacman -Qdtq | pacman -D --asexplicit -"
     alias "current-bg" "~/.config/scripts/helpers/current_swaybg.sh"
     alias "remove-bg" "~/.config/scripts/helpers/remove_bg.sh"
+    alias "dolphin-sync" "~/.config/scripts/helpers/dolphin_sync.sh"
     alias "swaylock" "~/.config/scripts/launchers/swaylock.sh"
     alias "ex" "~/.config/scripts/helpers/ex.sh"
     fetch
