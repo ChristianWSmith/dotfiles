@@ -6,7 +6,7 @@ do_update_mirrors=z
 
 while [ "$do_update_mirrors" != "y" ] && [ "$do_update_mirrors" != "Y" ] && [ "$do_update_mirrors" != "n" ] && [ "$do_update_mirrors" != "N" ] && [ "$do_update_mirrors" != "" ]
 do
-    read -n1 -p "Update mirrorlist? [y/N]" do_update_mirrors
+    read -n1 -p "Update mirrorlist? [y/N] " do_update_mirrors
     echo ""
 done
 
