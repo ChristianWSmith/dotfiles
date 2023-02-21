@@ -1,6 +1,20 @@
 #!/bin/bash
 
-(pfetch; echo "Updating...") | lolcat
+pfetch | lolcat
+
+do_update_mirrors=z
+
+while [ "$do_update_mirrors" != "y" ] && [ "$do_update_mirrors" != "Y" ] && [ "$do_update_mirrors" != "n" ] && [ "$do_update_mirrors" != "N" ] && [ "$do_update_mirrors" != "" ]
+do
+    read -n1 -p "Update mirrorlist? [y/N]" do_update_mirrors
+    echo ""
+done
+
+if [ "$do_update_mirrors" = "y" ] || [ "$do_update_mirrors" = "Y" ]
+then
+    sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.$(date +%s).old
+    reflector --sort rate -c 'United States' -f 10 --save /etc/pacman.d/mirrorlist
+fi
 
 if yay -Syu --needed --norebuild --noredownload --nocleanmenu --nodiffmenu --noremovemake
 then
