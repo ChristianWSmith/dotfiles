@@ -1,13 +1,25 @@
 #!/bin/bash
 
-LOCAL_DIR="$HOME/.local/share/dolphin-emu/GC/USA/Card A"
-REMOTE_DIR="$HOME/GoogleDrive/home/.local/share/dolphin-emu/GC/USA/Card A"
+LOCAL_DIR="$1"
+REMOTE_DIR="${HOME}/GoogleDrive/linux/${LOCAL_DIR}"
 
-if ! cd "$LOCAL_DIR" || ! cd "$REMOTE_DIR"
+if ! cd "$LOCAL_DIR"
 then
-    echo "ERROR: One or both directories don't exist."
+    echo "ERROR: Directory does not exist."
     exit 1
 fi
+
+if ! cat /etc/mtab | grep GoogleDrive > /dev/null 2>&1
+then
+    ~/.config/scripts/helpers/mount_google_drive.sh
+    if ! cat /etc/mtab | grep GoogleDrive > /dev/null 2>&1
+    then
+        echo "ERROR: Failed to mount Google Drive."
+        exit 1
+    fi
+fi
+
+mkdir -p "${REMOTE_DIR}"
 
 for local_file in $(cd "$LOCAL_DIR"; find . -type f | cut -d'/' -f2)
 do

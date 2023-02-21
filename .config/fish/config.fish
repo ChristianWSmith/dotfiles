@@ -20,7 +20,9 @@ if status is-interactive
     alias "adopt-orphans" "pacman -Qdtq | pacman -D --asexplicit -"
     alias "current-bg" "~/.config/scripts/helpers/current_swaybg.sh"
     alias "remove-bg" "~/.config/scripts/helpers/remove_bg.sh"
-    alias "dolphin-sync" "~/.config/scripts/helpers/dolphin_sync.sh"
+    alias "dolphin-sync" "~/.config/scripts/helpers/google_drive_sync_dir.sh ~/.local/share/dolphin-emu/GC/USA/Card\ A/"
+    alias "mount-google-drive" "~/.config/scripts/helpers/mount_google_drive.sh"
+    alias "unmount-google-drive" "~/.config/scripts/helpers/unmount_google_drive.sh"
     alias "swaylock" "~/.config/scripts/launchers/swaylock.sh"
     alias "ex" "~/.config/scripts/helpers/ex.sh"
     fetch
