@@ -182,5 +182,6 @@ exec /usr/bin/foot --server
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec dunst
 exec wl-paste --watch cliphist store
+exec ~/.config/scripts/helpers/mount_google_drive.sh
 
 include ~/.config/sway/active_layout
