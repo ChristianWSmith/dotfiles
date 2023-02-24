@@ -6,5 +6,5 @@ then
     exit 1
 fi
 
-sudo /bin/bash -c "echo 'permit nopass :wheel' > /etc/doas.conf"
-sudo /bin/bash -c "ln -sf /usr/bin/doas /usr/bin/sudo"
+doas /bin/bash -c "echo 'permit persist :wheel' > /etc/doas.conf"
+doas /bin/bash -c "ln -sf /usr/bin/doas /usr/bin/sudo"
