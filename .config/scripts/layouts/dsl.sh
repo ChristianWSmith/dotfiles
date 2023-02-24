@@ -2,7 +2,7 @@
 
 if ! ps -ef | grep dsl-server | grep -v grep
 then
-    ~/.local/bin/dsl-server & disown
+    ~/.local/bin/dsl-server > ~/.dsl-server.log 2>&1 & disown
 fi
 
 unlink ~/.config/sway/active_layout
