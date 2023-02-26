@@ -61,6 +61,8 @@
 !.config/dunst/**
 !.config/qt5ct
 !.config/qt5ct/**
+!.config/qt6ct
+!.config/qt6ct/**
 !.gtkrc-2.0
 !.config/gtk-3.0
 !.config/gtk-3.0/**

@@ -3,6 +3,7 @@ adw-gtk-theme
 adw-gtk3
 adwaita-dark
 adwaita-qt5
+adwaita-qt6
 amd-ucode
 appimagelauncher
 archlinux-keyring
@@ -13,6 +14,7 @@ bemoji
 binutils
 bison
 btop
+cemu-bin
 checkupdates-aur
 cliphist
 code
@@ -33,6 +35,7 @@ fakeroot
 ffmpegthumbnailer
 figlet
 file
+file-roller
 findutils
 fish
 flex
@@ -96,6 +99,7 @@ mpd
 mpv
 nano
 nemo
+nemo-fileroller
 network-manager-applet
 networkmanager
 noto-fonts
@@ -129,6 +133,7 @@ python-six
 qt5-wayland
 qt5ct
 qt6-wayland
+qt6ct
 ranger
 rclone
 reflector
@@ -152,6 +157,7 @@ timeshift
 tmatrix
 transmission-qt
 tumbler
+unrar
 vbam-wx
 vim
 vkd3d
