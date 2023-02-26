@@ -25,6 +25,7 @@ if status is-interactive
     alias "unmount-google-drive" "~/.config/scripts/helpers/unmount_google_drive.sh"
     alias "google-drive-sync-file" "~/.config/scripts/helpers/google_drive_sync_file.sh"
     alias "google-drive-sync-dir" "~/.config/scripts/helpers/google_drive_sync_dir.sh"
+    alias "clean-names" "~/.config/scripts/helpers/clean_names.sh"
     alias "swaylock" "~/.config/scripts/launchers/swaylock.sh"
     alias "ex" "~/.config/scripts/helpers/ex.sh"
     fetch
