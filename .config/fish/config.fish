@@ -26,6 +26,7 @@ if status is-interactive
     alias "google-drive-sync-file" "~/.config/scripts/helpers/google_drive_sync_file.sh"
     alias "google-drive-sync-dir" "~/.config/scripts/helpers/google_drive_sync_dir.sh"
     alias "clean-names" "~/.config/scripts/helpers/clean_names.sh"
+    alias "rip-yt-music-playlist" "~/.config/scripts/helpers/rip-yt-music-playlist.sh"
     alias "swaylock" "~/.config/scripts/launchers/swaylock.sh"
     alias "ex" "~/.config/scripts/helpers/ex.sh"
     fetch
