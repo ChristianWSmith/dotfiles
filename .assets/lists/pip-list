@@ -38,6 +38,7 @@ PyYAML
 ranger-fm
 Reflector
 requests
+setproctitle
 setuptools
 six
 team
