@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Google Docs
+StartupWMClass=google-docs
+Comment=Google Docs
+Exec=google-chrome-stable --new-window --enable-extensions --enable-features=WebRTCPipeWireCapturer --app="https://docs.google.com/"
+Icon=/usr/share/icons/Papirus/64x64/mimetypes/application-vnd.google-apps.document.svg
+Type=Application
+Categories=Office;
+Path=/usr/bin

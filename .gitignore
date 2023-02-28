@@ -18,6 +18,9 @@
 !.local/share/applications/zoom.desktop
 !.local/share/applications/messenger.desktop
 !.local/share/applications/gmail.desktop
+!.local/share/applications/google_docs.desktop
+!.local/share/applications/google_sheets.desktop
+!.local/share/applications/google_slides.desktop
 !.local/share/applications/instagram.desktop
 !.local/share/icons
 !.local/share/icons/discord.svg

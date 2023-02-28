@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Google Sheets
+StartupWMClass=google-sheets
+Comment=Google Sheets
+Exec=google-chrome-stable --new-window --enable-extensions --enable-features=WebRTCPipeWireCapturer --app="https://sheets.google.com/"
+Icon=/usr/share/icons/Papirus/64x64/mimetypes/application-vnd.google-apps.spreadsheet.svg
+Type=Application
+Categories=Office;
+Path=/usr/bin

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Google Slides
+StartupWMClass=google-slides
+Comment=Google Slides
+Exec=google-chrome-stable --new-window --enable-extensions --enable-features=WebRTCPipeWireCapturer --app="https://slides.google.com/"
+Icon=/usr/share/icons/Papirus/64x64/mimetypes/application-vnd.google-apps.presentation.svg
+Type=Application
+Categories=Office;
+Path=/usr/bin
