@@ -168,9 +168,9 @@ bindsym $mod+Shift+m exec --no-startup-id ~/.config/scripts/layouts/default.sh
 # -layout switching
 
 # +APPEARANCE
-gaps inner 12
-gaps outer 15
-for_window [class="^.*"] border pixel 2
+gaps inner 9
+gaps outer 9
+for_window [class="^.*"] border pixel 3
 # -APPEARANCE
 
 # +UI
