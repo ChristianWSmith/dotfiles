@@ -551,7 +551,6 @@ download https://i.imgur.com/cuVSTuP.jpeg
 download https://i.imgur.com/caffs63.jpeg
 download https://i.imgur.com/9vXKn17.jpeg
 download https://i.imgur.com/0KkAUoH.jpeg
-download https://i.imgur.com/gQFP8br.jpeg
 download https://i.imgur.com/c3MediC.jpeg
 download https://i.imgur.com/dU29gzP.jpeg
 download https://i.imgur.com/zB6GioF.jpeg
