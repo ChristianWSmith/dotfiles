@@ -601,7 +601,6 @@ download https://i.imgur.com/Aqby2gP.jpeg
 download https://i.imgur.com/p3ElgTP.jpeg
 download https://i.imgur.com/nLOfcU8.jpeg
 download https://i.imgur.com/RAuhWfX.jpeg
-download https://i.imgur.com/CAg8diL.jpeg
 download https://i.imgur.com/MvmY8DL.jpeg
 download https://i.imgur.com/rTC50ko.jpeg
 download https://i.imgur.com/Mr27x18.png
