@@ -16,7 +16,7 @@ if status is-interactive
     alias "reboot" "systemctl reboot --no-wall --reboot"
     alias "baseline" "sudo timeshift --delete-all; sudo timeshift --create --comments 'base'"
     alias "chx" "chmod +x"
-    alias "remove-orphans" "yay -Qdtq | yay -Rns -"
+    alias "remove-orphans" "~/.config/scripts/helpers/remove_orphans.sh"
     alias "adopt-orphans" "pacman -Qdtq | pacman -D --asexplicit -"
     alias "current-bg" "~/.config/scripts/helpers/current_swaybg.sh"
     alias "remove-bg" "~/.config/scripts/helpers/remove_bg.sh"
