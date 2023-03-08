@@ -527,7 +527,6 @@ download https://i.imgur.com/ryoF6ej.jpeg
 download https://i.imgur.com/Pe1Hyok.jpeg
 download https://i.imgur.com/GjRd25U.jpeg
 download https://i.imgur.com/XdTmzRL.jpeg
-download https://i.imgur.com/yqAwqz2.jpeg
 download https://i.imgur.com/2SVgCBb.jpeg
 download https://i.imgur.com/VjCU6G2.jpeg
 download https://i.imgur.com/tU0dcWP.jpeg
