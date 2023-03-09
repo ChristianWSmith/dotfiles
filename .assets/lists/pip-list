@@ -41,6 +41,7 @@ requests
 setproctitle
 setuptools
 six
+TBB
 team
 tomli
 trove-classifiers

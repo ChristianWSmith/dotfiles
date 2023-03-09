@@ -50,6 +50,7 @@ gettext
 gimp
 git
 gnome-font-viewer
+godot4-bin
 google-chrome
 grep
 grim
@@ -94,6 +95,7 @@ lxappearance
 m4
 make
 man-db
+meld
 mokutil
 mpd
 mpv
