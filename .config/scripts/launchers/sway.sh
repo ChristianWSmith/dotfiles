@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export QT_QPA_PLATFORM=wayland;xcb
+export QT_QPA_PLATFORM="wayland;xcb"
 export QT_QPA_PLATFORMTHEME=qt5ct
 export QT_PLUGINS_PATH=/usr/lib/qt/plugins/
 export GTK_THEME=Adw-dark
