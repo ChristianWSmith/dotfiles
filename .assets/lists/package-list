@@ -17,6 +17,7 @@ blueberry
 btop
 cemu-bin
 checkupdates-aur
+clangbincc
 cliphist
 code
 cups
@@ -50,7 +51,7 @@ gettext
 gimp
 git
 gnome-font-viewer
-godot4-bin
+godot
 google-chrome
 grep
 grim
@@ -62,6 +63,7 @@ gst-plugins-good
 gst-plugins-ugly
 gvfs
 gzip
+handbrake
 htop
 hyprpicker-git
 imv
@@ -71,6 +73,7 @@ intel-ucode
 iw
 iwd
 jq
+khal
 krita
 lib32-gamemode
 lib32-vkd3d
@@ -104,6 +107,7 @@ nemo
 nemo-fileroller
 network-manager-applet
 networkmanager
+nodejs
 noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji

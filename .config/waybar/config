@@ -78,7 +78,8 @@
     "clock": {
         // "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": "{:%a %b %d %I:%M %p}"
+        "format": "{:%a %b %d %I:%M %p}",
+        "on-click": "$TERMINAL --title=Calendar khal interactive"
     },
     "cpu": {
         "format": "{usage}% ",
