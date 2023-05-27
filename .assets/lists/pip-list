@@ -1,7 +1,7 @@
-argparse-extensions
 atomicwrites
 attrs
 autocommand
+beautifulsoup4
 btrfsutil
 certifi
 cffi
@@ -26,6 +26,7 @@ khal
 lensfun
 lxml
 meson
+moddb
 more-itertools
 numpy
 ordered-set
@@ -40,6 +41,7 @@ pycairo
 pycparser
 pydantic
 PyGObject
+pyrate-limiter
 python-dateutil
 python-xlib
 pytz
@@ -52,9 +54,11 @@ requests
 setproctitle
 setuptools
 six
+soupsieve
 TBB
-team
 tomli
+toolz
+tqdm
 trove-classifiers
 typing_extensions
 tzdata
