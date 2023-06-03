@@ -624,7 +624,6 @@ download https://i.imgur.com/nKQzI17.jpeg
 download https://i.imgur.com/4tCnvp3.jpeg
 download https://i.imgur.com/8KexOnV.jpeg
 download https://i.imgur.com/UwF1RIJ.jpeg
-download https://i.imgur.com/i6s0HmM.jpeg
 download https://i.imgur.com/2RWOJW4.jpeg
 download https://i.imgur.com/WPtEsPw.jpeg
 download https://i.imgur.com/7qG2KE3.jpeg
