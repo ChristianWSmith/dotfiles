@@ -9,4 +9,4 @@ Target=xdg-desktop-portal-wlr
 Description=Mask xdg-desktop-portal and xdg-desktop-portal-wlr by default
 When=PostTransaction
 NeedsTargets
-Exec=/usr/bin/su $SUDO_USER -c "systemctl --user mask xdg-desktop-portal; systemctl --user mask xdg-destkop-portal-wlr"
+Exec=/usr/bin/su $DOAS_USER -c "systemctl --user mask xdg-desktop-portal; systemctl --user mask xdg-destkop-portal-wlr"
