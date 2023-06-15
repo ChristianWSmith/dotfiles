@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=ChatGPT
+StartupWMClass=chatgpt
+Comment=ChatGPT
+Exec=google-chrome-stable --new-window --enable-extensions --enable-features=WebRTCPipeWireCapturer --app="https://chat.openai.com/"
+Icon=chatgpt
+Type=Application
+Categories=Network;InstantMessaging;
+Path=/usr/bin
