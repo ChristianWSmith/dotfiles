@@ -603,7 +603,6 @@ download https://i.imgur.com/MvmY8DL.jpeg
 download https://i.imgur.com/rTC50ko.jpeg
 download https://i.imgur.com/Mr27x18.png
 download https://i.imgur.com/YQZHe6n.jpeg
-download https://i.imgur.com/wMujntO.jpeg
 download https://i.imgur.com/oRHlUcu.jpeg
 download https://i.imgur.com/BkOZjjc.jpeg
 download https://i.imgur.com/6PZjLjn.jpeg
