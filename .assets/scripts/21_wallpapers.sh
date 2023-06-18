@@ -392,7 +392,6 @@ download https://i.imgur.com/EOUgTLp.jpeg
 download https://i.imgur.com/POvhi6c.jpeg
 download https://i.imgur.com/aP8i2oj.jpeg
 download https://i.imgur.com/n3rQfxA.jpeg
-download https://i.imgur.com/mOYpcIW.jpeg
 download https://i.imgur.com/pUkscuF.jpeg
 download https://i.imgur.com/FUZ6A1t.jpeg
 download https://i.imgur.com/nfmlDq8.jpeg
