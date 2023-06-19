@@ -202,7 +202,6 @@ download https://i.imgur.com/l7L39vG.jpeg
 download https://i.imgur.com/pSd2rUC.jpeg 
 download https://i.imgur.com/JpJujTb.jpeg 
 download https://i.imgur.com/c1vhYXC.png 
-download https://i.imgur.com/QefAMZO.png 
 download https://i.imgur.com/aSanRPt.jpeg 
 download https://i.imgur.com/8pWnCKj.jpeg 
 download https://i.imgur.com/WhA5MFA.jpeg 
