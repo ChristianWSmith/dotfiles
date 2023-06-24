@@ -99,6 +99,7 @@ m4
 make
 man-db
 meld
+minecraft-launcher
 mokutil
 mpd
 mpv
@@ -149,6 +150,7 @@ rtl88x2bu-dkms-git
 rtsp-simple-server-bin
 rustup
 sed
+sigil
 slurp
 smartmontools
 steam

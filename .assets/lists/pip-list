@@ -10,9 +10,12 @@ click
 click-log
 configobj
 cryptography
+css-parser
 cssselect
 Cython
+dbus-python
 distro
+dulwich
 evdev
 fastjsonschema
 i3ipc
@@ -40,6 +43,7 @@ pulsemixer
 pycairo
 pycparser
 pydantic
+Pygments
 PyGObject
 pyrate-limiter
 python-dateutil
