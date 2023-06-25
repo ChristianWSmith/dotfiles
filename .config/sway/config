@@ -147,6 +147,7 @@ exec {
     gsettings set org.gnome.desktop.default-applications.terminal exec $TERMINAL
     gsettings set org.gnome.desktop.default-applications.terminal exec-arg ''
     gsettings set org.gnome.desktop.interface cursor-theme 'Adwaita'
+    gnome-keyring-daemon
 }
 # -GNOME SETTINGS
 
