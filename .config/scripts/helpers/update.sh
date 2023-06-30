@@ -13,8 +13,7 @@ done
 if [ "$do_update_mirrors" = "y" ] || [ "$do_update_mirrors" = "Y" ]
 then
     sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.$(date +%s).old
-    sudo reflector --latest 20 --protocol https --sort rate --save /etc/pacman.d/mi
-rrorlis
+    sudo reflector --latest 20 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
 fi
 
 if yay -Syu --needed --norebuild --noredownload --nocleanmenu --nodiffmenu --noremovemake

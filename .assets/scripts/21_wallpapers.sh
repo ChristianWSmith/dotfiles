@@ -670,7 +670,6 @@ download https://i.imgur.com/9UULEzB.jpeg
 download https://i.imgur.com/rI2XXO9.jpeg
 download https://i.imgur.com/91DZ7yI.jpeg
 download https://i.imgur.com/tRyHDBj.jpeg
-download https://i.imgur.com/XVFx64u.jpeg
 download https://i.imgur.com/mDOuXPH.jpeg
 download https://i.imgur.com/UXL9ms5.jpeg
 download https://i.imgur.com/65Tj2WD.jpeg
