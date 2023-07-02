@@ -27,7 +27,6 @@ jaraco.text
 khal
 lensfun
 lxml
-meson
 moddb
 more-itertools
 numpy
@@ -59,7 +58,6 @@ soupsieve
 TBB
 tomli
 toolz
-tqdm
 trove-classifiers
 typing_extensions
 tzlocal
