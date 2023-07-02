@@ -34,8 +34,8 @@ set $right l
 
 set $mod Mod1
 
-# use Mouse+$mod to drag floating windows to their wanted position
-floating_modifier $mod
+# disable floating windows
+for_window [app_id=".*"] floating disable
 
 # start a terminal
 bindsym $mod+Return exec $TERMINAL
