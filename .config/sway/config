@@ -47,6 +47,7 @@ bindsym $mod+d exec --no-startup-id ~/.config/scripts/helpers/new_fuzzel.sh
 bindsym $mod+w exec --no-startup-id /bin/bash -c '$WEB_BROWSER'
 bindsym $mod+e exec --no-startup-id /bin/bash -c '$TERMINAL --title=$TUI_FILE_BROWSER $TUI_FILE_BROWSER'
 bindsym $mod+b exec --no-startup-id /bin/bash -c '$TERMINAL --title=$TUI_TASK_MANAGER $TUI_TASK_MANAGER'
+bindsym $mod+a exec --no-startup-id /bin/bash -c '$TERMINAL --title=$TUI_VOLUME_CONTROL $TUI_VOLUME_CONTROL'
 
 # change focus
 bindsym $mod+$left focus left
@@ -68,9 +69,6 @@ bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
-
-# focus the parent container
-bindsym $mod+a focus parent
 
 # focus the child container
 #bindsym $mod+d focus child
