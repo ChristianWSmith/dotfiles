@@ -1,4 +1,5 @@
 font pango:Noto Sans Mono 11
+seat * xcursor_theme Adwaita 40
 
 # input 1189:32769:BenQ_ZOWIE_BenQ_ZOWIE_Gaming_Mouse scroll_factor 2.0
 input type:touchpad {
@@ -145,6 +146,7 @@ exec {
     gsettings set org.gnome.desktop.default-applications.terminal exec $TERMINAL
     gsettings set org.gnome.desktop.default-applications.terminal exec-arg ''
     gsettings set org.gnome.desktop.interface cursor-theme 'Adwaita'
+    gsettings set org.gnome.desktop.interface cursor-size 40
     gnome-keyring-daemon
 }
 # -GNOME SETTINGS
