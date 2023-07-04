@@ -700,4 +700,3 @@ download https://i.imgur.com/FCMAszY.jpeg
 download https://i.imgur.com/PfpyszL.jpeg
 download https://i.imgur.com/jdC8YR1.jpeg
 download https://i.imgur.com/SrMG9mO.jpeg
-download https://i.imgur.com/DtCzh8D.jpeg
