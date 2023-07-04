@@ -176,7 +176,6 @@ download https://i.imgur.com/CcqtfAH.jpeg
 download https://i.imgur.com/20MZU0Z.jpeg 
 download https://i.imgur.com/JS7Tf9B.jpeg 
 download https://i.imgur.com/Qg3C7zR.jpeg 
-download https://i.imgur.com/IuPKMzc.jpeg 
 download https://i.imgur.com/lfXNLKA.jpeg 
 download https://i.imgur.com/YfUFrWF.jpeg 
 download https://i.imgur.com/BDeaofO.jpeg 
