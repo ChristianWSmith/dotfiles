@@ -33,6 +33,7 @@ if status is-interactive
     alias "ga" "git add --all"
     alias "gc" "git commit -m"
     alias "gp" "git push"
+    alias "gr" "git restore $HOME"
     fetch
 end
 set "NEWT_COLORS" "'
