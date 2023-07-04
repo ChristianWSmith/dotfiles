@@ -30,6 +30,7 @@ if status is-interactive
     alias "sort-video-by-res" "~/.config/scripts/helpers/sort-video-by-res.sh"
     alias "swaylock" "~/.config/scripts/launchers/swaylock.sh"
     alias "ex" "~/.config/scripts/helpers/ex.sh"
+    alias "update" "~/.config/scripts/helpers/update.sh"
     alias "ga" "git add --all"
     alias "gc" "git commit -m"
     alias "gp" "git push"
