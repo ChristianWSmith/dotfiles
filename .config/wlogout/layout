@@ -1,0 +1,18 @@
+{
+    "label" : "lock",
+    "action" : "~/.config/scripts/launchers/swaylock.sh",
+    "text" : "Lock",
+    "keybind" : "l"
+}
+{
+    "label" : "reboot",
+    "action" : "systemctl reboot --no-wall",
+    "text" : "Reboot",
+    "keybind" : "r"
+}
+{
+    "label" : "shutdown",
+    "action" : "systemctl poweroff --no-wall",
+    "text" : "Shutdown",
+    "keybind" : "s"
+}

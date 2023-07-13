@@ -190,7 +190,7 @@
         "return-type": "json",
         "exec": "echo \"{\\\"text\\\": \\\"\\\", \\\"tooltip\\\": \\\"Power Menu\\\"}\"",
         "interval": "once",
-        "on-click": "$HOME/.config/scripts/launchers/power_menu.sh",
+        "on-click": "wlogout",
     },
     "custom/media": {
         "format": "{icon} {}",
