@@ -15,7 +15,7 @@ button {
     border-radius: 10px;
 }
 
-button:focus, button:active, button:hover {
+button:hover {
 	border: 3px solid #00FFFF;
     outline-style: none;
 }
