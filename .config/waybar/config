@@ -190,7 +190,7 @@
         "return-type": "json",
         "exec": "echo \"{\\\"text\\\": \\\"\\\", \\\"tooltip\\\": \\\"Power Menu\\\"}\"",
         "interval": "once",
-        "on-click": "wlogout",
+        "on-click": "wlogout -p layer-shell",
     },
     "custom/media": {
         "format": "{icon} {}",

@@ -160,7 +160,7 @@ bindsym $mod+q exec --no-startup-id ~/.config/scripts/launchers/window_switcher.
 # -waybar widget binds
 
 # +EXIT MODE
-bindsym $mod+Shift+e exec --no-startup-id wlogout
+bindsym $mod+Shift+e exec --no-startup-id wlogout -p layer-shell
 # -EXIT MODE
 
 # +layout switching
