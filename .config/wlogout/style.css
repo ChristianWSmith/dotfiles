@@ -21,13 +21,13 @@ button:hover {
 }
 
 #lock {
-    background-image: image(url("/home/christian/.config/wlogout/icons/lock.png"), url("/home/christian/.config/wlogout/icons/lock.png"));
+    background-image: image(url("/home/christian/.config/wlogout/icons/lock.svg"), url("/home/christian/.config/wlogout/icons/lock.svg"));
 }
 
 #shutdown {
-    background-image: image(url("/home/christian/.config/wlogout/icons/shutdown.png"), url("/home/christian/.config/wlogout/icons/shutdown.png"));
+    background-image: image(url("/home/christian/.config/wlogout/icons/shutdown.svg"), url("/home/christian/.config/wlogout/icons/shutdown.svg"));
 }
 
 #reboot {
-    background-image: image(url("/home/christian/.config/wlogout/icons/reboot.png"), url("/home/christian/.config/wlogout/icons/reboot.png"));
+    background-image: image(url("/home/christian/.config/wlogout/icons/reboot.svg"), url("/home/christian/.config/wlogout/icons/reboot.svg"));
 }
