@@ -27,6 +27,10 @@ jaraco.text
 khal
 lensfun
 lxml
+Mako
+Markdown
+MarkupSafe
+meson
 moddb
 more-itertools
 numpy
@@ -41,6 +45,7 @@ pulsemixer
 pycairo
 pycparser
 pydantic
+Pygments
 PyGObject
 pyrate-limiter
 python-dateutil
@@ -51,6 +56,7 @@ PyYAML
 ranger-fm
 Reflector
 requests
+SCons
 setproctitle
 setuptools
 six
@@ -58,6 +64,7 @@ soupsieve
 TBB
 tomli
 toolz
+tqdm
 trove-classifiers
 typing_extensions
 tzlocal
