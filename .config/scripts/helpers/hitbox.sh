@@ -1,5 +1,19 @@
 #!/bin/bash
 
+PID_FILE=/tmp/hitbox_pid
+
+chmod a+rw $PID_FILE
+
+OLD_PID=$(cat $PID_FILE)
+
+if ps -p $OLD_PID > /dev/null
+then
+    exit
+fi
+
+pkill -9 xboxdrv
+echo "$$" > $PID_FILE
+
 EVENT_ID=$(cat /proc/bus/input/devices | grep "DragonRise" -A 4 | grep "H: Handlers" | cut -d'=' -f2 | cut -d' ' -f1)
 
 if [ ! "$EVENT_ID" ]
