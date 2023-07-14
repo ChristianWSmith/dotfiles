@@ -2,11 +2,7 @@
 
 PID_FILE=/tmp/hitbox_pid
 
-chmod a+rw $PID_FILE
-
-OLD_PID=$(cat $PID_FILE)
-
-if ps -p $OLD_PID > /dev/null
+if ps -p $(cat $PID_FILE) > /dev/null
 then
     exit
 fi
