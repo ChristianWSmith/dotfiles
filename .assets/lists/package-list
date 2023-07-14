@@ -31,6 +31,7 @@ dvdauthor
 dvgrab
 efibootmgr
 epson-inkjet-printer-escpr2
+evtest
 exfat-utils
 faac
 fakeroot
@@ -70,9 +71,11 @@ hyprpicker-git
 imv
 inkscape
 innoextract
+inotify-tools
 intel-ucode
 iw
 iwd
+joyutils
 jq
 khal
 krita
@@ -183,6 +186,7 @@ wireplumber
 wl-clipboard
 wlogout
 wlrobs-hg
+xboxdrv
 xdg-desktop-portal
 xdg-desktop-portal-wlr
 xdg-utils
