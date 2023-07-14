@@ -510,7 +510,6 @@ download https://i.imgur.com/UtEzyNR.jpeg
 download https://i.imgur.com/wwUWf5O.jpeg
 download https://i.imgur.com/tzKqUcr.jpeg
 download https://i.imgur.com/FWw4WpY.jpeg
-download https://i.imgur.com/mhHGEyS.jpeg
 download https://i.imgur.com/ryoF6ej.jpeg
 download https://i.imgur.com/Pe1Hyok.jpeg
 download https://i.imgur.com/GjRd25U.jpeg
