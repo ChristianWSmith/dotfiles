@@ -1,21 +1,12 @@
 #!/bin/bash
 
-PID_FILE=/tmp/hitbox_pid
-
-if ps -p $(cat $PID_FILE) > /dev/null
+PROC_COUNT="$(ps -ef | grep $(basename $0) | grep -v grep | wc -l)"
+if [ "$PROC_COUNT" -gt "2" ]
 then
     exit
 fi
-
-pkill -9 xboxdrv
-echo "$$" > $PID_FILE
 
 EVENT_ID=$(cat /proc/bus/input/devices | grep "DragonRise" -A 4 | grep "H: Handlers" | cut -d'=' -f2 | cut -d' ' -f1)
-
-if [ ! "$EVENT_ID" ]
-then
-    exit
-fi
 
 xboxdrv_keepalive () {
     while [ -e "/dev/input/${EVENT_ID}" ]
