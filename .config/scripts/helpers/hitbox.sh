@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [ $(ps -ef | grep $(basename $0) | grep -v grep | wc -l) -gt 2 ]
+then
+    exit
+fi
+
 xboxdrv_keepalive () {
     while [ -e /dev/input/$1 ]
     do
