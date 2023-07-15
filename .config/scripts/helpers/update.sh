@@ -16,7 +16,7 @@ then
     sudo reflector --latest 20 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
 fi
 
-if yay -Syu --needed --norebuild --noredownload --nocleanmenu --nodiffmenu --noremovemake
+if yay -Syyuu --needed --norebuild --noredownload --nocleanmenu --nodiffmenu --noremovemake
 then
     notify-send -t 5000 "Update complete."
     text=""
