@@ -72,6 +72,8 @@
 !.config/qt6ct/**
 !.config/khal
 !.config/khal/**
+!.config/yay
+!.config/yay/**
 !.gtkrc-2.0
 !.config/gtk-3.0
 !.config/gtk-3.0/**
