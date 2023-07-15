@@ -523,9 +523,7 @@ download https://i.imgur.com/uGryrgF.jpeg
 download https://i.imgur.com/SaqcdaA.jpeg
 download https://i.imgur.com/HZ31D0X.jpeg
 download https://i.imgur.com/JFFfvGD.jpeg
-download https://i.imgur.com/YUmkuf9.jpeg
 download https://i.imgur.com/scDDcWw.jpeg
-download https://i.imgur.com/BgeXHTH.jpeg
 download https://i.imgur.com/onjmE6p.jpeg
 download https://i.imgur.com/RNm3TcR.jpeg
 download https://i.imgur.com/dVwfSCw.jpeg
