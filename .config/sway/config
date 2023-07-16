@@ -187,5 +187,6 @@ exec dunst
 exec wl-paste --watch cliphist store
 exec ~/.config/scripts/helpers/mount_google_drive.sh
 exec ~/.config/scripts/helpers/hitbox.sh
+exec ~/.config/scripts/helpers/bell.sh
 
 include ~/.config/sway/active_layout

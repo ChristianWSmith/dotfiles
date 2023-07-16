@@ -6,13 +6,13 @@
 }
 {
     "label" : "reboot",
-    "action" : "systemctl reboot --no-wall",
+    "action" : "~/.config/scripts/helpers/bell.sh blocking; systemctl reboot --no-wall",
     "text" : "(R)eboot",
     "keybind" : "r"
 }
 {
     "label" : "shutdown",
-    "action" : "systemctl poweroff --no-wall",
+    "action" : "~/.config/scripts/helpers/bell.sh blocking; systemctl poweroff --no-wall",
     "text" : "(S)hutdown",
     "keybind" : "s"
 }
