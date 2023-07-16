@@ -31,6 +31,9 @@ workspace \$ws9 output \$monitor_center
 workspace \$ws10 output \$monitor_center
 workspace \$wsL output \$monitor_left
 workspace \$wsR output \$monitor_right
+
+assign [class="Google-Chrome" instance="messenger.com__login"] workspace \$wsR
+assign [class="Google-Chrome" instance="discord.com__login"] workspace \$wsR
 EOF' > /dev/null
 
 sudo /bin/bash -c 'rm -f /etc/modprobe.d/88x2bu.conf; tee -a /etc/modprobe.d/88x2bu.conf <<EOF
