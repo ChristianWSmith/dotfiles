@@ -1,18 +1,4 @@
 #!/bin/bash
 
-LOCK=" (L)ock"
-REBOOT=" (R)eboot"
-SHUTDOWN=" (S)hutdown"
-
-result=$(echo -e "$LOCK\n$REBOOT\n$SHUTDOWN" | ~/.config/scripts/helpers/new_fuzzel.sh --dmenu --lines 3)
-
-if [ "$result" = "$LOCK" ]
-then
-    ~/.config/scripts/launchers/swaylock.sh
-elif [ "$result" = "$REBOOT" ]
-then
-    systemctl reboot --no-wall
-elif [ "$result" = "$SHUTDOWN" ]
-then
-    systemctl poweroff --no-wall
-fi
+~/.config/scripts/helpers/bell.sh
+wlogout -p layer-shell

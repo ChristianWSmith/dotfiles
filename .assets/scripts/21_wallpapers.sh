@@ -514,7 +514,6 @@ download https://i.imgur.com/GjRd25U.jpeg
 download https://i.imgur.com/XdTmzRL.jpeg
 download https://i.imgur.com/2SVgCBb.jpeg
 download https://i.imgur.com/VjCU6G2.jpeg
-download https://i.imgur.com/tU0dcWP.jpeg
 download https://i.imgur.com/3u1k6I7.jpeg
 download https://i.imgur.com/T14hxYC.jpeg
 download https://i.imgur.com/uGryrgF.jpeg
