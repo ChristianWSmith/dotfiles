@@ -10,3 +10,4 @@ then
 fi
 
 swaylock --image $image
+~/.config/scripts/helpers/bell.sh

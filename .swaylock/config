@@ -1,7 +1,6 @@
 color=242424
 ignore-empty-password
 show-failed-attempts
-daemonize
 hide-keyboard-layout
 scaling=fill
 bs-hl-color=cd9309
