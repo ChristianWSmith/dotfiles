@@ -189,4 +189,5 @@ exec ~/.config/scripts/helpers/mount_google_drive.sh
 exec ~/.config/scripts/helpers/hitbox.sh
 exec ~/.config/scripts/helpers/bell.sh
 
+assign [class="steam" instance="steamwebhelper"] workspace $ws10
 include ~/.config/sway/active_layout

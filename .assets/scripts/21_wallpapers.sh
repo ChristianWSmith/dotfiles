@@ -304,7 +304,6 @@ download https://i.imgur.com/u4CieNF.png
 download https://i.imgur.com/i1lUf8L.jpeg
 download https://i.imgur.com/VPq7pGQ.jpeg
 download https://i.imgur.com/8iJJ27K.jpeg
-download https://i.imgur.com/xDFfqaX.jpeg
 download https://i.imgur.com/niXsHee.jpeg
 download https://i.imgur.com/yhJppw9.jpeg
 download https://i.imgur.com/jYuP6dJ.jpeg
