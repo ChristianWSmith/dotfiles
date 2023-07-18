@@ -31,6 +31,8 @@ lxml
 Mako
 Markdown
 MarkupSafe
+mercurial
+meson
 moddb
 more-itertools
 numpy
@@ -55,7 +57,6 @@ PyYAML
 ranger-fm
 Reflector
 requests
-SCons
 setproctitle
 setuptools
 six
@@ -63,6 +64,7 @@ soupsieve
 TBB
 tomli
 toolz
+tqdm
 trove-classifiers
 typing_extensions
 tzlocal

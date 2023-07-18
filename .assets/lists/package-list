@@ -4,16 +4,20 @@ adw-gtk3
 adwaita-dark
 adwaita-qt5
 adwaita-qt6
+alsa-utils
 amd-ucode
 appimagelauncher
 archlinux-keyring
+audacity
 autoconf
 automake
 base
+bash-completion
 bemoji
 binutils
 bison
 blueberry
+boost
 btop
 cemu-bin
 checkupdates-aur
@@ -120,6 +124,7 @@ noto-fonts-emoji
 ntfs-3g
 obs-studio
 opendoas
+openmp
 openssh
 otf-font-awesome
 pacdep
@@ -151,8 +156,6 @@ rclone
 reflector
 reflector-pacman-hook-git
 rsync
-rtl88x2bu-dkms-git
-rtsp-simple-server-bin
 rustup
 sed
 sigil
