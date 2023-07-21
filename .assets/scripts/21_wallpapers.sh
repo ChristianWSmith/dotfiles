@@ -246,7 +246,6 @@ download https://i.imgur.com/VUOeEg9.jpeg
 download https://i.imgur.com/Nz4ld0K.jpeg
 download https://i.imgur.com/EeGMlNF.jpeg
 download https://i.imgur.com/pwmXwAe.jpeg
-download https://i.imgur.com/4IYecD3.jpeg
 download https://i.imgur.com/kKlNaoK.jpeg
 download https://i.imgur.com/OxOZ4i4.jpeg
 download https://i.imgur.com/PXhTsG9.jpeg
@@ -278,7 +277,6 @@ download https://i.imgur.com/MNRvBA8.jpeg
 download https://i.imgur.com/KrEwUtj.jpeg
 download https://i.imgur.com/US8B1Ul.jpeg
 download https://i.imgur.com/Y3l2cH9.jpeg
-download https://i.imgur.com/22lC9Lh.jpeg
 download https://i.imgur.com/kZU6nTA.jpeg
 download https://i.imgur.com/lEtefTW.jpeg
 download https://i.imgur.com/UdClSUs.jpeg
