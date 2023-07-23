@@ -455,7 +455,6 @@ download https://i.imgur.com/OQqFJ36.jpeg
 download https://i.imgur.com/5yjXjzK.jpeg
 download https://i.imgur.com/3UrPsCO.jpeg
 download https://i.imgur.com/wGQiiD7.jpeg
-download https://i.imgur.com/4ZziOpq.jpeg
 download https://i.imgur.com/Uly5viv.jpeg
 download https://i.imgur.com/XuierPb.jpeg
 download https://i.imgur.com/kal9YcW.jpeg
