@@ -314,7 +314,6 @@ download https://i.imgur.com/jemqQO3.jpeg
 download https://i.imgur.com/FzUb7sC.jpeg
 download https://i.imgur.com/Al2f5mD.jpeg
 download https://i.imgur.com/nj22oui.jpeg
-download https://i.imgur.com/IezH6c8.jpeg
 download https://i.imgur.com/FqiuYPD.jpeg
 download https://i.imgur.com/Ataez6G.jpeg
 download https://i.imgur.com/ok7nuS9.jpeg
