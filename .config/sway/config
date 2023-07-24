@@ -18,7 +18,6 @@ exec --no-startup-id dex --autostart --environment sway
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
 exec systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
 exec xrandr --output XWAYLAND0 --primary
-exec ~/.config/scripts/helpers/enable_screenshare.sh 5
 
 # Use pactl to adjust volume in PulseAudio.
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10%
@@ -188,6 +187,8 @@ exec wl-paste --watch cliphist store
 exec ~/.config/scripts/helpers/mount_google_drive.sh
 exec ~/.config/scripts/helpers/hitbox.sh
 exec ~/.config/scripts/helpers/bell.sh
+
+exec ~/.config/scripts/helpers/enable_screenshare.sh
 
 assign [class="steam" instance="steamwebhelper"] workspace $ws10
 include ~/.config/sway/active_layout

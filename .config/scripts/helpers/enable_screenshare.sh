@@ -1,6 +1,5 @@
 #!/bin/bash
 
-sleep $1
 systemctl --user unmask xdg-desktop-portal
 systemctl --user unmask xdg-desktop-portal-wlr
 systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
