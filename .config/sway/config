@@ -1,3 +1,8 @@
+# +UI
+exec ~/.config/scripts/launchers/swaybg.sh
+exec ~/.config/scripts/launchers/waybar.sh
+# -UI
+
 font pango:Noto Sans Mono 11
 seat * xcursor_theme Adwaita 40
 
@@ -175,11 +180,6 @@ for_window [class="^.*"] border pixel 3
 corner_radius 10
 # -APPEARANCE
 
-# +UI
-exec ~/.config/scripts/launchers/swaybg.sh
-exec ~/.config/scripts/launchers/waybar.sh
-# -UI
-
 exec /usr/bin/foot --server
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec dunst
@@ -188,7 +188,7 @@ exec ~/.config/scripts/helpers/mount_google_drive.sh
 exec ~/.config/scripts/helpers/hitbox.sh
 exec ~/.config/scripts/helpers/bell.sh
 
-exec ~/.config/scripts/helpers/enable_screenshare.sh
-
 assign [class="steam" instance="steamwebhelper"] workspace $ws10
 include ~/.config/sway/active_layout
+
+exec ~/.config/scripts/helpers/enable_screenshare.sh

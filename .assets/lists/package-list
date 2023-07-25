@@ -27,6 +27,7 @@ code
 cups
 cups-pdf
 debugedit
+discord
 dmenu
 dolphin-emu
 dunst
@@ -39,6 +40,7 @@ evtest
 exfat-utils
 faac
 fakeroot
+featherpad
 ffmpegthumbnailer
 figlet
 file
@@ -94,6 +96,7 @@ libdvdnav
 libdvdread
 libmpeg2
 libpulse
+libreoffice-fresh
 libtool
 libva-mesa-driver
 light
