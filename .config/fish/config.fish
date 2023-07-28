@@ -2,7 +2,8 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
     set -g fish_greeting
     if [ "$XDG_VTNR" = "1" ] && [ -z "$DISPLAY" ]
-        while true; ~/.config/scripts/launchers/sway.sh 2>&1 > /dev/null; end
+        # while true; ~/.config/scripts/launchers/sway.sh 2>&1 > /dev/null; end
+        while true; ~/.config/scripts/launchers/plasma.sh 2>&1 > /dev/null; end
     end
     fish_add_path ~/.local/bin
     alias "fetch" "pfetch | lolcat -F 0.2"
