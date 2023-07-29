@@ -14,6 +14,7 @@ then
     restart_server=1
 fi
 
+mkdir -p ~/.local/bin
 cp target/debug/server ~/.local/bin/dsl-server
 cp target/debug/client ~/.local/bin/dsl-client
 

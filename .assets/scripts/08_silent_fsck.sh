@@ -20,7 +20,7 @@ done < /etc/mkinitcpio.conf
 sudo chmod 644 .tmp
 sudo chown root:root .tmp
 sudo mv .tmp /etc/mkinitcpio.conf
-if [ "$(diff /etc/mkinitcpio.con .mkinitcpi.conf.old)" ]
+if [ "$(diff /etc/mkinitcpio.conf .mkinitcpio.conf.old)" ]
 then
     sudo mkinitcpio -P
 fi
