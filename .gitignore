@@ -43,9 +43,9 @@
 !.config/appimagelauncher.cfg
 !.config/sway
 !.config/sway/**
-!.config/hyprland
-!.config/hyprland/**
-.config/hyprland/display.conf
+!.config/hypr
+!.config/hypr/**
+.config/hypr/display.conf
 .config/sway/active_layout
 .config/sway/display
 !.config/waybar
