@@ -170,7 +170,7 @@ bindsym $mod+Shift+e exec --no-startup-id ~/.config/scripts/launchers/power_menu
 # +layout switching
 bindsym $mod+m exec --no-startup-id ~/.config/scripts/layouts/dsl.sh
 bindsym $mod+Shift+m exec --no-startup-id ~/.config/scripts/layouts/default.sh
-bindsym $mod+z exec --no-startup-id ~/.config/scripts/helpers/zen_toggle.sh
+bindsym $mod+z exec --no-startup-id ~/.config/scripts/helpers/zen_toggle.sh sway
 # -layout switching
 
 # +APPEARANCE

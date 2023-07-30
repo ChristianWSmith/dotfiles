@@ -4,5 +4,5 @@ if pgrep waybar 2>&1 > /dev/null;
 then
     pkill waybar
 else
-    ~/.config/scripts/launchers/waybar.sh
+    ~/.config/scripts/launchers/waybar.sh $1
 fi
