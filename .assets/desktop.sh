@@ -6,6 +6,29 @@ if [ "$EUID" -eq 0 ]
     exit
 fi
 
+rm -f ~/.config/hypr/display.conf
+/bin/bash -c 'tee -a ~/.config/hypr/display.conf <<EOF
+monitor=DP-2, 1920x1080, 0x0, 1
+monitor=DP-1, 1920x1080@240, 1920x0, 1
+monitor=DP-3, 1920x1080, 3840x0, 1
+
+bind =  SHIFT, left, movewindow, mon:l
+bind =  SHIFT, right, movewindow, mon:r
+
+workspace=11,monitor:DP-2
+workspace=12,monitor:DP-3
+workspace=1,monitor:DP-1
+workspace=2,monitor:DP-1
+workspace=3,monitor:DP-1
+workspace=4,monitor:DP-1
+workspace=5,monitor:DP-1
+workspace=6,monitor:DP-1
+workspace=7,monitor:DP-1
+workspace=8,monitor:DP-1
+workspace=9,monitor:DP-1
+workspace=10,monitor:DP-1
+EOF' > /dev/null
+
 rm -f ~/.config/sway/display
 /bin/bash -c 'tee -a ~/.config/sway/display <<EOF
 set \$wsL "L"

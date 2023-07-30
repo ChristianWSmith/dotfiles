@@ -191,4 +191,4 @@ exec ~/.config/scripts/helpers/bell.sh
 assign [class="steam" instance="steamwebhelper"] workspace $ws10
 include ~/.config/sway/active_layout
 
-exec ~/.config/scripts/helpers/enable_screenshare.sh
+exec ~/.config/scripts/helpers/enable_screenshare.sh sway
