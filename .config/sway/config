@@ -1,6 +1,6 @@
 # +UI
 exec ~/.config/scripts/launchers/swaybg.sh
-exec ~/.config/scripts/launchers/waybar.sh
+exec ~/.config/scripts/launchers/waybar.sh sway
 # -UI
 
 font pango:Noto Sans Mono 11
