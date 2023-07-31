@@ -17,5 +17,6 @@ export XDG_CURRENT_DESKTOP=sway
 export XDG_CONFIG_HOME=$HOME/.config
 export TUI_VOLUME_CONTROL=pulsemixer
 export GUI_VOLUME_CONTROL=pavucontrol
+export XCURSOR_SIZE=40
 
 dbus-run-session sway
