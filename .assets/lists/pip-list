@@ -28,6 +28,8 @@ lxml
 Mako
 Markdown
 MarkupSafe
+mercurial
+meson
 moddb
 msgpack
 numpy
@@ -55,6 +57,7 @@ six
 soupsieve
 TBB
 toolz
+tqdm
 typing_extensions
 tzlocal
 urllib3
