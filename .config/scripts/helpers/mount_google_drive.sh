@@ -7,5 +7,5 @@ then
     then
         fusermount -uz ~/GoogleDrive
     fi
-    rclone mount GoogleDrive: ~/GoogleDrive & disown
+    rclone mount --vfs-cache-mode minimal GoogleDrive: ~/GoogleDrive & disown
 fi
