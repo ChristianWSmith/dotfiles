@@ -36,6 +36,7 @@ if status is-interactive
     alias "gc" "git commit -m"
     alias "gp" "git push"
     alias "gr" "git restore $HOME"
+    alias "gd" "git diff $HOME"
     fetch
 end
 set "NEWT_COLORS" "'
