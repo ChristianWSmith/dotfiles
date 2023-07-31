@@ -1,7 +1,7 @@
 #!/bin/bash
 
 swaybg_file=""
-for ps_token in $(ps -ef | grep swaybg)
+for ps_token in $(ps -ef | grep swaybg | grep -v grep)
 do
     if test -f $ps_token
     then

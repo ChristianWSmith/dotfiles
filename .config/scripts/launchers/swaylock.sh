@@ -18,5 +18,5 @@ then
     # convert $image -blur 7x5 $tmp_image
 fi
 
-swaylock --image $image # you would use tmp_image here if applying effects
+swaylock --image ~/.wallpapers/nature/PnSeZX3.jpeg # you would use tmp_image here if applying effects
 ~/.config/scripts/helpers/bell.sh
