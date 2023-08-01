@@ -11,7 +11,16 @@ set_collection () {
 download () {
     url=$1
     file_name=$(basename $url)
-    wget -nc -O $outdir/$file_name $url
+    file_name_png="$(echo $file_name | cut -d'.' -f1).png"
+    if [ ! -e $file_name_png ]
+    then
+        wget -nc -O $outdir/$file_name $url
+        if [ "$file_name" != "$file_name_png"  ]
+        then
+            convert $outdir/$file_name $outdir/${file_name_png}
+            rm $outdir/$file_name
+        fi
+    fi
 }
 
 set_collection nature

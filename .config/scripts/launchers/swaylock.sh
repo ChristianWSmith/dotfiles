@@ -2,21 +2,15 @@
 
 pkill -x swaylock
 
-image=$(~/.config/scripts/helpers/current_swaybg.sh)
-
-if [ "$image" = "" ]
-then
-    image=$(~/.config/scripts/helpers/random_bg.sh)
-fi
+image=$(readlink $HOME/.wallpapers/active.png)
 
 tmp_image=/tmp/$(basename $image)
 
 if [ ! -e $tmp_image ]
 then
-    : # Use this if we want to apply image effects to the lock screen
-    # cp $image $tmp_image
-    # convert $image -blur 7x5 $tmp_image
+    # Use this if we want to apply image effects to the lock screen
+    convert $image -blur 7x5 $tmp_image
 fi
 
-swaylock --image ~/.wallpapers/nature/PnSeZX3.jpeg # you would use tmp_image here if applying effects
+swaylock --image $tmp_image # you would use tmp_image here if applying effects
 ~/.config/scripts/helpers/bell.sh
