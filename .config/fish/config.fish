@@ -9,7 +9,7 @@ if status is-interactive
     alias "fetch" "pfetch | lolcat -F 0.2"
     alias "fc" "footclient & disown"
     alias "update-crontab" "crontab -l > ~/.assets/lists/crontab-dump"
-    alias "update-package-list" "yay -Qe | cut -d' ' -f1 > ~/.assets/lists/package-list"
+    alias "update-package-list" "yay -Qe | cut -d' ' -f1 | sort > ~/.assets/lists/package-list"
     alias "update-etc-environment" "cat /etc/environment > ~/.assets/lists/etc-environment"
     alias "update-pip-list" "pip list | tail -n +3 | cut -d' ' -f1 > ~/.assets/lists/pip-list"
     alias "update-dump-all" "update-crontab; update-package-list; update-etc-environment; update-pip-list"

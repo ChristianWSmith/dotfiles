@@ -1,10 +1,14 @@
 #!/bin/bash
 set -e
 
-yay -S --needed $(cat ~/.assets/lists/package-list)
+REPO_LIST=$HOME/.assets/lists/package-list
+TEMP_LIST=/tmp/package-list
 
-yay -Qe | cut -d' ' -f1 > tmp
-remove=$(diff tmp ~/.assets/lists/package-list | grep '^>' | sed 's/^>\ //')
+yay -Qe | cut -d' ' -f1 | sort > $TEMP_LIST
+
+yay -S --needed $(comm -13 $REPO_LIST $TEMP_LIST)
+
+remove=$(comm -23 $REPO_LIST $TEMP_LIST)
 if [ "$remove" ]
 then
     yay -R $remove
