@@ -29,6 +29,7 @@
 !.local/share/icons/foxwq.png
 !.local/share/icons/messenger.png
 !.local/share/icons/minecraft.png
+!.local/share/icons/geoguessr.svg
 !.assets
 !.assets/**
 .assets/cache
