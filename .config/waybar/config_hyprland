@@ -193,7 +193,9 @@
         "exec": "cat $HOME/.power_profile",
         "format": "{}",
         "interval": 1,
-        "on-click": "$HOME/.config/scripts/helpers/power_profile.sh"
+        "on-click": "$HOME/.config/scripts/helpers/power_profile.sh power-saver",
+        "on-click-middle": "$HOME/.config/scripts/helpers/power_profile.sh balanced",
+        "on-click-right": "$HOME/.config/scripts/helpers/power_profile.sh performance"
     },
     "custom/powermenu": {
         "return-type": "json",

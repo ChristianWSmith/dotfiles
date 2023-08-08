@@ -1,35 +1,39 @@
 #!/bin/bash
 
 POWER_PROFILE=~/.power_profile
+POWER_SAVER="power-saver"
+BALANCED="balanced"
+PERFORMANCE="performance"
 
-# if [ -e
+do_update=1
 
-touch $POWER_PROFILE
-
-CURRENT_MODE=$(powerprofilesctl list | grep "*" | cut -d' ' -f2 | cut -d':' -f1)
-
-if [ "$CURRENT_MODE" = "performance" ]
+if [ "$1" = "$POWER_SAVER" ]
 then
     notify-send -t 5000 "Power profile set to saver."
-    powerprofilesctl set power-saver &
-    text=""
-    tooltip="Saver"
-elif [ "$CURRENT_MODE" = "power-saver" ]
+    powerprofilesctl set $POWER_SAVER &
+    text=""
+    tooltip="Power Profile: Saver "
+    internal=$POWER_SAVER
+elif [ "$1" = "$BALANCED" ]
 then
     notify-send -t 5000 "Power profile set to balanced."
-    powerprofilesctl set balanced &
-    text=""
-    tooltip="Balanced"
-elif [ "$CURRENT_MODE" = "balanced" ]
+    powerprofilesctl set $BALANCED &
+    text=""
+    tooltip="Power Profile: Balanced "
+    internal=$BALANCED
+elif [ "$1" = "$PERFORMANCE" ]
 then
     notify-send -t 5000 "Power profile set to performance."
-    powerprofilesctl set performance &
-    text=""
-    tooltip="Performance"
+    powerprofilesctl set $PERFORMANCE &
+    text=""
+    tooltip="Power Profile: Performance "
+    internal=$PERFORMANCE
 else
-    notify-send -t 5000 "Power profile not detected."
-    text=""
-    tooltip="Power profile not detected."
+    notify-send -t 5000 "Requested power profile not recognized."
+    do_update=0
 fi
-echo "{\"text\": \"$text\", \"tooltip\": \"$tooltip\"}" > $POWER_PROFILE
 
+if [ $do_update -eq 1 ]
+then
+    echo "{\"text\": \"$text\", \"tooltip\": \"$tooltip\", \"internal\": \"$internal\"}" > $POWER_PROFILE
+fi
