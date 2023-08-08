@@ -23,7 +23,7 @@ then
     tooltip="Up to date."
 else
     notify-send --urgency=critical -t 5000 "Update failed."
-    text="⚠"
+    text=""
     tooltip="Update failed."
 fi
 echo "{\"text\": \"$text\", \"tooltip\": \"$tooltip\"}" > ~/.update_reminder

@@ -10,7 +10,7 @@
     // Choose the order of the modules
     "modules-left": ["wlr/workspaces"],
     "modules-center": [],
-    "modules-right": ["tray", "custom/updates", "custom/emoji", "custom/clipboard", "custom/screenshot", "custom/colorpicker", "idle_inhibitor", "pulseaudio", "network", "cpu", "memory", "temperature", "battery", "clock", "custom/powermenu"],
+    "modules-right": ["tray", "custom/updates", "custom/emoji", "custom/clipboard", "custom/screenshot", "custom/colorpicker", "custom/powerprofile", "pulseaudio", "network", "cpu", "memory", "temperature", "battery", "clock", "custom/powermenu"],
     // Modules configuration
     "wlr/workspaces": {
         "on-click": "activate",
@@ -187,6 +187,13 @@
         "exec": "echo \"{\\\"text\\\": \\\"\\\", \\\"tooltip\\\": \\\"Color Picker\\\"}\"",
         "interval": "once",
         "on-click": "sleep 0.1; $HOME/.config/scripts/launchers/color_picker.sh"
+    },
+    "custom/powerprofile": {
+        "return-type": "json",
+        "exec": "cat $HOME/.power_profile",
+        "format": "{}",
+        "interval": 1,
+        "on-click": "$HOME/.config/scripts/helpers/power_profile.sh"
     },
     "custom/powermenu": {
         "return-type": "json",
