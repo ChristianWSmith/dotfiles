@@ -14,3 +14,5 @@ then
     yay -R $remove
 fi
 rm tmp
+
+sudo rm /usr/share/applications/steam-native.desktop
