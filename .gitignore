@@ -24,12 +24,8 @@
 !.local/share/applications/google_slides.desktop
 !.local/share/applications/instagram.desktop
 !.local/share/icons
-!.local/share/icons/discord.svg
-!.local/share/icons/chatgpt.svg
-!.local/share/icons/foxwq.png
-!.local/share/icons/messenger.png
-!.local/share/icons/minecraft.png
-!.local/share/icons/geoguessr.svg
+!.local/share/icons/**
+.local/share/icons/hicolor
 !.assets
 !.assets/**
 .assets/cache
