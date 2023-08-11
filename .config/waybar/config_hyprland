@@ -10,7 +10,7 @@
     // Choose the order of the modules
     "modules-left": ["wlr/workspaces"],
     "modules-center": [],
-    "modules-right": ["tray", "custom/updates", "custom/emoji", "custom/clipboard", "custom/screenshot", "custom/colorpicker", "custom/powerprofile", "pulseaudio", "network", "cpu", "memory", "temperature", "battery", "clock", "custom/powermenu"],
+    "modules-right": ["tray", "custom/separator", "custom/updates", "custom/emoji", "custom/clipboard", "custom/screenshot", "custom/colorpicker", "custom/powerprofile", "custom/separator", "pulseaudio", "network", "custom/separator", "cpu", "memory", "temperature", "battery", "custom/separator", "clock", "custom/powermenu"],
     // Modules configuration
     "wlr/workspaces": {
         "on-click": "activate",
@@ -175,6 +175,11 @@
         "on-click": "$HOME/.config/scripts/launchers/clipboard_manager.sh copy",
         "on-click-right": "$HOME/.config/scripts/launchers/clipboard_manager.sh delete",
         "on-click-middle": "$HOME/.config/scripts/launchers/clipboard_manager.sh wipe"
+    },
+    "custom/separator": {
+        "format": "|",
+        "interval": "once",
+        "tooltip": false
     },
     "custom/screenshot": {
         "return-type": "json",
