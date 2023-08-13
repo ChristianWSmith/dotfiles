@@ -12,9 +12,6 @@ monitor=DP-2, 1920x1080, 0x0, 1
 monitor=DP-1, 1920x1080@240, 1920x0, 1
 monitor=DP-3, 1920x1080, 3840x0, 1
 
-bind =  SHIFT, left, movewindow, mon:l
-bind =  SHIFT, right, movewindow, mon:r
-
 workspace=11,monitor:DP-2
 workspace=12,monitor:DP-3
 workspace=1,monitor:DP-1
