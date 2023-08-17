@@ -15,9 +15,7 @@ bemoji
 blueberry
 boost
 btop
-cemu-bin
 checkupdates-aur
-clangbincc
 cliphist
 code
 cups
@@ -26,7 +24,6 @@ discord
 dmenu
 dolphin-emu
 dunst
-dvdauthor
 dvd+rw-tools
 dvgrab
 efibootmgr
@@ -45,8 +42,11 @@ gamemode
 gamescope
 gimp
 git
+gnome-boxes
+gnome-disk-utility
 gnome-font-viewer
 gnome-keyring
+go
 godot
 google-chrome
 grim
@@ -61,7 +61,6 @@ htop
 hyprland
 hyprpaper
 hyprpicker-git
-i3status
 i3-wm
 imv
 inkscape
@@ -86,7 +85,7 @@ libdvdnav
 libdvdread
 libmpeg2
 libpulse
-libreoffice-fresh
+libreoffice-still
 libva-mesa-driver
 light
 linux-firmware
@@ -128,6 +127,7 @@ pipewire-alsa
 pipewire-jack
 pipewire-pulse
 pipewire-v4l2
+pkgfile
 polkit-gnome
 power-profiles-daemon
 pulsemixer
@@ -142,7 +142,6 @@ qt6-wayland
 ranger
 rclone
 reflector
-reflector-pacman-hook-git
 rsync
 rustup
 sigil
@@ -150,13 +149,9 @@ slurp
 smartmontools
 steam
 steam-native-runtime
-swaybg
-swayfx
-swayidle
 swaylock
 thunderbird-dark-reader
 timeshift
-tmatrix
 transmission-qt
 tumbler
 unrar
@@ -173,7 +168,6 @@ wireless_tools
 wireplumber
 wl-clipboard
 wlogout
-wlrobs-hg
 wpa_supplicant
 xboxdrv
 xdg-desktop-portal
@@ -187,7 +181,6 @@ xorg-xgamma
 xorg-xinit
 xorg-xwayland
 xorg-xwininfo
-yay-git
+yay
 zathura
 zathura-pdf-poppler
-zeit-git
