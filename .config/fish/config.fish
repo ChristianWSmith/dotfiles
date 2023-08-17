@@ -14,7 +14,6 @@ if status is-interactive
     alias "update-dump-all" "update-crontab; update-package-list; update-etc-environment"
     alias "shutdown" "systemctl poweroff --no-wall"
     alias "reboot" "systemctl reboot --no-wall --reboot"
-    alias "baseline" "sudo timeshift --delete-all; sudo timeshift --create --comments 'base'"
     alias "chx" "chmod +x"
     alias "remove-orphans" "~/.config/scripts/helpers/remove_orphans.sh"
     alias "adopt-orphans" "pacman -Qdtq | pacman -D --asexplicit -"
