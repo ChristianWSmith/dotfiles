@@ -18,6 +18,7 @@ btop
 checkupdates-aur
 cliphist
 code
+cronie
 cups
 cups-pdf
 discord
@@ -29,12 +30,14 @@ dvgrab
 efibootmgr
 epson-inkjet-printer-escpr2
 evtest
+eww-wayland
 exfat-utils
 faac
 featherpad
 ffmpegthumbnailer
 figlet
 file-roller
+firefox
 fish
 foot
 fuzzel
@@ -48,7 +51,6 @@ gnome-font-viewer
 gnome-keyring
 go
 godot
-google-chrome
 grim
 gst-libav
 gst-plugin-pipewire
@@ -62,6 +64,8 @@ hyprland
 hyprpaper
 hyprpicker-git
 i3-wm
+imagescan
+imagescan-plugin-networkscan
 imv
 inkscape
 innoextract
@@ -73,7 +77,6 @@ joyutils
 jq
 khal
 kitty
-krita
 lib32-gamemode
 lib32-vkd3d
 lib32-vulkan-icd-loader
@@ -136,7 +139,6 @@ python-i3ipc
 python-pip
 python-six
 qt5ct
-qt5-wayland
 qt6ct
 qt6-wayland
 ranger
