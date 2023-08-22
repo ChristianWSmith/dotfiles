@@ -16,7 +16,7 @@ then
     sudo reflector --connection-timeout 1 --download-timeout 1 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
 fi
 
-if yay -Syyuu --needed --norebuild --noredownload --nocleanmenu --nodiffmenu --noremovemake
+if yay -Syyuu --noconfirm
 then
     notify-send -t 5000 "Update complete."
     text=""
