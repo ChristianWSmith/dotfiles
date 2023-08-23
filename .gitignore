@@ -47,6 +47,9 @@
 .config/sway/display
 !.config/waybar
 !.config/waybar/**
+!.config/eww
+!.config/eww/**
+!eww.sh
 !.config/wlogout
 !.config/wlogout/**
 !.config/fish

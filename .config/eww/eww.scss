@@ -1,0 +1,16 @@
+* {
+  all: unset; //Unsets everything so you can style everything from scratch
+}
+
+//Global Styles
+// THESE STYLE WINDOWS
+.wallpaper0,.wallpaper1,.wallpaper2 {
+  background-image: url("../../.wallpapers/active.png");
+}
+
+.eww_bar {
+  background-color: rgba(17, 17, 17, 0.8);
+  margin-top: 18px;
+  margin-bottom: 18px;
+  border-radius: 1em;
+}

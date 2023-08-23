@@ -1,0 +1,66 @@
+; BAR
+
+(defwidget bar [] 
+  (box :class "eww_bar"
+       :orientation "v"
+       :vexpand "false"
+       :hexpand "false"))
+
+(defwindow bar
+  
+  :monitor 0
+  :exclusive true
+  :stacking "fg"
+  :focusable false
+  :namespace "overlay"
+  :geometry (geometry :x "18px"
+                      :y "0px"
+                      :width "30px"
+                      :height "100%"
+                      :anchor "center left")
+  (bar))
+
+; WALLPAPER
+
+(defwidget wallpaper [] 
+  (box :orientation "horizontal"))
+
+(defwindow wallpaper0
+  :monitor 0
+  :exclusive false
+  :stacking "bg"
+  :focusable false
+  :namespace "background"
+  :geometry (geometry :x "0%"
+                      :y "0%"
+                      :width "100%"
+                      :height "100%"
+                      :anchor "center right")
+  (wallpaper))
+
+(defwindow wallpaper1
+  :monitor 1
+  :exclusive false
+  :stacking "bg"
+  :focusable false
+  :namespace "bottom"
+  :geometry (geometry :x "0%"
+                      :y "0%"
+                      :width "100%"
+                      :height "100%"
+                      :anchor "center right")
+  (wallpaper))
+
+(defwindow wallpaper2
+  :monitor 2
+  :exclusive false
+  :stacking "bg"
+  :focusable false
+  :namespace "background"
+  :geometry (geometry :x "0%"
+                      :y "0%"
+                      :width "100%"
+                      :height "100%"
+                      :anchor "center right")
+  (wallpaper))
+
