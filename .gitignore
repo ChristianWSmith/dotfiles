@@ -51,6 +51,7 @@
 !.config/eww/**
 !no_eww.sh
 !eww.sh
+!eww_random_wallpaper.sh
 !.config/wlogout
 !.config/wlogout/**
 !.config/fish
