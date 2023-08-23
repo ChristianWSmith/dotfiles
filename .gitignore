@@ -49,6 +49,7 @@
 !.config/waybar/**
 !.config/eww
 !.config/eww/**
+!no_eww.sh
 !eww.sh
 !.config/wlogout
 !.config/wlogout/**
