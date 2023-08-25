@@ -12,7 +12,7 @@
   :exclusive true
   :stacking "fg"
   :focusable false
-  :namespace "overlay"
+  :namespace "eww-bar"
   :geometry (geometry :x "18px"
                       :y "0px"
                       :width "30px"
